@@ -1,7 +1,8 @@
 #include "Component.h"
 #include "../physics/Vec2.h"
 
-struct Transform final : public Component {
+class Transform final : public Component {
+public:
     Vec2 position;
     Vec2 scale;
     double rotation;

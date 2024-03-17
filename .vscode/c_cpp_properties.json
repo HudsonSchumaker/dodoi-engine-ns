@@ -4,15 +4,15 @@
             "name": "ppc",
             "includePath": [
                 "${workspaceFolder}/**",
-                "C:/devkitPro/portlibs/gamecube/include/**",
-                "C:/devkitPro/libogc/include/**"
+                "/opt/devkitPro/portlibs/gamecube/include/**",
+                "/opt/devkitPro/libogc/include/**"
             ],
             "defines": [
                 "_DEBUG",
                 "UNICODE",
                 "_UNICODE"
             ],
-            "compilerPath": "C:/devkitPro/devkitPPC/bin/powerpc-eabi-gcc.exe",
+            "compilerPath": "/opt/devkitPro/devkitPPC/bin/powerpc-eabi-g++",
             "cStandard": "c17",
             "cppStandard": "c++17",
             "intelliSenseMode": "gcc-x64",
@@ -20,8 +20,8 @@
             "browse": {
                 "path": [
                     "${workspaceFolder}/**",
-                    "C:/devkitPro/portlibs/gamecube/include/**",
-                    "C:/devkitPro/libogc/include/**"
+                    "/opt/devkitPro/portlibs/gamecube/include/**",
+                    "/opt/devkitPro/libogc/include/**"
                 ],
                 "limitSymbolsToIncludedHeaders": true
             }

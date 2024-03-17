@@ -3,8 +3,11 @@
 #include "../Common.h"
 #include "Component.h"
 
-struct GameObject {
+class GameObject {
+private:
     std::unordered_map<const std::type_info*, Component*> components;
+
+public:
     unsigned long id = 0;
 
     GameObject() {}
