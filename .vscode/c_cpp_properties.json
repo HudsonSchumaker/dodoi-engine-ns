@@ -1,11 +1,15 @@
 {
     "configurations": [
         {
-            "name": "ppc",
+            "name": "arm64",
             "includePath": [
                 "${workspaceFolder}/**",
-                "/opt/devkitPro/portlibs/switch/include/**",
-                "/opt/devkitpro/devkitA64/aarch64-none-elf/include/c++/13.2.0/**"
+                "/opt/devkitpro/portlibs/switch/include/**",
+                "/opt/devkitpro/portlibs/switch/include/SDL2/**",
+                "/opt/devkitpro/libnx/include/**",
+                "/opt/devkitpro/devkitA64/aarch64-none-elf/include/**",
+                "/opt/devkitpro/devkitA64/aarch64-none-elf/include/c++/13.2.0/**",
+                "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/**" 
             ],
             "defines": [
                 "_DEBUG",
@@ -15,13 +19,17 @@
             "compilerPath": "/opt/devkitpro/devkitA64/bin/aarch64-none-elf-g++",
             "cStandard": "c17",
             "cppStandard": "c++17",
-            "intelliSenseMode": "gcc-x64",
+            "intelliSenseMode": "macos-gcc-arm64",
             "mergeConfigurations": false,
             "browse": {
                 "path": [
                     "${workspaceFolder}/**",
-                    "/opt/devkitPro/portlibs/switch/include/**",
-                    "/opt/devkitpro/devkitA64/aarch64-none-elf/include/c++/13.2.0/**"
+                    "/opt/devkitpro/portlibs/switch/include/**",
+                    "/opt/devkitpro/portlibs/switch/include/SDL2/**",
+                    "/opt/devkitpro/libnx/include/**",
+                    "/opt/devkitpro/devkitA64/aarch64-none-elf/include/**",
+                    "/opt/devkitpro/devkitA64/aarch64-none-elf/include/c++/13.2.0/**",
+                    "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/**" 
                 ],
                 "limitSymbolsToIncludedHeaders": true
             }
