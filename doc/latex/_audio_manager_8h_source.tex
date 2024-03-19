@@ -1,0 +1,39 @@
+\doxysection{Audio\+Manager.\+h}
+\hypertarget{_audio_manager_8h_source}{}\label{_audio_manager_8h_source}\index{dodoi-\/engine-\/ns/src/engine/sfx/AudioManager.h@{dodoi-\/engine-\/ns/src/engine/sfx/AudioManager.h}}
+\mbox{\hyperlink{_audio_manager_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_common_8h}{../Common.h}}"{}}}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_audio_manager}{AudioManager}}\ final\ \{}
+\DoxyCodeLine{00018\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keyword}{static}\ \mbox{\hyperlink{class_audio_manager}{AudioManager}}*\ instance\ =\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{00020\ \ \ \ \ std::map<std::string,\ Mix\_Chunk*>\ sounds;}
+\DoxyCodeLine{00021\ \ \ \ \ \mbox{\hyperlink{class_audio_manager}{AudioManager}}();}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00024\ \ \ \ \ \mbox{\hyperlink{class_audio_manager}{\string~AudioManager}}();}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{class_audio_manager}{AudioManager}}*\ getInstance();}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{void}\ load();}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordtype}{void}\ addSound(\textcolor{keyword}{const}\ std::string\&\ name,\ \textcolor{keyword}{const}\ std::string\&\ filePath);}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordtype}{int}\ playSound(\textcolor{keyword}{const}\ std::string\&\ name);}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordtype}{int}\ playSound(\textcolor{keyword}{const}\ std::string\&\ name,\ \textcolor{keywordtype}{int}\ loop);}
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keywordtype}{void}\ stopSound(\textcolor{keywordtype}{int}\ channel);}
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keywordtype}{void}\ stopSound(\textcolor{keywordtype}{int}\ channel,\ \textcolor{keywordtype}{int}\ delay);}
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keywordtype}{void}\ pauseSound(\textcolor{keywordtype}{int}\ channel);}
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keywordtype}{void}\ unPauseSound(\textcolor{keywordtype}{int}\ channel);}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keywordtype}{void}\ playMusic(\textcolor{keyword}{const}\ std::string\&\ filePath);}
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keywordtype}{void}\ stopMusic();}
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keywordtype}{void}\ stopMusic(\textcolor{keywordtype}{int}\ delay);}
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keywordtype}{void}\ pauseMusic();}
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keywordtype}{void}\ unPauseMusic();}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keywordtype}{int}\ audioCount()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keywordtype}{void}\ clearAssets();}
+\DoxyCodeLine{00045\ \};}
+
+\end{DoxyCode}

@@ -1,0 +1,71 @@
+\doxysection{Audio.\+h}
+\hypertarget{_audio_8h_source}{}\label{_audio_8h_source}\index{dodoi-\/engine-\/ns/src/engine/ecs/component/Audio.h@{dodoi-\/engine-\/ns/src/engine/ecs/component/Audio.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_common_8h}{../../Common.h}}"{}}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}Component.h"{}}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_audio}{Audio}}\ final\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_component}{Component}}\ \{}
+\DoxyCodeLine{00006\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00007\ \ \ \ \ \textcolor{keywordtype}{bool}\ paused\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00010\ \ \ \ \ std::string\ audioId;}
+\DoxyCodeLine{00011\ \ \ \ \ \textcolor{keywordtype}{int}\ loops\ =\ 0;}
+\DoxyCodeLine{00012\ \ \ \ \ \textcolor{keywordtype}{bool}\ playOnAwake\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00013\ \ \ \ \ \textcolor{keywordtype}{int}\ channel\ =\ -\/1;}
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{keywordtype}{int}\ delay\ =\ 0;}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \ \ \ \ \mbox{\hyperlink{class_audio}{Audio}}(std::string\ audioId)\ \{}
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ this-\/>audioId\ =\ audioId;}
+\DoxyCodeLine{00018\ \ \ \ \ \}}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \ \ \ \ \mbox{\hyperlink{class_audio}{Audio}}(std::string\ audioId,\ \textcolor{keywordtype}{bool}\ playOnAwake,\ \textcolor{keywordtype}{int}\ loop)\ \{}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ this-\/>audioId\ =\ audioId;}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ this-\/>playOnAwake\ =\ playOnAwake;}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ this-\/>loops\ =\ loop;}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (playOnAwake)\ \{\ play();\ \}}
+\DoxyCodeLine{00026\ \ \ \ \ \}}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \ \ \ \ \mbox{\hyperlink{class_audio}{\string~Audio}}()\ \{}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (delay\ !=\ 0)\ \{}
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \ \ \ \ stop(delay);}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \ \ \ \ stop();}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00035\ \ \ \ \ \}}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keywordtype}{void}\ play()\ \{}
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ channel\ =\ AudioManager::getInstance()-\/>playSound(audioId,\ loops);}
+\DoxyCodeLine{00039\ \ \ \ \ \}}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keywordtype}{void}\ play(\textcolor{keywordtype}{int}\ loop)\ \{}
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ channel\ =\ AudioManager::getInstance()-\/>playSound(audioId,\ loop);}
+\DoxyCodeLine{00043\ \ \ \ \ \}}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keywordtype}{void}\ pause()\ \{}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ paused\ =\ paused\ ==\ \textcolor{keyword}{false}\ ?\ true\ :\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (paused)\ \{}
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \ \ \ \ AudioManager::getInstance()-\/>pauseSound(channel);}
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ \ \ \ \ AudioManager::getInstance()-\/>unPauseSound(channel);}
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00054\ \ \ \ \ \}}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00056\ \ \ \ \ \textcolor{keywordtype}{void}\ stop()\ \{}
+\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (channel\ !=\ -\/1)\ \{}
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ \ \ \ \ AudioManager::getInstance()-\/>stopSound(channel);}
+\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00060\ \ \ \ \ \}}
+\DoxyCodeLine{00061\ }
+\DoxyCodeLine{00062\ \ \ \ \ \textcolor{keywordtype}{void}\ stop(\textcolor{keywordtype}{int}\ delay)\ \{}
+\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ AudioManager::getInstance()-\/>stopSound(channel,\ delay);}
+\DoxyCodeLine{00064\ \ \ \ \ \}}
+\DoxyCodeLine{00065\ \};}
+
+\end{DoxyCode}
