@@ -1,2 +1,2 @@
-# dodoi-engine-ppc
-dodoi engine for ppc consoles 
+# dodoi-engine-ns
+dodoi engine for ns

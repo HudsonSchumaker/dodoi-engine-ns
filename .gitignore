@@ -30,3 +30,10 @@
 *.exe
 *.out
 *.app
+*.dol
+*.elf
+*.nacp
+*.nro
+
+# MacOS
+.DS_Store

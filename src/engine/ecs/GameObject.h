@@ -3,7 +3,7 @@
 #include "../Common.h"
 #include "Component.h"
 
-class GameObject {
+class GameObject final {
 private:
     std::unordered_map<const std::type_info*, Component*> components;
 
