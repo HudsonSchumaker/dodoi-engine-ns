@@ -122,37 +122,42 @@ $(function() { codefold.init(0); });
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    }</div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="keywordtype">void</span> play() {</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        channel = AudioManager::getInstance()-&gt;playSound(audioId, loops);</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        channel = <a class="code hl_function" href="class_audio_manager.html#a77de22887544ce37ae13d7c4d5cf7a79">AudioManager::getInstance</a>()-&gt;<a class="code hl_function" href="class_audio_manager.html#a8738ee4214c759b1225d81ed241fc20e">playSound</a>(audioId, loops);</div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    }</div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <span class="keywordtype">void</span> play(<span class="keywordtype">int</span> loop) {</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        channel = AudioManager::getInstance()-&gt;playSound(audioId, loop);</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        channel = <a class="code hl_function" href="class_audio_manager.html#a77de22887544ce37ae13d7c4d5cf7a79">AudioManager::getInstance</a>()-&gt;<a class="code hl_function" href="class_audio_manager.html#a8738ee4214c759b1225d81ed241fc20e">playSound</a>(audioId, loop);</div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    }</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <span class="keywordtype">void</span> pause() {</div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        paused = paused == <span class="keyword">false</span> ? true : <span class="keyword">false</span>;</div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        <span class="keywordflow">if</span> (paused) {</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>            AudioManager::getInstance()-&gt;pauseSound(channel);</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>            <a class="code hl_function" href="class_audio_manager.html#a77de22887544ce37ae13d7c4d5cf7a79">AudioManager::getInstance</a>()-&gt;<a class="code hl_function" href="class_audio_manager.html#aa527f18ec0f0149d3054137cbfd0d0a6">pauseSound</a>(channel);</div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        }</div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>            AudioManager::getInstance()-&gt;unPauseSound(channel);</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>            <a class="code hl_function" href="class_audio_manager.html#a77de22887544ce37ae13d7c4d5cf7a79">AudioManager::getInstance</a>()-&gt;<a class="code hl_function" href="class_audio_manager.html#a0f9f551732a2f601e0f0ccd5154f8585">unPauseSound</a>(channel);</div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        }</div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    }</div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <span class="keywordtype">void</span> stop() {</div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        <span class="keywordflow">if</span> (channel != -1) {</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>            AudioManager::getInstance()-&gt;stopSound(channel);</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>            <a class="code hl_function" href="class_audio_manager.html#a77de22887544ce37ae13d7c4d5cf7a79">AudioManager::getInstance</a>()-&gt;<a class="code hl_function" href="class_audio_manager.html#afa197cf8fa2c47b44621e23765f8e22a">stopSound</a>(channel);</div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        }</div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    }</div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <span class="keywordtype">void</span> stop(<span class="keywordtype">int</span> delay) {</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        AudioManager::getInstance()-&gt;stopSound(channel, delay);</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        <a class="code hl_function" href="class_audio_manager.html#a77de22887544ce37ae13d7c4d5cf7a79">AudioManager::getInstance</a>()-&gt;<a class="code hl_function" href="class_audio_manager.html#afa197cf8fa2c47b44621e23765f8e22a">stopSound</a>(channel, delay);</div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    }</div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>};</div>
 </div>
 <div class="ttc" id="a_common_8h_html"><div class="ttname"><a href="_common_8h.html">Common.h</a></div><div class="ttdoc">Common includes and definitions for the Dodoi-Engine.</div></div>
 <div class="ttc" id="aclass_audio_html"><div class="ttname"><a href="class_audio.html">Audio</a></div><div class="ttdef"><b>Definition</b> Audio.h:5</div></div>
+<div class="ttc" id="aclass_audio_manager_html_a0f9f551732a2f601e0f0ccd5154f8585"><div class="ttname"><a href="class_audio_manager.html#a0f9f551732a2f601e0f0ccd5154f8585">AudioManager::unPauseSound</a></div><div class="ttdeci">void unPauseSound(int channel)</div><div class="ttdoc">Unpause a sound.</div><div class="ttdef"><b>Definition</b> AudioManager.cpp:41</div></div>
+<div class="ttc" id="aclass_audio_manager_html_a77de22887544ce37ae13d7c4d5cf7a79"><div class="ttname"><a href="class_audio_manager.html#a77de22887544ce37ae13d7c4d5cf7a79">AudioManager::getInstance</a></div><div class="ttdeci">static AudioManager * getInstance()</div><div class="ttdoc">Get the instance of the AudioManager class.</div><div class="ttdef"><b>Definition</b> AudioManager.cpp:9</div></div>
+<div class="ttc" id="aclass_audio_manager_html_a8738ee4214c759b1225d81ed241fc20e"><div class="ttname"><a href="class_audio_manager.html#a8738ee4214c759b1225d81ed241fc20e">AudioManager::playSound</a></div><div class="ttdeci">int playSound(const std::string &amp;name)</div><div class="ttdoc">Play a sound.</div><div class="ttdef"><b>Definition</b> AudioManager.cpp:21</div></div>
+<div class="ttc" id="aclass_audio_manager_html_aa527f18ec0f0149d3054137cbfd0d0a6"><div class="ttname"><a href="class_audio_manager.html#aa527f18ec0f0149d3054137cbfd0d0a6">AudioManager::pauseSound</a></div><div class="ttdeci">void pauseSound(int channel)</div><div class="ttdoc">Pause a sound.</div><div class="ttdef"><b>Definition</b> AudioManager.cpp:37</div></div>
+<div class="ttc" id="aclass_audio_manager_html_afa197cf8fa2c47b44621e23765f8e22a"><div class="ttname"><a href="class_audio_manager.html#afa197cf8fa2c47b44621e23765f8e22a">AudioManager::stopSound</a></div><div class="ttdeci">void stopSound(int channel)</div><div class="ttdoc">Stop a sound.</div><div class="ttdef"><b>Definition</b> AudioManager.cpp:29</div></div>
 <div class="ttc" id="aclass_component_html"><div class="ttname"><a href="class_component.html">Component</a></div><div class="ttdef"><b>Definition</b> Component.h:3</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->

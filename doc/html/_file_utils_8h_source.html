@@ -84,28 +84,46 @@ $(function() { codefold.init(0); });
   <div class="headertitle"><div class="title">FileUtils.h</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#pragma once</span></div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;../../Common.h&quot;</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
-<div class="foldopen" id="foldopen00006" data-start="{" data-end="};">
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno"><a class="line" href="class_file_utils.html">    6</a></span><span class="keyword">class </span><a class="code hl_class" href="class_file_utils.html">FileUtils</a> {</div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>    <span class="keyword">static</span> std::string getClearName(std::filesystem::path file);</div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    <span class="keyword">static</span> std::string getClearName(<span class="keyword">const</span> std::string path);</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    <span class="keyword">static</span> std::string getName(<span class="keyword">const</span> std::string path); </div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    <span class="keyword">static</span> std::string getClearPath(<span class="keyword">const</span> std::string path);</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    <span class="keyword">static</span> std::string getFileExtension(std::filesystem::path file);</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    <span class="keyword">static</span> std::string getFileExtension(<span class="keyword">const</span> std::string fileName);</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    <span class="keyword">static</span> std::vector&lt;std::string&gt; listImageFilesInFolder();</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    <span class="keyword">static</span> std::vector&lt;std::string&gt; listAudioFilesInFolder();</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    <span class="keyword">static</span> std::vector&lt;std::string&gt; listFontFilesInFolder();</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <span class="keyword">static</span> std::vector&lt;std::string&gt; listMapFilesInFolder();</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <span class="keyword">static</span> std::vector&lt;std::string&gt; listFilesInFolder(<span class="keyword">const</span> std::filesystem::path dirPath, <span class="keyword">const</span> std::set&lt;std::string&gt;&amp; extensions);</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>};</div>
+<a href="_file_utils_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &quot;../../Common.h&quot;</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="foldopen" id="foldopen00018" data-start="{" data-end="};">
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="class_file_utils.html">   18</a></span><span class="keyword">class </span><a class="code hl_class" href="class_file_utils.html">FileUtils</a> {</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <span class="keyword">static</span> std::string <a class="code hl_function" href="class_file_utils.html#a4b591adbd28e6c7cf2e5748fcf45fb9d">getClearName</a>(std::filesystem::path file);</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="keyword">static</span> std::string <a class="code hl_function" href="class_file_utils.html#a4b591adbd28e6c7cf2e5748fcf45fb9d">getClearName</a>(<span class="keyword">const</span> std::string path);</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="keyword">static</span> std::string <a class="code hl_function" href="class_file_utils.html#afdc413756db6aca33f046d4ad5c5d7f6">getName</a>(<span class="keyword">const</span> std::string path); </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <span class="keyword">static</span> std::string <a class="code hl_function" href="class_file_utils.html#acefb8826aa7dffe7c7472d2ba95e9cf3">getClearPath</a>(<span class="keyword">const</span> std::string path);</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    <span class="keyword">static</span> std::string <a class="code hl_function" href="class_file_utils.html#ad199fc4cb3318102f2bce5e967ea3904">getFileExtension</a>(std::filesystem::path file);</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    <span class="keyword">static</span> std::string <a class="code hl_function" href="class_file_utils.html#ad199fc4cb3318102f2bce5e967ea3904">getFileExtension</a>(<span class="keyword">const</span> std::string fileName);</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    <span class="keyword">static</span> std::vector&lt;std::string&gt; <a class="code hl_function" href="class_file_utils.html#afc1755242fbb77092a7541497e029a60">listImageFilesInFolder</a>();</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span> </div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>    <span class="keyword">static</span> std::vector&lt;std::string&gt; <a class="code hl_function" href="class_file_utils.html#a59f453a01124095f74204d8500662e59">listAudioFilesInFolder</a>();</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span> </div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>    <span class="keyword">static</span> std::vector&lt;std::string&gt; <a class="code hl_function" href="class_file_utils.html#a52b5521ab1f9d33a322fb08968af98d1">listFontFilesInFolder</a>();</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span> </div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>    <span class="keyword">static</span> std::vector&lt;std::string&gt; <a class="code hl_function" href="class_file_utils.html#af1942860c94894cfd4bc7e63d13e627d">listMapFilesInFolder</a>();</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span> </div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>    <span class="keyword">static</span> std::vector&lt;std::string&gt; <a class="code hl_function" href="class_file_utils.html#a734f0daa4571c1195220dd696974deea">listFilesInFolder</a>(<span class="keyword">const</span> std::filesystem::path dirPath, <span class="keyword">const</span> std::set&lt;std::string&gt;&amp; extensions);</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>};</div>
 </div>
-<div class="ttc" id="aclass_file_utils_html"><div class="ttname"><a href="class_file_utils.html">FileUtils</a></div><div class="ttdef"><b>Definition</b> FileUtils.h:6</div></div>
+<div class="ttc" id="aclass_file_utils_html"><div class="ttname"><a href="class_file_utils.html">FileUtils</a></div><div class="ttdef"><b>Definition</b> FileUtils.h:18</div></div>
+<div class="ttc" id="aclass_file_utils_html_a4b591adbd28e6c7cf2e5748fcf45fb9d"><div class="ttname"><a href="class_file_utils.html#a4b591adbd28e6c7cf2e5748fcf45fb9d">FileUtils::getClearName</a></div><div class="ttdeci">static std::string getClearName(std::filesystem::path file)</div><div class="ttdoc">Get the clear name of a file.</div><div class="ttdef"><b>Definition</b> FileUtils.cpp:3</div></div>
+<div class="ttc" id="aclass_file_utils_html_a52b5521ab1f9d33a322fb08968af98d1"><div class="ttname"><a href="class_file_utils.html#a52b5521ab1f9d33a322fb08968af98d1">FileUtils::listFontFilesInFolder</a></div><div class="ttdeci">static std::vector&lt; std::string &gt; listFontFilesInFolder()</div><div class="ttdoc">List the font files in a folder.</div><div class="ttdef"><b>Definition</b> FileUtils.cpp:43</div></div>
+<div class="ttc" id="aclass_file_utils_html_a59f453a01124095f74204d8500662e59"><div class="ttname"><a href="class_file_utils.html#a59f453a01124095f74204d8500662e59">FileUtils::listAudioFilesInFolder</a></div><div class="ttdeci">static std::vector&lt; std::string &gt; listAudioFilesInFolder()</div><div class="ttdoc">List the audio files in a folder.</div><div class="ttdef"><b>Definition</b> FileUtils.cpp:38</div></div>
+<div class="ttc" id="aclass_file_utils_html_a734f0daa4571c1195220dd696974deea"><div class="ttname"><a href="class_file_utils.html#a734f0daa4571c1195220dd696974deea">FileUtils::listFilesInFolder</a></div><div class="ttdeci">static std::vector&lt; std::string &gt; listFilesInFolder(const std::filesystem::path dirPath, const std::set&lt; std::string &gt; &amp;extensions)</div><div class="ttdoc">List the files in a folder with specific extensions.</div><div class="ttdef"><b>Definition</b> FileUtils.cpp:53</div></div>
+<div class="ttc" id="aclass_file_utils_html_acefb8826aa7dffe7c7472d2ba95e9cf3"><div class="ttname"><a href="class_file_utils.html#acefb8826aa7dffe7c7472d2ba95e9cf3">FileUtils::getClearPath</a></div><div class="ttdeci">static std::string getClearPath(const std::string path)</div><div class="ttdoc">Get the clear path of a file.</div><div class="ttdef"><b>Definition</b> FileUtils.cpp:16</div></div>
+<div class="ttc" id="aclass_file_utils_html_ad199fc4cb3318102f2bce5e967ea3904"><div class="ttname"><a href="class_file_utils.html#ad199fc4cb3318102f2bce5e967ea3904">FileUtils::getFileExtension</a></div><div class="ttdeci">static std::string getFileExtension(std::filesystem::path file)</div><div class="ttdoc">Get the extension of a file.</div><div class="ttdef"><b>Definition</b> FileUtils.cpp:21</div></div>
+<div class="ttc" id="aclass_file_utils_html_af1942860c94894cfd4bc7e63d13e627d"><div class="ttname"><a href="class_file_utils.html#af1942860c94894cfd4bc7e63d13e627d">FileUtils::listMapFilesInFolder</a></div><div class="ttdeci">static std::vector&lt; std::string &gt; listMapFilesInFolder()</div><div class="ttdoc">List the map files in a folder.</div><div class="ttdef"><b>Definition</b> FileUtils.cpp:48</div></div>
+<div class="ttc" id="aclass_file_utils_html_afc1755242fbb77092a7541497e029a60"><div class="ttname"><a href="class_file_utils.html#afc1755242fbb77092a7541497e029a60">FileUtils::listImageFilesInFolder</a></div><div class="ttdeci">static std::vector&lt; std::string &gt; listImageFilesInFolder()</div><div class="ttdoc">List the image files in a folder.</div><div class="ttdef"><b>Definition</b> FileUtils.cpp:33</div></div>
+<div class="ttc" id="aclass_file_utils_html_afdc413756db6aca33f046d4ad5c5d7f6"><div class="ttname"><a href="class_file_utils.html#afdc413756db6aca33f046d4ad5c5d7f6">FileUtils::getName</a></div><div class="ttdeci">static std::string getName(const std::string path)</div><div class="ttdoc">Get the name of a file.</div><div class="ttdef"><b>Definition</b> FileUtils.cpp:11</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

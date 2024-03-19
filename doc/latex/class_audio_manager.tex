@@ -3,57 +3,227 @@
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
+\Hypertarget{class_audio_manager_ad94dc46723c6d7cf8c81fc3772a842aa}\label{class_audio_manager_ad94dc46723c6d7cf8c81fc3772a842aa} 
+{\bfseries \texorpdfstring{$\sim$}{\string~}\+Audio\+Manager} ()
+\begin{DoxyCompactList}\small\item\em Destructor for the \doxylink{class_audio_manager}{Audio\+Manager} class. \end{DoxyCompactList}\item 
 \Hypertarget{class_audio_manager_a7eb243b09bff3069060bb76c9dc8eb62}\label{class_audio_manager_a7eb243b09bff3069060bb76c9dc8eb62} 
 void {\bfseries load} ()
-\item 
-\Hypertarget{class_audio_manager_abf7f5cd9ba34a456fcb8e048812b2d9e}\label{class_audio_manager_abf7f5cd9ba34a456fcb8e048812b2d9e} 
-void {\bfseries add\+Sound} (const std\+::string \&name, const std\+::string \&file\+Path)
-\item 
-\Hypertarget{class_audio_manager_a8738ee4214c759b1225d81ed241fc20e}\label{class_audio_manager_a8738ee4214c759b1225d81ed241fc20e} 
-int {\bfseries play\+Sound} (const std\+::string \&name)
-\item 
-\Hypertarget{class_audio_manager_aa117bc99d38f8381d0a1d6a2e47b05be}\label{class_audio_manager_aa117bc99d38f8381d0a1d6a2e47b05be} 
-int {\bfseries play\+Sound} (const std\+::string \&name, int loop)
-\item 
-\Hypertarget{class_audio_manager_afa197cf8fa2c47b44621e23765f8e22a}\label{class_audio_manager_afa197cf8fa2c47b44621e23765f8e22a} 
-void {\bfseries stop\+Sound} (int channel)
-\item 
-\Hypertarget{class_audio_manager_ac7c2ea7ac524074d75a2c31eca17a30e}\label{class_audio_manager_ac7c2ea7ac524074d75a2c31eca17a30e} 
-void {\bfseries stop\+Sound} (int channel, int delay)
-\item 
-\Hypertarget{class_audio_manager_aa527f18ec0f0149d3054137cbfd0d0a6}\label{class_audio_manager_aa527f18ec0f0149d3054137cbfd0d0a6} 
-void {\bfseries pause\+Sound} (int channel)
-\item 
-\Hypertarget{class_audio_manager_a0f9f551732a2f601e0f0ccd5154f8585}\label{class_audio_manager_a0f9f551732a2f601e0f0ccd5154f8585} 
-void {\bfseries un\+Pause\+Sound} (int channel)
-\item 
-\Hypertarget{class_audio_manager_a00aa6ec9dd3d2f525974d995dbfb1a06}\label{class_audio_manager_a00aa6ec9dd3d2f525974d995dbfb1a06} 
-void {\bfseries play\+Music} (const std\+::string \&file\+Path)
-\item 
+\begin{DoxyCompactList}\small\item\em Load audio assets. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_audio_manager_abf7f5cd9ba34a456fcb8e048812b2d9e}{add\+Sound}} (const std\+::string \&name, const std\+::string \&file\+Path)
+\begin{DoxyCompactList}\small\item\em Add a sound to the \doxylink{class_audio_manager}{Audio\+Manager}. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_audio_manager_a8738ee4214c759b1225d81ed241fc20e}{play\+Sound}} (const std\+::string \&name)
+\begin{DoxyCompactList}\small\item\em Play a sound. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_audio_manager_aa117bc99d38f8381d0a1d6a2e47b05be}{play\+Sound}} (const std\+::string \&name, int loop)
+\begin{DoxyCompactList}\small\item\em Play a sound with looping. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_audio_manager_afa197cf8fa2c47b44621e23765f8e22a}{stop\+Sound}} (int channel)
+\begin{DoxyCompactList}\small\item\em Stop a sound. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_audio_manager_ac7c2ea7ac524074d75a2c31eca17a30e}{stop\+Sound}} (int channel, int delay)
+\begin{DoxyCompactList}\small\item\em Stop a sound after a delay. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_audio_manager_aa527f18ec0f0149d3054137cbfd0d0a6}{pause\+Sound}} (int channel)
+\begin{DoxyCompactList}\small\item\em Pause a sound. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_audio_manager_a0f9f551732a2f601e0f0ccd5154f8585}{un\+Pause\+Sound}} (int channel)
+\begin{DoxyCompactList}\small\item\em Unpause a sound. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_audio_manager_a00aa6ec9dd3d2f525974d995dbfb1a06}{play\+Music}} (const std\+::string \&file\+Path)
+\begin{DoxyCompactList}\small\item\em Play music. \end{DoxyCompactList}\item 
 \Hypertarget{class_audio_manager_a72a288a0d8397bed1a9a39efca363326}\label{class_audio_manager_a72a288a0d8397bed1a9a39efca363326} 
 void {\bfseries stop\+Music} ()
-\item 
-\Hypertarget{class_audio_manager_a9626c1bd80b2cb14afe45fe8e641ea0d}\label{class_audio_manager_a9626c1bd80b2cb14afe45fe8e641ea0d} 
-void {\bfseries stop\+Music} (int delay)
-\item 
+\begin{DoxyCompactList}\small\item\em Stop the music. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_audio_manager_a9626c1bd80b2cb14afe45fe8e641ea0d}{stop\+Music}} (int delay)
+\begin{DoxyCompactList}\small\item\em Stop the music after a delay. \end{DoxyCompactList}\item 
 \Hypertarget{class_audio_manager_a8afd8f3db6787f87aa55436d6c9dadf1}\label{class_audio_manager_a8afd8f3db6787f87aa55436d6c9dadf1} 
 void {\bfseries pause\+Music} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Pause the music. \end{DoxyCompactList}\item 
 \Hypertarget{class_audio_manager_a6154bc827adad02fcc375e0c111ba584}\label{class_audio_manager_a6154bc827adad02fcc375e0c111ba584} 
 void {\bfseries un\+Pause\+Music} ()
-\item 
-\Hypertarget{class_audio_manager_a0dd98d8980eb7a22b07ca5e70b0dee4d}\label{class_audio_manager_a0dd98d8980eb7a22b07ca5e70b0dee4d} 
-int {\bfseries audio\+Count} () const
-\item 
+\begin{DoxyCompactList}\small\item\em Unpause the music. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_audio_manager_a0dd98d8980eb7a22b07ca5e70b0dee4d}{audio\+Count}} () const
+\begin{DoxyCompactList}\small\item\em Get the count of audio assets. \end{DoxyCompactList}\item 
 \Hypertarget{class_audio_manager_a6f547ecac879ea9d1d364ef99056a65a}\label{class_audio_manager_a6f547ecac879ea9d1d364ef99056a65a} 
 void {\bfseries clear\+Assets} ()
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Clear all audio assets. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
+static \mbox{\hyperlink{class_audio_manager}{Audio\+Manager}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_audio_manager_a77de22887544ce37ae13d7c4d5cf7a79}{get\+Instance}} ()
+\begin{DoxyCompactList}\small\item\em Get the instance of the \doxylink{class_audio_manager}{Audio\+Manager} class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_audio_manager_abf7f5cd9ba34a456fcb8e048812b2d9e}\label{class_audio_manager_abf7f5cd9ba34a456fcb8e048812b2d9e} 
+\index{AudioManager@{AudioManager}!addSound@{addSound}}
+\index{addSound@{addSound}!AudioManager@{AudioManager}}
+\doxysubsubsection{\texorpdfstring{addSound()}{addSound()}}
+{\footnotesize\ttfamily void Audio\+Manager\+::add\+Sound (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name,  }\item[{const std\+::string \&}]{file\+Path }\end{DoxyParamCaption})}
+
+
+
+Add a sound to the \doxylink{class_audio_manager}{Audio\+Manager}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the sound. \\
+\hline
+{\em file\+Path} & The file path of the sound. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_audio_manager_a0dd98d8980eb7a22b07ca5e70b0dee4d}\label{class_audio_manager_a0dd98d8980eb7a22b07ca5e70b0dee4d} 
+\index{AudioManager@{AudioManager}!audioCount@{audioCount}}
+\index{audioCount@{audioCount}!AudioManager@{AudioManager}}
+\doxysubsubsection{\texorpdfstring{audioCount()}{audioCount()}}
+{\footnotesize\ttfamily int Audio\+Manager\+::audio\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the count of audio assets. 
+
+\begin{DoxyReturn}{Returns}
+The count of audio assets. 
+\end{DoxyReturn}
 \Hypertarget{class_audio_manager_a77de22887544ce37ae13d7c4d5cf7a79}\label{class_audio_manager_a77de22887544ce37ae13d7c4d5cf7a79} 
-static \mbox{\hyperlink{class_audio_manager}{Audio\+Manager}} \texorpdfstring{$\ast$}{*} {\bfseries get\+Instance} ()
-\end{DoxyCompactItemize}
+\index{AudioManager@{AudioManager}!getInstance@{getInstance}}
+\index{getInstance@{getInstance}!AudioManager@{AudioManager}}
+\doxysubsubsection{\texorpdfstring{getInstance()}{getInstance()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_audio_manager}{Audio\+Manager}} \texorpdfstring{$\ast$}{*} Audio\+Manager\+::get\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Get the instance of the \doxylink{class_audio_manager}{Audio\+Manager} class. 
+
+Since \doxylink{class_audio_manager}{Audio\+Manager} is a singleton class, this function provides the global point of access to the instance.
+
+\begin{DoxyReturn}{Returns}
+A pointer to the instance of the \doxylink{class_audio_manager}{Audio\+Manager} class. 
+\end{DoxyReturn}
+\Hypertarget{class_audio_manager_aa527f18ec0f0149d3054137cbfd0d0a6}\label{class_audio_manager_aa527f18ec0f0149d3054137cbfd0d0a6} 
+\index{AudioManager@{AudioManager}!pauseSound@{pauseSound}}
+\index{pauseSound@{pauseSound}!AudioManager@{AudioManager}}
+\doxysubsubsection{\texorpdfstring{pauseSound()}{pauseSound()}}
+{\footnotesize\ttfamily void Audio\+Manager\+::pause\+Sound (\begin{DoxyParamCaption}\item[{int}]{channel }\end{DoxyParamCaption})}
+
+
+
+Pause a sound. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em channel} & The channel on which the sound is playing. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_audio_manager_a00aa6ec9dd3d2f525974d995dbfb1a06}\label{class_audio_manager_a00aa6ec9dd3d2f525974d995dbfb1a06} 
+\index{AudioManager@{AudioManager}!playMusic@{playMusic}}
+\index{playMusic@{playMusic}!AudioManager@{AudioManager}}
+\doxysubsubsection{\texorpdfstring{playMusic()}{playMusic()}}
+{\footnotesize\ttfamily void Audio\+Manager\+::play\+Music (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{file\+Path }\end{DoxyParamCaption})}
+
+
+
+Play music. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Path} & The file path of the music. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_audio_manager_a8738ee4214c759b1225d81ed241fc20e}\label{class_audio_manager_a8738ee4214c759b1225d81ed241fc20e} 
+\index{AudioManager@{AudioManager}!playSound@{playSound}}
+\index{playSound@{playSound}!AudioManager@{AudioManager}}
+\doxysubsubsection{\texorpdfstring{playSound()}{playSound()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int Audio\+Manager\+::play\+Sound (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name }\end{DoxyParamCaption})}
+
+
+
+Play a sound. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the sound. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The channel on which the sound is played. 
+\end{DoxyReturn}
+\Hypertarget{class_audio_manager_aa117bc99d38f8381d0a1d6a2e47b05be}\label{class_audio_manager_aa117bc99d38f8381d0a1d6a2e47b05be} 
+\index{AudioManager@{AudioManager}!playSound@{playSound}}
+\index{playSound@{playSound}!AudioManager@{AudioManager}}
+\doxysubsubsection{\texorpdfstring{playSound()}{playSound()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily int Audio\+Manager\+::play\+Sound (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name,  }\item[{int}]{loop }\end{DoxyParamCaption})}
+
+
+
+Play a sound with looping. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the sound. \\
+\hline
+{\em loop} & The number of times to loop the sound. -\/1 for infinite loop. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The channel on which the sound is played. 
+\end{DoxyReturn}
+\Hypertarget{class_audio_manager_a9626c1bd80b2cb14afe45fe8e641ea0d}\label{class_audio_manager_a9626c1bd80b2cb14afe45fe8e641ea0d} 
+\index{AudioManager@{AudioManager}!stopMusic@{stopMusic}}
+\index{stopMusic@{stopMusic}!AudioManager@{AudioManager}}
+\doxysubsubsection{\texorpdfstring{stopMusic()}{stopMusic()}}
+{\footnotesize\ttfamily void Audio\+Manager\+::stop\+Music (\begin{DoxyParamCaption}\item[{int}]{delay }\end{DoxyParamCaption})}
+
+
+
+Stop the music after a delay. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em delay} & The delay in milliseconds before the music is stopped. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_audio_manager_afa197cf8fa2c47b44621e23765f8e22a}\label{class_audio_manager_afa197cf8fa2c47b44621e23765f8e22a} 
+\index{AudioManager@{AudioManager}!stopSound@{stopSound}}
+\index{stopSound@{stopSound}!AudioManager@{AudioManager}}
+\doxysubsubsection{\texorpdfstring{stopSound()}{stopSound()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Audio\+Manager\+::stop\+Sound (\begin{DoxyParamCaption}\item[{int}]{channel }\end{DoxyParamCaption})}
+
+
+
+Stop a sound. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em channel} & The channel on which the sound is playing. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_audio_manager_ac7c2ea7ac524074d75a2c31eca17a30e}\label{class_audio_manager_ac7c2ea7ac524074d75a2c31eca17a30e} 
+\index{AudioManager@{AudioManager}!stopSound@{stopSound}}
+\index{stopSound@{stopSound}!AudioManager@{AudioManager}}
+\doxysubsubsection{\texorpdfstring{stopSound()}{stopSound()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Audio\+Manager\+::stop\+Sound (\begin{DoxyParamCaption}\item[{int}]{channel,  }\item[{int}]{delay }\end{DoxyParamCaption})}
+
+
+
+Stop a sound after a delay. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em channel} & The channel on which the sound is playing. \\
+\hline
+{\em delay} & The delay in milliseconds before the sound is stopped. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_audio_manager_a0f9f551732a2f601e0f0ccd5154f8585}\label{class_audio_manager_a0f9f551732a2f601e0f0ccd5154f8585} 
+\index{AudioManager@{AudioManager}!unPauseSound@{unPauseSound}}
+\index{unPauseSound@{unPauseSound}!AudioManager@{AudioManager}}
+\doxysubsubsection{\texorpdfstring{unPauseSound()}{unPauseSound()}}
+{\footnotesize\ttfamily void Audio\+Manager\+::un\+Pause\+Sound (\begin{DoxyParamCaption}\item[{int}]{channel }\end{DoxyParamCaption})}
+
+
+
+Unpause a sound. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em channel} & The channel on which the sound is paused. \\
+\hline
+\end{DoxyParams}
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}

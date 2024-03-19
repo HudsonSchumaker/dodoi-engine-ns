@@ -1,9 +1,10 @@
 var indexSectionsWithContent =
 {
-  0: "acfgimtv",
+  0: "acfgilmpstuv~",
   1: "acfgtv",
-  2: "ac",
-  3: "afim"
+  2: "acf",
+  3: "acglpsu~",
+  4: "afim"
 };
 
 var indexSectionNames =
@@ -11,7 +12,8 @@ var indexSectionNames =
   0: "all",
   1: "classes",
   2: "files",
-  3: "defines"
+  3: "functions",
+  4: "defines"
 };
 
 var indexSectionLabels =
@@ -19,6 +21,7 @@ var indexSectionLabels =
   0: "All",
   1: "Classes",
   2: "Files",
-  3: "Macros"
+  3: "Functions",
+  4: "Macros"
 };
 

@@ -42,6 +42,30 @@ void AudioManager::unPauseSound(int channel) {
 	Mix_Resume(channel);
 }
 
+void AudioManager::playMusic(const std::string& filePath) {
+    std::async(std::launch::async, [&]() {
+        Mix_Music* music = Mix_LoadMUS(filePath.c_str());
+        Mix_PlayMusic(music, 0);
+        Mix_FreeMusic(music);
+    });
+}
+
+void AudioManager::stopMusic() {
+    Mix_HaltMusic();
+}
+
+void AudioManager::stopMusic(int delay) {
+    Mix_FadeOutMusic(delay);
+}
+
+void AudioManager::pauseMusic() {
+    Mix_PauseMusic();
+}
+
+void AudioManager::unPauseMusic() {
+    Mix_ResumeMusic();
+}
+
 void AudioManager::load() {
 	auto files = FileUtils::listAudioFilesInFolder();
     for (auto& file : files) {
