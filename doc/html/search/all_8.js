@@ -1,5 +1,8 @@
 var searchData=
 [
-  ['stopmusic_0',['stopMusic',['../class_audio_manager.html#a72a288a0d8397bed1a9a39efca363326',1,'AudioManager::stopMusic()'],['../class_audio_manager.html#a9626c1bd80b2cb14afe45fe8e641ea0d',1,'AudioManager::stopMusic(int delay)']]],
-  ['stopsound_1',['stopSound',['../class_audio_manager.html#afa197cf8fa2c47b44621e23765f8e22a',1,'AudioManager::stopSound(int channel)'],['../class_audio_manager.html#ac7c2ea7ac524074d75a2c31eca17a30e',1,'AudioManager::stopSound(int channel, int delay)']]]
+  ['pausemusic_0',['pauseMusic',['../class_audio_manager.html#a8afd8f3db6787f87aa55436d6c9dadf1',1,'AudioManager']]],
+  ['pausesound_1',['pauseSound',['../class_audio_manager.html#aa527f18ec0f0149d3054137cbfd0d0a6',1,'AudioManager']]],
+  ['pi_2',['PI',['../class_common.html#acb4e699df5f652b0bf53fc88aa201319',1,'Common']]],
+  ['playmusic_3',['playMusic',['../class_audio_manager.html#a00aa6ec9dd3d2f525974d995dbfb1a06',1,'AudioManager']]],
+  ['playsound_4',['playSound',['../class_audio_manager.html#a8738ee4214c759b1225d81ed241fc20e',1,'AudioManager::playSound(const std::string &amp;name)'],['../class_audio_manager.html#aa117bc99d38f8381d0a1d6a2e47b05be',1,'AudioManager::playSound(const std::string &amp;name, int loop)']]]
 ];
