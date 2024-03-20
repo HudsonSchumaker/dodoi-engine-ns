@@ -1,0 +1,72 @@
+\doxysection{Music Class Reference}
+\hypertarget{class_music}{}\label{class_music}\index{Music@{Music}}
+
+
+The music component.  
+
+
+
+
+{\ttfamily \#include $<$Music.\+h$>$}
+
+Inheritance diagram for Music\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_music}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_music_aa55ca850a783bed1afb3d80728363258}\label{class_music_aa55ca850a783bed1afb3d80728363258} 
+{\bfseries Music} (std\+::string music\+Path)
+\item 
+\Hypertarget{class_music_ab7566a1e96897f3da4e23db426301f1d}\label{class_music_ab7566a1e96897f3da4e23db426301f1d} 
+{\bfseries Music} (std\+::string music\+Path, bool play\+On\+Awake, int loop)
+\item 
+\Hypertarget{class_music_a54b941f6f7634d7f99b473c78fe6e4da}\label{class_music_a54b941f6f7634d7f99b473c78fe6e4da} 
+void {\bfseries play} ()
+\item 
+\Hypertarget{class_music_a2da55f8a89e7f1b7d4b6dfd8d3f409ac}\label{class_music_a2da55f8a89e7f1b7d4b6dfd8d3f409ac} 
+void {\bfseries play} (int loop)
+\item 
+\Hypertarget{class_music_a10e5537400b6f018a8c86085751a90cb}\label{class_music_a10e5537400b6f018a8c86085751a90cb} 
+void {\bfseries pause} ()
+\item 
+\Hypertarget{class_music_a008211b514c1c89c15399d3384d3fcea}\label{class_music_a008211b514c1c89c15399d3384d3fcea} 
+void {\bfseries stop} ()
+\item 
+\Hypertarget{class_music_a2c51d02bb8795c6b03d30e47f0a62fda}\label{class_music_a2c51d02bb8795c6b03d30e47f0a62fda} 
+void {\bfseries stop} (int delay)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_music_a9d4243fac026c2001bd7732fbbbb1988}\label{class_music_a9d4243fac026c2001bd7732fbbbb1988} 
+std\+::string {\bfseries music\+Path}
+\item 
+\Hypertarget{class_music_ac71c29175dde292f1aa4a55a0912b2b0}\label{class_music_ac71c29175dde292f1aa4a55a0912b2b0} 
+int {\bfseries loops} = 0
+\item 
+\Hypertarget{class_music_a970aca81d097e64f7af7c70e805b09ec}\label{class_music_a970aca81d097e64f7af7c70e805b09ec} 
+bool {\bfseries play\+On\+Awake} = false
+\item 
+\Hypertarget{class_music_a6f9074ad2adc9e10b4825ad8df6963d1}\label{class_music_a6f9074ad2adc9e10b4825ad8df6963d1} 
+int {\bfseries channel} = -\/1
+\item 
+\Hypertarget{class_music_a5b3d485429bfc263cbe7d4bbf5aef909}\label{class_music_a5b3d485429bfc263cbe7d4bbf5aef909} 
+int {\bfseries delay} = 0
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{class_component}{Component}}}
+\begin{DoxyCompactItemize}
+\item 
+unsigned long {\bfseries parent\+Id} = 0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The music component. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+dodoi-\/engine-\/ns/src/engine/ecs/component/Music.\+h\end{DoxyCompactItemize}

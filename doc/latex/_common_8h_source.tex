@@ -34,31 +34,36 @@
 \DoxyCodeLine{00043\ \textcolor{preprocessor}{\#include\ <SDL\_image.h>}}
 \DoxyCodeLine{00044\ \textcolor{preprocessor}{\#include\ <SDL\_mixer.h>}}
 \DoxyCodeLine{00045\ }
-\DoxyCodeLine{00050\ \textcolor{preprocessor}{\#define\ AUDIO\_FOLDER\ "{}./assets/audios/"{}}}
-\DoxyCodeLine{00051\ }
-\DoxyCodeLine{00056\ \textcolor{preprocessor}{\#define\ FONT\_FOLDER\ "{}./assets/fonts/"{}}}
-\DoxyCodeLine{00057\ }
-\DoxyCodeLine{00062\ \textcolor{preprocessor}{\#define\ IMAGE\_FOLDER\ "{}./assets/images/"{}}}
-\DoxyCodeLine{00063\ }
-\DoxyCodeLine{00068\ \textcolor{preprocessor}{\#define\ MAP\_FOLDER\ "{}./assets/maps/"{}}}
-\DoxyCodeLine{00069\ }
-\DoxyCodeLine{00074\ \textcolor{preprocessor}{\#define\ SCREEN\_WIDTH\ 1280}}
-\DoxyCodeLine{00075\ }
-\DoxyCodeLine{00080\ \textcolor{preprocessor}{\#define\ SCREEN\_H\_WIDTH\ SCREEN\_WIDTH/2}}
-\DoxyCodeLine{00081\ }
-\DoxyCodeLine{00086\ \textcolor{preprocessor}{\#define\ SCREEN\_HEIGHT\ 720}}
-\DoxyCodeLine{00087\ }
-\DoxyCodeLine{00092\ \textcolor{preprocessor}{\#define\ SCREEN\_H\_HEIGHT\ SCREEN\_HEIGHT/2\ }}
-\DoxyCodeLine{00093\ }
-\DoxyCodeLine{00098\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_common}{Common}}\ final\ \{}
-\DoxyCodeLine{00099\ \textcolor{keyword}{public}:}
-\DoxyCodeLine{00103\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ \mbox{\hyperlink{class_common_a1f16971f6660be0df79f7351f0f40a40}{NAME}}[]\ =\ \textcolor{stringliteral}{"{}dodoi-\/engine\ v.0.0.0-\/ns"{}};}
-\DoxyCodeLine{00104\ }
-\DoxyCodeLine{00108\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_common_a90128ad8d1012307459f2fafe01bee57}{FPS}}\ =\ 60;}
+\DoxyCodeLine{00046\ \textcolor{comment}{//\ Switch\ includes}}
+\DoxyCodeLine{00047\ \textcolor{preprocessor}{\#include\ <switch.h>}}
+\DoxyCodeLine{00048\ \textcolor{preprocessor}{\#include\ <unistd.h>}}
+\DoxyCodeLine{00049\ \textcolor{preprocessor}{\#include\ <sys/stat.h>}}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00055\ \textcolor{preprocessor}{\#define\ AUDIO\_FOLDER\ "{}./assets/audios/"{}}}
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00061\ \textcolor{preprocessor}{\#define\ FONT\_FOLDER\ "{}./assets/fonts/"{}}}
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00067\ \textcolor{preprocessor}{\#define\ IMAGE\_FOLDER\ "{}./assets/images/"{}}}
+\DoxyCodeLine{00068\ }
+\DoxyCodeLine{00073\ \textcolor{preprocessor}{\#define\ MAP\_FOLDER\ "{}./assets/maps/"{}}}
+\DoxyCodeLine{00074\ }
+\DoxyCodeLine{00079\ \textcolor{preprocessor}{\#define\ SCREEN\_WIDTH\ 1280}}
+\DoxyCodeLine{00080\ }
+\DoxyCodeLine{00085\ \textcolor{preprocessor}{\#define\ SCREEN\_H\_WIDTH\ SCREEN\_WIDTH/2}}
+\DoxyCodeLine{00086\ }
+\DoxyCodeLine{00091\ \textcolor{preprocessor}{\#define\ SCREEN\_HEIGHT\ 720}}
+\DoxyCodeLine{00092\ }
+\DoxyCodeLine{00097\ \textcolor{preprocessor}{\#define\ SCREEN\_H\_HEIGHT\ SCREEN\_HEIGHT/2\ }}
+\DoxyCodeLine{00098\ }
+\DoxyCodeLine{00103\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_common}{Common}}\ final\ \{}
+\DoxyCodeLine{00104\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00108\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ \mbox{\hyperlink{class_common_a1f16971f6660be0df79f7351f0f40a40}{NAME}}[]\ =\ \textcolor{stringliteral}{"{}dodoi-\/engine\ v.0.0.0-\/ns"{}};}
 \DoxyCodeLine{00109\ }
-\DoxyCodeLine{00113\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_common_a2ee0e0a9a29d1728c9621ff4bcc25928}{MILLISECS\_PER\_FRAME}}\ =\ 1000\ /\ \mbox{\hyperlink{class_common_a90128ad8d1012307459f2fafe01bee57}{FPS}};}
+\DoxyCodeLine{00113\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_common_a90128ad8d1012307459f2fafe01bee57}{FPS}}\ =\ 60;}
 \DoxyCodeLine{00114\ }
-\DoxyCodeLine{00118\ \ \ \ \ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{static}\ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{class_common_acb4e699df5f652b0bf53fc88aa201319}{PI}}\ =\ 3.1415926535f;}
-\DoxyCodeLine{00119\ \};}
+\DoxyCodeLine{00118\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_common_a2ee0e0a9a29d1728c9621ff4bcc25928}{MILLISECS\_PER\_FRAME}}\ =\ 1000\ /\ \mbox{\hyperlink{class_common_a90128ad8d1012307459f2fafe01bee57}{FPS}};}
+\DoxyCodeLine{00119\ }
+\DoxyCodeLine{00123\ \ \ \ \ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{static}\ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{class_common_acb4e699df5f652b0bf53fc88aa201319}{PI}}\ =\ 3.1415926535f;}
+\DoxyCodeLine{00124\ \};}
 
 \end{DoxyCode}

@@ -6,10 +6,21 @@
 \DoxyCodeLine{00002\ \textcolor{preprocessor}{\#pragma\ one}}
 \DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_common_8h}{../Common.h}}"{}}}
 \DoxyCodeLine{00004\ }
-\DoxyCodeLine{00005\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_gfx}{Gfx}}\ \{}
+\DoxyCodeLine{00005\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_gfx}{Gfx}}\ final\ \{}
 \DoxyCodeLine{00006\ \textcolor{keyword}{private}:}
-\DoxyCodeLine{00007\ }
-\DoxyCodeLine{00008\ }
-\DoxyCodeLine{00009\ \};}
+\DoxyCodeLine{00007\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keyword}{static}\ \mbox{\hyperlink{class_gfx}{Gfx}}*\ instance\ =\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{00008\ \ \ \ \ SDL\_Window*\ window\ =\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{00009\ \ \ \ \ SDL\_Renderer*\ renderer\ =\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \ \ \ \ \mbox{\hyperlink{class_gfx}{Gfx}}()\ \{\}}
+\DoxyCodeLine{00012\ \ \ \ \ }
+\DoxyCodeLine{00013\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00014\ \ \ \ \ \mbox{\hyperlink{class_gfx}{\string~Gfx}}();}
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{class_gfx}{Gfx}}*\ getInstance();}
+\DoxyCodeLine{00016\ \ \ \ \ }
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keywordtype}{void}\ setGfxContext();}
+\DoxyCodeLine{00018\ \ \ \ \ SDL\_Window*\ getWindow();}
+\DoxyCodeLine{00019\ \ \ \ \ SDL\_Renderer*\ getRenderer();}
+\DoxyCodeLine{00020\ \};}
 
 \end{DoxyCode}
