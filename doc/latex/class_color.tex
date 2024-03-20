@@ -1,0 +1,333 @@
+\doxysection{Color Class Reference}
+\hypertarget{class_color}{}\label{class_color}\index{Color@{Color}}
+
+
+A class that represents a color.  
+
+
+
+
+{\ttfamily \#include $<$Color.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_color_a6fae8aa8b75d27cb134234e75b41caf2}\label{class_color_a6fae8aa8b75d27cb134234e75b41caf2} 
+{\bfseries Color} ()=default
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_color_a63ed7a9b9001c892f901e32c2cae03aa}{Color}} (int r, int g, int b, int a)
+\begin{DoxyCompactList}\small\item\em Constructor that initializes the color with the given values. \end{DoxyCompactList}\item 
+\Hypertarget{class_color_a2a84d3b91f2999a11b6728a4b8f85ae4}\label{class_color_a2a84d3b91f2999a11b6728a4b8f85ae4} 
+{\bfseries \texorpdfstring{$\sim$}{\string~}\+Color} ()=default
+\begin{DoxyCompactList}\small\item\em Default destructor. \end{DoxyCompactList}\item 
+unsigned long \mbox{\hyperlink{class_color_a126ab6053383326699e61f3e3669d23a}{get\+RGBA}} ()
+\begin{DoxyCompactList}\small\item\em Returns the RGBA value of this color. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static Uint32 \mbox{\hyperlink{class_color_aa13e14c3d3a68fc6e08612138292e6e5}{create\+RGBA}} (SDL\+\_\+\+Color color)
+\begin{DoxyCompactList}\small\item\em Creates a RGBA value from an SDL\+\_\+\+Color. \end{DoxyCompactList}\item 
+static Uint32 \mbox{\hyperlink{class_color_acdbce85f71b6845aed73d14e05c90d76}{create\+RGBA}} (int r, int g, int b, int a)
+\begin{DoxyCompactList}\small\item\em Creates a RGBA value from individual color components. \end{DoxyCompactList}\item 
+static Uint32 \mbox{\hyperlink{class_color_a0f68616f54b6faebe71bea47b8ff4919}{create\+ARGB}} (SDL\+\_\+\+Color color)
+\begin{DoxyCompactList}\small\item\em Creates a ARGB value from an SDL\+\_\+\+Color. \end{DoxyCompactList}\item 
+static Uint32 \mbox{\hyperlink{class_color_a1bbdd24bf8a2b461a6ce68baea92dcea}{create\+ARGB}} (int a, int r, int g, int b)
+\begin{DoxyCompactList}\small\item\em Creates a ARGB value from individual color components. \end{DoxyCompactList}\item 
+static SDL\+\_\+\+Color \mbox{\hyperlink{class_color_a832111d9c4a8339b0213f72372f4d1a5}{get\+Red}} ()
+\begin{DoxyCompactList}\small\item\em Returns an SDL\+\_\+\+Color representing red. \end{DoxyCompactList}\item 
+static SDL\+\_\+\+Color \mbox{\hyperlink{class_color_abdc217b5435d483536346c8c56afe709}{get\+Green}} ()
+\begin{DoxyCompactList}\small\item\em Returns an SDL\+\_\+\+Color representing green. \end{DoxyCompactList}\item 
+static SDL\+\_\+\+Color \mbox{\hyperlink{class_color_aa7186fb1e8828340ca4896b05fdedf81}{get\+Blue}} ()
+\begin{DoxyCompactList}\small\item\em Returns an SDL\+\_\+\+Color representing blue. \end{DoxyCompactList}\item 
+static SDL\+\_\+\+Color \mbox{\hyperlink{class_color_aafc5056b3e7b8f10ca09d04eb8877e0e}{get\+White}} ()
+\begin{DoxyCompactList}\small\item\em Returns an SDL\+\_\+\+Color representing white. \end{DoxyCompactList}\item 
+static SDL\+\_\+\+Color \mbox{\hyperlink{class_color_a82def235754627a151f961e6976e1c1a}{get\+Black}} ()
+\begin{DoxyCompactList}\small\item\em Returns an SDL\+\_\+\+Color representing black. \end{DoxyCompactList}\item 
+static SDL\+\_\+\+Color \mbox{\hyperlink{class_color_a040e83cf2633d74481c45b0f9aad0afe}{get\+Gray}} ()
+\begin{DoxyCompactList}\small\item\em Returns an SDL\+\_\+\+Color representing gray. \end{DoxyCompactList}\item 
+static SDL\+\_\+\+Color \mbox{\hyperlink{class_color_ac4abf18a9bb4bd2628f89bf566b9ac70}{get\+Orange}} ()
+\begin{DoxyCompactList}\small\item\em Returns an SDL\+\_\+\+Color representing orange. \end{DoxyCompactList}\item 
+static SDL\+\_\+\+Color \mbox{\hyperlink{class_color_ad7430d415d472a18626d8915660b0dbe}{get\+Yellow}} ()
+\begin{DoxyCompactList}\small\item\em Returns an SDL\+\_\+\+Color representing yellow. \end{DoxyCompactList}\item 
+static SDL\+\_\+\+Color \mbox{\hyperlink{class_color_aa838e4a1e0c0d102efe11c9161048280}{get\+Pink}} ()
+\begin{DoxyCompactList}\small\item\em Returns an SDL\+\_\+\+Color representing pink. \end{DoxyCompactList}\item 
+static SDL\+\_\+\+Color \mbox{\hyperlink{class_color_a02061c62d3c48d442cc533aa8070c154}{get\+Brown}} ()
+\begin{DoxyCompactList}\small\item\em Returns an SDL\+\_\+\+Color representing brown. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_color_a4954bdc9772da2a610401b8a438125cb}\label{class_color_a4954bdc9772da2a610401b8a438125cb} 
+int {\bfseries r} = 255
+\item 
+\Hypertarget{class_color_ab5656e995bddd43d286c7ff5629a31dd}\label{class_color_ab5656e995bddd43d286c7ff5629a31dd} 
+int {\bfseries g} = 255
+\item 
+\Hypertarget{class_color_ae11f00d34bf3ecd8c8278f68876b82bf}\label{class_color_ae11f00d34bf3ecd8c8278f68876b82bf} 
+int {\bfseries b} = 255
+\item 
+\Hypertarget{class_color_aa85f0a7c4980f26d7799dbbc8c1f7aa2}\label{class_color_aa85f0a7c4980f26d7799dbbc8c1f7aa2} 
+int {\bfseries a} = 255
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A class that represents a color. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_color_a63ed7a9b9001c892f901e32c2cae03aa}\label{class_color_a63ed7a9b9001c892f901e32c2cae03aa} 
+\index{Color@{Color}!Color@{Color}}
+\index{Color@{Color}!Color@{Color}}
+\doxysubsubsection{\texorpdfstring{Color()}{Color()}}
+{\footnotesize\ttfamily Color\+::\+Color (\begin{DoxyParamCaption}\item[{int}]{r,  }\item[{int}]{g,  }\item[{int}]{b,  }\item[{int}]{a }\end{DoxyParamCaption})}
+
+
+
+Constructor that initializes the color with the given values. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em r} & Red component. \\
+\hline
+{\em g} & Green component. \\
+\hline
+{\em b} & Blue component. \\
+\hline
+{\em a} & Alpha component. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_color_a1bbdd24bf8a2b461a6ce68baea92dcea}\label{class_color_a1bbdd24bf8a2b461a6ce68baea92dcea} 
+\index{Color@{Color}!createARGB@{createARGB}}
+\index{createARGB@{createARGB}!Color@{Color}}
+\doxysubsubsection{\texorpdfstring{createARGB()}{createARGB()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Uint32 Color\+::create\+ARGB (\begin{DoxyParamCaption}\item[{int}]{a,  }\item[{int}]{r,  }\item[{int}]{g,  }\item[{int}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Creates a ARGB value from individual color components. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & Alpha component. \\
+\hline
+{\em r} & Red component. \\
+\hline
+{\em g} & Green component. \\
+\hline
+{\em b} & Blue component. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The created ARGB value. 
+\end{DoxyReturn}
+\Hypertarget{class_color_a0f68616f54b6faebe71bea47b8ff4919}\label{class_color_a0f68616f54b6faebe71bea47b8ff4919} 
+\index{Color@{Color}!createARGB@{createARGB}}
+\index{createARGB@{createARGB}!Color@{Color}}
+\doxysubsubsection{\texorpdfstring{createARGB()}{createARGB()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Uint32 Color\+::create\+ARGB (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Color}]{color }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Creates a ARGB value from an SDL\+\_\+\+Color. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em color} & The SDL\+\_\+\+Color to convert. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The created ARGB value. 
+\end{DoxyReturn}
+\Hypertarget{class_color_acdbce85f71b6845aed73d14e05c90d76}\label{class_color_acdbce85f71b6845aed73d14e05c90d76} 
+\index{Color@{Color}!createRGBA@{createRGBA}}
+\index{createRGBA@{createRGBA}!Color@{Color}}
+\doxysubsubsection{\texorpdfstring{createRGBA()}{createRGBA()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Uint32 Color\+::create\+RGBA (\begin{DoxyParamCaption}\item[{int}]{r,  }\item[{int}]{g,  }\item[{int}]{b,  }\item[{int}]{a }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Creates a RGBA value from individual color components. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em r} & Red component. \\
+\hline
+{\em g} & Green component. \\
+\hline
+{\em b} & Blue component. \\
+\hline
+{\em a} & Alpha component. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The created RGBA value. 
+\end{DoxyReturn}
+\Hypertarget{class_color_aa13e14c3d3a68fc6e08612138292e6e5}\label{class_color_aa13e14c3d3a68fc6e08612138292e6e5} 
+\index{Color@{Color}!createRGBA@{createRGBA}}
+\index{createRGBA@{createRGBA}!Color@{Color}}
+\doxysubsubsection{\texorpdfstring{createRGBA()}{createRGBA()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Uint32 Color\+::create\+RGBA (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Color}]{color }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Creates a RGBA value from an SDL\+\_\+\+Color. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em color} & The SDL\+\_\+\+Color to convert. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The created RGBA value. 
+\end{DoxyReturn}
+\Hypertarget{class_color_a82def235754627a151f961e6976e1c1a}\label{class_color_a82def235754627a151f961e6976e1c1a} 
+\index{Color@{Color}!getBlack@{getBlack}}
+\index{getBlack@{getBlack}!Color@{Color}}
+\doxysubsubsection{\texorpdfstring{getBlack()}{getBlack()}}
+{\footnotesize\ttfamily SDL\+\_\+\+Color Color\+::get\+Black (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns an SDL\+\_\+\+Color representing black. 
+
+\begin{DoxyReturn}{Returns}
+An SDL\+\_\+\+Color representing black. 
+\end{DoxyReturn}
+\Hypertarget{class_color_aa7186fb1e8828340ca4896b05fdedf81}\label{class_color_aa7186fb1e8828340ca4896b05fdedf81} 
+\index{Color@{Color}!getBlue@{getBlue}}
+\index{getBlue@{getBlue}!Color@{Color}}
+\doxysubsubsection{\texorpdfstring{getBlue()}{getBlue()}}
+{\footnotesize\ttfamily SDL\+\_\+\+Color Color\+::get\+Blue (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns an SDL\+\_\+\+Color representing blue. 
+
+\begin{DoxyReturn}{Returns}
+An SDL\+\_\+\+Color representing blue. 
+\end{DoxyReturn}
+\Hypertarget{class_color_a02061c62d3c48d442cc533aa8070c154}\label{class_color_a02061c62d3c48d442cc533aa8070c154} 
+\index{Color@{Color}!getBrown@{getBrown}}
+\index{getBrown@{getBrown}!Color@{Color}}
+\doxysubsubsection{\texorpdfstring{getBrown()}{getBrown()}}
+{\footnotesize\ttfamily SDL\+\_\+\+Color Color\+::get\+Brown (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns an SDL\+\_\+\+Color representing brown. 
+
+\begin{DoxyReturn}{Returns}
+An SDL\+\_\+\+Color representing brown. 
+\end{DoxyReturn}
+\Hypertarget{class_color_a040e83cf2633d74481c45b0f9aad0afe}\label{class_color_a040e83cf2633d74481c45b0f9aad0afe} 
+\index{Color@{Color}!getGray@{getGray}}
+\index{getGray@{getGray}!Color@{Color}}
+\doxysubsubsection{\texorpdfstring{getGray()}{getGray()}}
+{\footnotesize\ttfamily SDL\+\_\+\+Color Color\+::get\+Gray (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns an SDL\+\_\+\+Color representing gray. 
+
+\begin{DoxyReturn}{Returns}
+An SDL\+\_\+\+Color representing gray. 
+\end{DoxyReturn}
+\Hypertarget{class_color_abdc217b5435d483536346c8c56afe709}\label{class_color_abdc217b5435d483536346c8c56afe709} 
+\index{Color@{Color}!getGreen@{getGreen}}
+\index{getGreen@{getGreen}!Color@{Color}}
+\doxysubsubsection{\texorpdfstring{getGreen()}{getGreen()}}
+{\footnotesize\ttfamily SDL\+\_\+\+Color Color\+::get\+Green (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns an SDL\+\_\+\+Color representing green. 
+
+\begin{DoxyReturn}{Returns}
+An SDL\+\_\+\+Color representing green. 
+\end{DoxyReturn}
+\Hypertarget{class_color_ac4abf18a9bb4bd2628f89bf566b9ac70}\label{class_color_ac4abf18a9bb4bd2628f89bf566b9ac70} 
+\index{Color@{Color}!getOrange@{getOrange}}
+\index{getOrange@{getOrange}!Color@{Color}}
+\doxysubsubsection{\texorpdfstring{getOrange()}{getOrange()}}
+{\footnotesize\ttfamily SDL\+\_\+\+Color Color\+::get\+Orange (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns an SDL\+\_\+\+Color representing orange. 
+
+\begin{DoxyReturn}{Returns}
+An SDL\+\_\+\+Color representing orange. 
+\end{DoxyReturn}
+\Hypertarget{class_color_aa838e4a1e0c0d102efe11c9161048280}\label{class_color_aa838e4a1e0c0d102efe11c9161048280} 
+\index{Color@{Color}!getPink@{getPink}}
+\index{getPink@{getPink}!Color@{Color}}
+\doxysubsubsection{\texorpdfstring{getPink()}{getPink()}}
+{\footnotesize\ttfamily SDL\+\_\+\+Color Color\+::get\+Pink (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns an SDL\+\_\+\+Color representing pink. 
+
+\begin{DoxyReturn}{Returns}
+An SDL\+\_\+\+Color representing pink. 
+\end{DoxyReturn}
+\Hypertarget{class_color_a832111d9c4a8339b0213f72372f4d1a5}\label{class_color_a832111d9c4a8339b0213f72372f4d1a5} 
+\index{Color@{Color}!getRed@{getRed}}
+\index{getRed@{getRed}!Color@{Color}}
+\doxysubsubsection{\texorpdfstring{getRed()}{getRed()}}
+{\footnotesize\ttfamily SDL\+\_\+\+Color Color\+::get\+Red (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns an SDL\+\_\+\+Color representing red. 
+
+\begin{DoxyReturn}{Returns}
+An SDL\+\_\+\+Color representing red. 
+\end{DoxyReturn}
+\Hypertarget{class_color_a126ab6053383326699e61f3e3669d23a}\label{class_color_a126ab6053383326699e61f3e3669d23a} 
+\index{Color@{Color}!getRGBA@{getRGBA}}
+\index{getRGBA@{getRGBA}!Color@{Color}}
+\doxysubsubsection{\texorpdfstring{getRGBA()}{getRGBA()}}
+{\footnotesize\ttfamily unsigned long Color\+::get\+RGBA (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the RGBA value of this color. 
+
+\begin{DoxyReturn}{Returns}
+The RGBA value of this color. 
+\end{DoxyReturn}
+\Hypertarget{class_color_aafc5056b3e7b8f10ca09d04eb8877e0e}\label{class_color_aafc5056b3e7b8f10ca09d04eb8877e0e} 
+\index{Color@{Color}!getWhite@{getWhite}}
+\index{getWhite@{getWhite}!Color@{Color}}
+\doxysubsubsection{\texorpdfstring{getWhite()}{getWhite()}}
+{\footnotesize\ttfamily SDL\+\_\+\+Color Color\+::get\+White (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns an SDL\+\_\+\+Color representing white. 
+
+\begin{DoxyReturn}{Returns}
+An SDL\+\_\+\+Color representing white. 
+\end{DoxyReturn}
+\Hypertarget{class_color_ad7430d415d472a18626d8915660b0dbe}\label{class_color_ad7430d415d472a18626d8915660b0dbe} 
+\index{Color@{Color}!getYellow@{getYellow}}
+\index{getYellow@{getYellow}!Color@{Color}}
+\doxysubsubsection{\texorpdfstring{getYellow()}{getYellow()}}
+{\footnotesize\ttfamily SDL\+\_\+\+Color Color\+::get\+Yellow (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns an SDL\+\_\+\+Color representing yellow. 
+
+\begin{DoxyReturn}{Returns}
+An SDL\+\_\+\+Color representing yellow. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+dodoi-\/engine-\/ns/src/engine/gfx/\mbox{\hyperlink{_color_8h}{Color.\+h}}\item 
+dodoi-\/engine-\/ns/src/engine/gfx/Color.\+cpp\end{DoxyCompactItemize}

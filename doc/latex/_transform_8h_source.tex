@@ -2,38 +2,39 @@
 \hypertarget{_transform_8h_source}{}\label{_transform_8h_source}\index{dodoi-\/engine-\/ns/src/engine/ecs/component/Transform.h@{dodoi-\/engine-\/ns/src/engine/ecs/component/Transform.h}}
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#include\ "{}Component.h"{}}}
-\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ "{}../physics/Vec2.h"{}}}
-\DoxyCodeLine{00003\ }
-\DoxyCodeLine{00008\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_transform}{Transform}}\ final\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_component}{Component}}\ \{}
-\DoxyCodeLine{00009\ \textcolor{keyword}{public}:}
-\DoxyCodeLine{00010\ \ \ \ \ \mbox{\hyperlink{class_vec2}{Vec2}}\ position;}
-\DoxyCodeLine{00011\ \ \ \ \ \mbox{\hyperlink{class_vec2}{Vec2}}\ scale;}
-\DoxyCodeLine{00012\ \ \ \ \ \textcolor{keywordtype}{double}\ rotation;}
-\DoxyCodeLine{00013\ }
-\DoxyCodeLine{00014\ \ \ \ \ \mbox{\hyperlink{class_transform}{Transform}}()\ \{\ }
-\DoxyCodeLine{00015\ \ \ \ \ \ \ \ \ this-\/>scale.x\ =\ 1.0f;}
-\DoxyCodeLine{00016\ \ \ \ \ \ \ \ \ this-\/>scale.y\ =\ 1.0f;}
-\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ this-\/>rotation\ =\ 0.0;}
-\DoxyCodeLine{00018\ \ \ \ \ \}}
-\DoxyCodeLine{00019\ }
-\DoxyCodeLine{00020\ \ \ \ \ \mbox{\hyperlink{class_transform}{Transform}}(\textcolor{keywordtype}{float}\ v)\ \{}
-\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ this-\/>scale.x\ =\ 1.0f;}
-\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ this-\/>scale.y\ =\ 1.0f;}
-\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ this-\/>position.x\ =\ v;}
-\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ this-\/>position.y\ =\ v;}
-\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ this-\/>rotation\ =\ 0.0;}
-\DoxyCodeLine{00026\ \ \ \ \ \}}
-\DoxyCodeLine{00027\ }
-\DoxyCodeLine{00028\ \ \ \ \ \mbox{\hyperlink{class_transform}{Transform}}(\textcolor{keywordtype}{float}\ x,\ \textcolor{keywordtype}{float}\ y)\ \{}
-\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ this-\/>scale.x\ =\ 1.0f;}
-\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ this-\/>scale.y\ =\ 1.0f;}
-\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ this-\/>position.x\ =\ x;}
-\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ this-\/>position.y\ =\ y;}
-\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ this-\/>rotation\ =\ 0.0;}
-\DoxyCodeLine{00034\ \ \ \ \ \}}
-\DoxyCodeLine{00035\ }
-\DoxyCodeLine{00036\ \ \ \ \ \mbox{\hyperlink{class_transform}{\string~Transform}}()\ \{\}}
-\DoxyCodeLine{00037\ \};}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ "{}Component.h"{}}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}../physics/Vec2.h"{}}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00009\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_transform}{Transform}}\ final\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_component}{Component}}\ \{}
+\DoxyCodeLine{00010\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00011\ \ \ \ \ \mbox{\hyperlink{class_vec2}{Vec2}}\ position;}
+\DoxyCodeLine{00012\ \ \ \ \ \mbox{\hyperlink{class_vec2}{Vec2}}\ scale;}
+\DoxyCodeLine{00013\ \ \ \ \ \textcolor{keywordtype}{double}\ rotation;}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \ \ \ \ \mbox{\hyperlink{class_transform}{Transform}}()\ \{\ }
+\DoxyCodeLine{00016\ \ \ \ \ \ \ \ \ this-\/>scale.x\ =\ 1.0f;}
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ this-\/>scale.y\ =\ 1.0f;}
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ this-\/>rotation\ =\ 0.0;}
+\DoxyCodeLine{00019\ \ \ \ \ \}}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \ \ \ \ \mbox{\hyperlink{class_transform}{Transform}}(\textcolor{keywordtype}{float}\ v)\ \{}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ this-\/>scale.x\ =\ 1.0f;}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ this-\/>scale.y\ =\ 1.0f;}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ this-\/>position.x\ =\ v;}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ this-\/>position.y\ =\ v;}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ this-\/>rotation\ =\ 0.0;}
+\DoxyCodeLine{00027\ \ \ \ \ \}}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \ \ \ \ \mbox{\hyperlink{class_transform}{Transform}}(\textcolor{keywordtype}{float}\ x,\ \textcolor{keywordtype}{float}\ y)\ \{}
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ this-\/>scale.x\ =\ 1.0f;}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ this-\/>scale.y\ =\ 1.0f;}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ this-\/>position.x\ =\ x;}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ this-\/>position.y\ =\ y;}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ this-\/>rotation\ =\ 0.0;}
+\DoxyCodeLine{00035\ \ \ \ \ \}}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00037\ \ \ \ \ \mbox{\hyperlink{class_transform}{\string~Transform}}()\ \{\}}
+\DoxyCodeLine{00038\ \};}
 
 \end{DoxyCode}

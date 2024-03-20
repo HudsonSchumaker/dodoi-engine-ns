@@ -97,41 +97,40 @@ $(function() { codefold.init(0); });
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <a class="code hl_class" href="class_audio_manager.html">AudioManager</a>();</div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <a class="code hl_class" href="class_audio_manager.html">~AudioManager</a>();</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="class_audio_manager.html#ad94dc46723c6d7cf8c81fc3772a842aa">   37</a></span>    <a class="code hl_function" href="class_audio_manager.html#ad94dc46723c6d7cf8c81fc3772a842aa">~AudioManager</a>();</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <span class="keyword">static</span> <a class="code hl_class" href="class_audio_manager.html">AudioManager</a>* <a class="code hl_function" href="class_audio_manager.html#a77de22887544ce37ae13d7c4d5cf7a79">getInstance</a>();</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_audio_manager.html#a7eb243b09bff3069060bb76c9dc8eb62">load</a>();</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_audio_manager.html#abf7f5cd9ba34a456fcb8e048812b2d9e">addSound</a>(<span class="keyword">const</span> std::string&amp; name, <span class="keyword">const</span> std::string&amp; filePath);</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    <span class="keywordtype">int</span> <a class="code hl_function" href="class_audio_manager.html#a8738ee4214c759b1225d81ed241fc20e">playSound</a>(<span class="keyword">const</span> std::string&amp; name);</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    <span class="keywordtype">int</span> <a class="code hl_function" href="class_audio_manager.html#a8738ee4214c759b1225d81ed241fc20e">playSound</a>(<span class="keyword">const</span> std::string&amp; name, <span class="keywordtype">int</span> loop);</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_audio_manager.html#afa197cf8fa2c47b44621e23765f8e22a">stopSound</a>(<span class="keywordtype">int</span> channel);</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_audio_manager.html#afa197cf8fa2c47b44621e23765f8e22a">stopSound</a>(<span class="keywordtype">int</span> channel, <span class="keywordtype">int</span> delay);</div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span> </div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_audio_manager.html#aa527f18ec0f0149d3054137cbfd0d0a6">pauseSound</a>(<span class="keywordtype">int</span> channel);</div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span> </div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_audio_manager.html#a0f9f551732a2f601e0f0ccd5154f8585">unPauseSound</a>(<span class="keywordtype">int</span> channel);</div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span> </div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_audio_manager.html#a00aa6ec9dd3d2f525974d995dbfb1a06">playMusic</a>(<span class="keyword">const</span> std::string&amp; filePath);</div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span> </div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_audio_manager.html#a72a288a0d8397bed1a9a39efca363326">stopMusic</a>();</div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span> </div>
-<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_audio_manager.html#a72a288a0d8397bed1a9a39efca363326">stopMusic</a>(<span class="keywordtype">int</span> delay);</div>
-<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span> </div>
-<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_audio_manager.html#a8afd8f3db6787f87aa55436d6c9dadf1">pauseMusic</a>();</div>
-<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span> </div>
-<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_audio_manager.html#a6154bc827adad02fcc375e0c111ba584">unPauseMusic</a>();</div>
-<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span> </div>
-<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>    <span class="keywordtype">int</span> <a class="code hl_function" href="class_audio_manager.html#a0dd98d8980eb7a22b07ca5e70b0dee4d">audioCount</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span> </div>
-<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_audio_manager.html#a6f547ecac879ea9d1d364ef99056a65a">clearAssets</a>();</div>
-<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>};</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <a class="code hl_function" href="class_audio_manager.html#ad94dc46723c6d7cf8c81fc3772a842aa">~AudioManager</a>();</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <span class="keyword">static</span> <a class="code hl_class" href="class_audio_manager.html">AudioManager</a>* <a class="code hl_function" href="class_audio_manager.html#a77de22887544ce37ae13d7c4d5cf7a79">getInstance</a>();</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_audio_manager.html#a7eb243b09bff3069060bb76c9dc8eb62">load</a>();</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_audio_manager.html#abf7f5cd9ba34a456fcb8e048812b2d9e">addSound</a>(<span class="keyword">const</span> std::string&amp; name, <span class="keyword">const</span> std::string&amp; filePath);</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    <span class="keywordtype">int</span> <a class="code hl_function" href="class_audio_manager.html#a8738ee4214c759b1225d81ed241fc20e">playSound</a>(<span class="keyword">const</span> std::string&amp; name);</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    <span class="keywordtype">int</span> <a class="code hl_function" href="class_audio_manager.html#a8738ee4214c759b1225d81ed241fc20e">playSound</a>(<span class="keyword">const</span> std::string&amp; name, <span class="keywordtype">int</span> loop);</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_audio_manager.html#afa197cf8fa2c47b44621e23765f8e22a">stopSound</a>(<span class="keywordtype">int</span> channel);</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> </div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_audio_manager.html#afa197cf8fa2c47b44621e23765f8e22a">stopSound</a>(<span class="keywordtype">int</span> channel, <span class="keywordtype">int</span> delay);</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_audio_manager.html#aa527f18ec0f0149d3054137cbfd0d0a6">pauseSound</a>(<span class="keywordtype">int</span> channel);</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span> </div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_audio_manager.html#a0f9f551732a2f601e0f0ccd5154f8585">unPauseSound</a>(<span class="keywordtype">int</span> channel);</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span> </div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_audio_manager.html#a00aa6ec9dd3d2f525974d995dbfb1a06">playMusic</a>(<span class="keyword">const</span> std::string&amp; filePath);</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span> </div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_audio_manager.html#a72a288a0d8397bed1a9a39efca363326">stopMusic</a>();</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span> </div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_audio_manager.html#a72a288a0d8397bed1a9a39efca363326">stopMusic</a>(<span class="keywordtype">int</span> delay);</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span> </div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_audio_manager.html#a8afd8f3db6787f87aa55436d6c9dadf1">pauseMusic</a>();</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span> </div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_audio_manager.html#a6154bc827adad02fcc375e0c111ba584">unPauseMusic</a>();</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span> </div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>    <span class="keywordtype">int</span> <a class="code hl_function" href="class_audio_manager.html#a0dd98d8980eb7a22b07ca5e70b0dee4d">audioCount</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span> </div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_audio_manager.html#a6f547ecac879ea9d1d364ef99056a65a">clearAssets</a>();</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>};</div>
 </div>
 <div class="ttc" id="a_common_8h_html"><div class="ttname"><a href="_common_8h.html">Common.h</a></div><div class="ttdoc">Common includes and definitions for the Dodoi-Engine.</div></div>
 <div class="ttc" id="aclass_audio_manager_html"><div class="ttname"><a href="class_audio_manager.html">AudioManager</a></div><div class="ttdef"><b>Definition</b> AudioManager.h:20</div></div>
@@ -147,7 +146,7 @@ $(function() { codefold.init(0); });
 <div class="ttc" id="aclass_audio_manager_html_a8afd8f3db6787f87aa55436d6c9dadf1"><div class="ttname"><a href="class_audio_manager.html#a8afd8f3db6787f87aa55436d6c9dadf1">AudioManager::pauseMusic</a></div><div class="ttdeci">void pauseMusic()</div><div class="ttdoc">Pause the music.</div><div class="ttdef"><b>Definition</b> AudioManager.cpp:62</div></div>
 <div class="ttc" id="aclass_audio_manager_html_aa527f18ec0f0149d3054137cbfd0d0a6"><div class="ttname"><a href="class_audio_manager.html#aa527f18ec0f0149d3054137cbfd0d0a6">AudioManager::pauseSound</a></div><div class="ttdeci">void pauseSound(int channel)</div><div class="ttdoc">Pause a sound.</div><div class="ttdef"><b>Definition</b> AudioManager.cpp:38</div></div>
 <div class="ttc" id="aclass_audio_manager_html_abf7f5cd9ba34a456fcb8e048812b2d9e"><div class="ttname"><a href="class_audio_manager.html#abf7f5cd9ba34a456fcb8e048812b2d9e">AudioManager::addSound</a></div><div class="ttdeci">void addSound(const std::string &amp;name, const std::string &amp;filePath)</div><div class="ttdoc">Add a sound to the AudioManager.</div><div class="ttdef"><b>Definition</b> AudioManager.cpp:18</div></div>
-<div class="ttc" id="aclass_audio_manager_html_ad94dc46723c6d7cf8c81fc3772a842aa"><div class="ttname"><a href="class_audio_manager.html#ad94dc46723c6d7cf8c81fc3772a842aa">AudioManager::~AudioManager</a></div><div class="ttdeci">~AudioManager()</div><div class="ttdoc">Destructor for the AudioManager class.</div></div>
+<div class="ttc" id="aclass_audio_manager_html_ad94dc46723c6d7cf8c81fc3772a842aa"><div class="ttname"><a href="class_audio_manager.html#ad94dc46723c6d7cf8c81fc3772a842aa">AudioManager::~AudioManager</a></div><div class="ttdeci">~AudioManager()</div><div class="ttdoc">Destructor for the AudioManager class.</div><div class="ttdef"><b>Definition</b> AudioManager.cpp:6</div></div>
 <div class="ttc" id="aclass_audio_manager_html_afa197cf8fa2c47b44621e23765f8e22a"><div class="ttname"><a href="class_audio_manager.html#afa197cf8fa2c47b44621e23765f8e22a">AudioManager::stopSound</a></div><div class="ttdeci">void stopSound(int channel)</div><div class="ttdoc">Stop a sound.</div><div class="ttdef"><b>Definition</b> AudioManager.cpp:30</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
