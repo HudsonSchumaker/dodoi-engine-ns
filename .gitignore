@@ -25,6 +25,8 @@
 *.la
 *.a
 *.lib
+*.lst
+*ns.map
 
 # Executables
 *.exe
