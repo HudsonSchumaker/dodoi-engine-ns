@@ -18,27 +18,27 @@ Inheritance diagram for Audio\+:\begin{figure}[H]
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\Hypertarget{class_audio_a3e621b5ca5bafeb413a60b854dab9d73}\label{class_audio_a3e621b5ca5bafeb413a60b854dab9d73} 
-{\bfseries Audio} (std\+::string audio\+Id)
-\item 
-\Hypertarget{class_audio_a79ea1dedc42e4622766c756cd51e2a29}\label{class_audio_a79ea1dedc42e4622766c756cd51e2a29} 
-{\bfseries Audio} (std\+::string audio\+Id, bool play\+On\+Awake, int loop)
-\item 
+\mbox{\hyperlink{class_audio_a3e621b5ca5bafeb413a60b854dab9d73}{Audio}} (std\+::string audio\+Id)
+\begin{DoxyCompactList}\small\item\em Constructor that initializes the audio\+Id. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_audio_a79ea1dedc42e4622766c756cd51e2a29}{Audio}} (std\+::string audio\+Id, bool play\+On\+Awake, int loop)
+\begin{DoxyCompactList}\small\item\em Constructor that initializes the audio\+Id, play\+On\+Awake, and loops. If play\+On\+Awake is true, the audio will start playing immediately. \end{DoxyCompactList}\item 
+\Hypertarget{class_audio_ae8f54deecb5f48511aaab469e80294d6}\label{class_audio_ae8f54deecb5f48511aaab469e80294d6} 
+{\bfseries \texorpdfstring{$\sim$}{\string~}\+Audio} ()
+\begin{DoxyCompactList}\small\item\em Destructor that stops the audio. If delay is non-\/zero, the audio will fade out over the specified delay. \end{DoxyCompactList}\item 
 \Hypertarget{class_audio_a2916f9015031bee9abb98adf0d83e7ee}\label{class_audio_a2916f9015031bee9abb98adf0d83e7ee} 
 void {\bfseries play} ()
-\item 
-\Hypertarget{class_audio_a2ebc8bd97c5bf4cbfbddca46c15ce46c}\label{class_audio_a2ebc8bd97c5bf4cbfbddca46c15ce46c} 
-void {\bfseries play} (int loop)
-\item 
+\begin{DoxyCompactList}\small\item\em Starts playing the audio on the specified channel with the specified number of loops. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_audio_a2ebc8bd97c5bf4cbfbddca46c15ce46c}{play}} (int loop)
+\begin{DoxyCompactList}\small\item\em Starts playing the audio on the specified channel with the specified number of loops. \end{DoxyCompactList}\item 
 \Hypertarget{class_audio_a82c1018cf778eccc8819acfb64be53b2}\label{class_audio_a82c1018cf778eccc8819acfb64be53b2} 
 void {\bfseries pause} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Toggles the paused state of the audio. If the audio is currently playing, it will be paused. If it\textquotesingle{}s currently paused, it will be resumed. \end{DoxyCompactList}\item 
 \Hypertarget{class_audio_af628fdffa4dba3866e6e801fdda123ea}\label{class_audio_af628fdffa4dba3866e6e801fdda123ea} 
 void {\bfseries stop} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Stops the audio immediately. \end{DoxyCompactList}\item 
 \Hypertarget{class_audio_ad2b666f1d68d7673636064e42c66b15b}\label{class_audio_ad2b666f1d68d7673636064e42c66b15b} 
 void {\bfseries stop} (int delay)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Stops the audio with a fade out over the specified delay. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -67,6 +67,63 @@ unsigned long {\bfseries parent\+Id} = 0
 \doxysubsection{Detailed Description}
 The audio component. 
 
+This class represents an audio component that can be attached to a game object. It uses the \doxylink{class_audio_manager}{Audio\+Manager} to play, pause, and stop sounds. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_audio_a3e621b5ca5bafeb413a60b854dab9d73}\label{class_audio_a3e621b5ca5bafeb413a60b854dab9d73} 
+\index{Audio@{Audio}!Audio@{Audio}}
+\index{Audio@{Audio}!Audio@{Audio}}
+\doxysubsubsection{\texorpdfstring{Audio()}{Audio()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Audio\+::\+Audio (\begin{DoxyParamCaption}\item[{std\+::string}]{audio\+Id }\end{DoxyParamCaption})}
+
+
+
+Constructor that initializes the audio\+Id. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em audio\+Id} & The ID of the audio to play. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_audio_a79ea1dedc42e4622766c756cd51e2a29}\label{class_audio_a79ea1dedc42e4622766c756cd51e2a29} 
+\index{Audio@{Audio}!Audio@{Audio}}
+\index{Audio@{Audio}!Audio@{Audio}}
+\doxysubsubsection{\texorpdfstring{Audio()}{Audio()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Audio\+::\+Audio (\begin{DoxyParamCaption}\item[{std\+::string}]{audio\+Id,  }\item[{bool}]{play\+On\+Awake,  }\item[{int}]{loop }\end{DoxyParamCaption})}
+
+
+
+Constructor that initializes the audio\+Id, play\+On\+Awake, and loops. If play\+On\+Awake is true, the audio will start playing immediately. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em audio\+Id} & The ID of the audio to play. \\
+\hline
+{\em play\+On\+Awake} & Whether the audio should start playing immediately. \\
+\hline
+{\em loop} & The number of times the audio should loop. If loop is -\/1, the audio will loop indefinitely. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_audio_a2ebc8bd97c5bf4cbfbddca46c15ce46c}\label{class_audio_a2ebc8bd97c5bf4cbfbddca46c15ce46c} 
+\index{Audio@{Audio}!play@{play}}
+\index{play@{play}!Audio@{Audio}}
+\doxysubsubsection{\texorpdfstring{play()}{play()}}
+{\footnotesize\ttfamily void Audio\+::play (\begin{DoxyParamCaption}\item[{int}]{loop }\end{DoxyParamCaption})}
+
+
+
+Starts playing the audio on the specified channel with the specified number of loops. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em loop} & The number of times the audio should loop. If loop is -\/1, the audio will loop indefinitely. \\
+\hline
+\end{DoxyParams}
+
+
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-dodoi-\/engine-\/ns/src/engine/ecs/component/Audio.\+h\end{DoxyCompactItemize}
+dodoi-\/engine-\/ns/src/engine/ecs/component/\mbox{\hyperlink{_audio_8h}{Audio.\+h}}\end{DoxyCompactItemize}

@@ -90,32 +90,40 @@ Inheritance diagram for Audio:</div>
  <div class="center">
   <img src="class_audio.png" usemap="#Audio_map" alt=""/>
   <map id="Audio_map" name="Audio_map">
-<area href="class_component.html" alt="Component" shape="rect" coords="0,0,75,24"/>
+<area href="class_component.html" title="The base class for all components." alt="Component" shape="rect" coords="0,0,75,24"/>
   </map>
 </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a3e621b5ca5bafeb413a60b854dab9d73" id="r_a3e621b5ca5bafeb413a60b854dab9d73"><td class="memItemLeft" align="right" valign="top"><a id="a3e621b5ca5bafeb413a60b854dab9d73" name="a3e621b5ca5bafeb413a60b854dab9d73"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Audio</b> (std::string audioId)</td></tr>
+<tr class="memitem:a3e621b5ca5bafeb413a60b854dab9d73" id="r_a3e621b5ca5bafeb413a60b854dab9d73"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3e621b5ca5bafeb413a60b854dab9d73">Audio</a> (std::string audioId)</td></tr>
+<tr class="memdesc:a3e621b5ca5bafeb413a60b854dab9d73"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor that initializes the audioId.  <br /></td></tr>
 <tr class="separator:a3e621b5ca5bafeb413a60b854dab9d73"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a79ea1dedc42e4622766c756cd51e2a29" id="r_a79ea1dedc42e4622766c756cd51e2a29"><td class="memItemLeft" align="right" valign="top"><a id="a79ea1dedc42e4622766c756cd51e2a29" name="a79ea1dedc42e4622766c756cd51e2a29"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Audio</b> (std::string audioId, bool playOnAwake, int loop)</td></tr>
+<tr class="memitem:a79ea1dedc42e4622766c756cd51e2a29" id="r_a79ea1dedc42e4622766c756cd51e2a29"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a79ea1dedc42e4622766c756cd51e2a29">Audio</a> (std::string audioId, bool playOnAwake, int loop)</td></tr>
+<tr class="memdesc:a79ea1dedc42e4622766c756cd51e2a29"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor that initializes the audioId, playOnAwake, and loops. If playOnAwake is true, the audio will start playing immediately.  <br /></td></tr>
 <tr class="separator:a79ea1dedc42e4622766c756cd51e2a29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8f54deecb5f48511aaab469e80294d6" id="r_ae8f54deecb5f48511aaab469e80294d6"><td class="memItemLeft" align="right" valign="top"><a id="ae8f54deecb5f48511aaab469e80294d6" name="ae8f54deecb5f48511aaab469e80294d6"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>~Audio</b> ()</td></tr>
+<tr class="memdesc:ae8f54deecb5f48511aaab469e80294d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor that stops the audio. If delay is non-zero, the audio will fade out over the specified delay. <br /></td></tr>
+<tr class="separator:ae8f54deecb5f48511aaab469e80294d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2916f9015031bee9abb98adf0d83e7ee" id="r_a2916f9015031bee9abb98adf0d83e7ee"><td class="memItemLeft" align="right" valign="top"><a id="a2916f9015031bee9abb98adf0d83e7ee" name="a2916f9015031bee9abb98adf0d83e7ee"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>play</b> ()</td></tr>
+<tr class="memdesc:a2916f9015031bee9abb98adf0d83e7ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts playing the audio on the specified channel with the specified number of loops. <br /></td></tr>
 <tr class="separator:a2916f9015031bee9abb98adf0d83e7ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2ebc8bd97c5bf4cbfbddca46c15ce46c" id="r_a2ebc8bd97c5bf4cbfbddca46c15ce46c"><td class="memItemLeft" align="right" valign="top"><a id="a2ebc8bd97c5bf4cbfbddca46c15ce46c" name="a2ebc8bd97c5bf4cbfbddca46c15ce46c"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>play</b> (int loop)</td></tr>
+<tr class="memitem:a2ebc8bd97c5bf4cbfbddca46c15ce46c" id="r_a2ebc8bd97c5bf4cbfbddca46c15ce46c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2ebc8bd97c5bf4cbfbddca46c15ce46c">play</a> (int loop)</td></tr>
+<tr class="memdesc:a2ebc8bd97c5bf4cbfbddca46c15ce46c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts playing the audio on the specified channel with the specified number of loops.  <br /></td></tr>
 <tr class="separator:a2ebc8bd97c5bf4cbfbddca46c15ce46c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a82c1018cf778eccc8819acfb64be53b2" id="r_a82c1018cf778eccc8819acfb64be53b2"><td class="memItemLeft" align="right" valign="top"><a id="a82c1018cf778eccc8819acfb64be53b2" name="a82c1018cf778eccc8819acfb64be53b2"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>pause</b> ()</td></tr>
+<tr class="memdesc:a82c1018cf778eccc8819acfb64be53b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Toggles the paused state of the audio. If the audio is currently playing, it will be paused. If it's currently paused, it will be resumed. <br /></td></tr>
 <tr class="separator:a82c1018cf778eccc8819acfb64be53b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af628fdffa4dba3866e6e801fdda123ea" id="r_af628fdffa4dba3866e6e801fdda123ea"><td class="memItemLeft" align="right" valign="top"><a id="af628fdffa4dba3866e6e801fdda123ea" name="af628fdffa4dba3866e6e801fdda123ea"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>stop</b> ()</td></tr>
+<tr class="memdesc:af628fdffa4dba3866e6e801fdda123ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stops the audio immediately. <br /></td></tr>
 <tr class="separator:af628fdffa4dba3866e6e801fdda123ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad2b666f1d68d7673636064e42c66b15b" id="r_ad2b666f1d68d7673636064e42c66b15b"><td class="memItemLeft" align="right" valign="top"><a id="ad2b666f1d68d7673636064e42c66b15b" name="ad2b666f1d68d7673636064e42c66b15b"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>stop</b> (int delay)</td></tr>
+<tr class="memdesc:ad2b666f1d68d7673636064e42c66b15b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stops the audio with a fade out over the specified delay. <br /></td></tr>
 <tr class="separator:ad2b666f1d68d7673636064e42c66b15b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
@@ -142,7 +150,96 @@ unsigned long&#160;</td><td class="memItemRight" valign="bottom"><b>parentId</b>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The audio component. </p>
-</div><hr/>The documentation for this class was generated from the following file:<ul>
+<p>This class represents an audio component that can be attached to a game object. It uses the <a class="el" href="class_audio_manager.html" title="The audio manager class.">AudioManager</a> to play, pause, and stop sounds. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a3e621b5ca5bafeb413a60b854dab9d73" name="a3e621b5ca5bafeb413a60b854dab9d73"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e621b5ca5bafeb413a60b854dab9d73">&#9670;&#160;</a></span>Audio() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Audio::Audio </td>
+          <td>(</td>
+          <td class="paramtype">std::string</td>          <td class="paramname"><span class="paramname"><em>audioId</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constructor that initializes the audioId. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">audioId</td><td>The ID of the audio to play. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a79ea1dedc42e4622766c756cd51e2a29" name="a79ea1dedc42e4622766c756cd51e2a29"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a79ea1dedc42e4622766c756cd51e2a29">&#9670;&#160;</a></span>Audio() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Audio::Audio </td>
+          <td>(</td>
+          <td class="paramtype">std::string</td>          <td class="paramname"><span class="paramname"><em>audioId</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>playOnAwake</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>loop</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constructor that initializes the audioId, playOnAwake, and loops. If playOnAwake is true, the audio will start playing immediately. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">audioId</td><td>The ID of the audio to play. </td></tr>
+    <tr><td class="paramname">playOnAwake</td><td>Whether the audio should start playing immediately. </td></tr>
+    <tr><td class="paramname">loop</td><td>The number of times the audio should loop. If loop is -1, the audio will loop indefinitely. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a2ebc8bd97c5bf4cbfbddca46c15ce46c" name="a2ebc8bd97c5bf4cbfbddca46c15ce46c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ebc8bd97c5bf4cbfbddca46c15ce46c">&#9670;&#160;</a></span>play()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Audio::play </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>loop</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Starts playing the audio on the specified channel with the specified number of loops. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">loop</td><td>The number of times the audio should loop. If loop is -1, the audio will loop indefinitely. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
 <li>dodoi-engine-ns/src/engine/ecs/component/<a class="el" href="_audio_8h_source.html">Audio.h</a></li>
 </ul>
 </div><!-- contents -->

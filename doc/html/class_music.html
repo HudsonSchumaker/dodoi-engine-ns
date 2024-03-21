@@ -90,32 +90,39 @@ Inheritance diagram for Music:</div>
  <div class="center">
   <img src="class_music.png" usemap="#Music_map" alt=""/>
   <map id="Music_map" name="Music_map">
-<area href="class_component.html" alt="Component" shape="rect" coords="0,0,75,24"/>
+<area href="class_component.html" title="The base class for all components." alt="Component" shape="rect" coords="0,0,75,24"/>
   </map>
 </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aa55ca850a783bed1afb3d80728363258" id="r_aa55ca850a783bed1afb3d80728363258"><td class="memItemLeft" align="right" valign="top"><a id="aa55ca850a783bed1afb3d80728363258" name="aa55ca850a783bed1afb3d80728363258"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Music</b> (std::string musicPath)</td></tr>
+<tr class="memitem:aa55ca850a783bed1afb3d80728363258" id="r_aa55ca850a783bed1afb3d80728363258"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa55ca850a783bed1afb3d80728363258">Music</a> (std::string musicPath)</td></tr>
+<tr class="memdesc:aa55ca850a783bed1afb3d80728363258"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor that initializes the musicPath.  <br /></td></tr>
 <tr class="separator:aa55ca850a783bed1afb3d80728363258"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7566a1e96897f3da4e23db426301f1d" id="r_ab7566a1e96897f3da4e23db426301f1d"><td class="memItemLeft" align="right" valign="top"><a id="ab7566a1e96897f3da4e23db426301f1d" name="ab7566a1e96897f3da4e23db426301f1d"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Music</b> (std::string musicPath, bool playOnAwake, int loop)</td></tr>
+<tr class="memitem:ab7566a1e96897f3da4e23db426301f1d" id="r_ab7566a1e96897f3da4e23db426301f1d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab7566a1e96897f3da4e23db426301f1d">Music</a> (std::string musicPath, bool playOnAwake, int loop)</td></tr>
+<tr class="memdesc:ab7566a1e96897f3da4e23db426301f1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor that initializes the musicPath, playOnAwake, and loops. If playOnAwake is true, the music will start playing immediately.  <br /></td></tr>
 <tr class="separator:ab7566a1e96897f3da4e23db426301f1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b4f3b9a018207e0c08003505f1f87fe" id="r_a0b4f3b9a018207e0c08003505f1f87fe"><td class="memItemLeft" align="right" valign="top"><a id="a0b4f3b9a018207e0c08003505f1f87fe" name="a0b4f3b9a018207e0c08003505f1f87fe"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>~Music</b> ()</td></tr>
+<tr class="memdesc:a0b4f3b9a018207e0c08003505f1f87fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor that stops the music. If delay is non-zero, the music will fade out over the specified delay. <br /></td></tr>
+<tr class="separator:a0b4f3b9a018207e0c08003505f1f87fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a54b941f6f7634d7f99b473c78fe6e4da" id="r_a54b941f6f7634d7f99b473c78fe6e4da"><td class="memItemLeft" align="right" valign="top"><a id="a54b941f6f7634d7f99b473c78fe6e4da" name="a54b941f6f7634d7f99b473c78fe6e4da"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>play</b> ()</td></tr>
+<tr class="memdesc:a54b941f6f7634d7f99b473c78fe6e4da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts playing the music with the specified number of loops. <br /></td></tr>
 <tr class="separator:a54b941f6f7634d7f99b473c78fe6e4da"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2da55f8a89e7f1b7d4b6dfd8d3f409ac" id="r_a2da55f8a89e7f1b7d4b6dfd8d3f409ac"><td class="memItemLeft" align="right" valign="top"><a id="a2da55f8a89e7f1b7d4b6dfd8d3f409ac" name="a2da55f8a89e7f1b7d4b6dfd8d3f409ac"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>play</b> (int loop)</td></tr>
+<tr class="memitem:a2da55f8a89e7f1b7d4b6dfd8d3f409ac" id="r_a2da55f8a89e7f1b7d4b6dfd8d3f409ac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2da55f8a89e7f1b7d4b6dfd8d3f409ac">play</a> (int loop)</td></tr>
+<tr class="memdesc:a2da55f8a89e7f1b7d4b6dfd8d3f409ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts playing the music with the specified number of loops.  <br /></td></tr>
 <tr class="separator:a2da55f8a89e7f1b7d4b6dfd8d3f409ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a10e5537400b6f018a8c86085751a90cb" id="r_a10e5537400b6f018a8c86085751a90cb"><td class="memItemLeft" align="right" valign="top"><a id="a10e5537400b6f018a8c86085751a90cb" name="a10e5537400b6f018a8c86085751a90cb"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>pause</b> ()</td></tr>
+<tr class="memdesc:a10e5537400b6f018a8c86085751a90cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Toggles the paused state of the music. If the music is currently playing, it will be paused. If it's currently paused, it will be resumed. <br /></td></tr>
 <tr class="separator:a10e5537400b6f018a8c86085751a90cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a008211b514c1c89c15399d3384d3fcea" id="r_a008211b514c1c89c15399d3384d3fcea"><td class="memItemLeft" align="right" valign="top"><a id="a008211b514c1c89c15399d3384d3fcea" name="a008211b514c1c89c15399d3384d3fcea"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>stop</b> ()</td></tr>
+<tr class="memdesc:a008211b514c1c89c15399d3384d3fcea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stops the music immediately. <br /></td></tr>
 <tr class="separator:a008211b514c1c89c15399d3384d3fcea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2c51d02bb8795c6b03d30e47f0a62fda" id="r_a2c51d02bb8795c6b03d30e47f0a62fda"><td class="memItemLeft" align="right" valign="top"><a id="a2c51d02bb8795c6b03d30e47f0a62fda" name="a2c51d02bb8795c6b03d30e47f0a62fda"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>stop</b> (int delay)</td></tr>
+<tr class="memitem:a2c51d02bb8795c6b03d30e47f0a62fda" id="r_a2c51d02bb8795c6b03d30e47f0a62fda"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2c51d02bb8795c6b03d30e47f0a62fda">stop</a> (int delay)</td></tr>
+<tr class="memdesc:a2c51d02bb8795c6b03d30e47f0a62fda"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stops the music after the specified delay.  <br /></td></tr>
 <tr class="separator:a2c51d02bb8795c6b03d30e47f0a62fda"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
@@ -142,7 +149,153 @@ unsigned long&#160;</td><td class="memItemRight" valign="bottom"><b>parentId</b>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The music component. </p>
-</div><hr/>The documentation for this class was generated from the following file:<ul>
+<p>This class represents an music component that can be attached to a game object. It uses the <a class="el" href="class_audio_manager.html" title="The audio manager class.">AudioManager</a> to play, pause, and stop music. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="aa55ca850a783bed1afb3d80728363258" name="aa55ca850a783bed1afb3d80728363258"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa55ca850a783bed1afb3d80728363258">&#9670;&#160;</a></span>Music() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Music::Music </td>
+          <td>(</td>
+          <td class="paramtype">std::string</td>          <td class="paramname"><span class="paramname"><em>musicPath</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructor that initializes the musicPath. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">musicPath</td><td>The path of the music to play. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ab7566a1e96897f3da4e23db426301f1d" name="ab7566a1e96897f3da4e23db426301f1d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7566a1e96897f3da4e23db426301f1d">&#9670;&#160;</a></span>Music() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Music::Music </td>
+          <td>(</td>
+          <td class="paramtype">std::string</td>          <td class="paramname"><span class="paramname"><em>musicPath</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>playOnAwake</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>loop</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructor that initializes the musicPath, playOnAwake, and loops. If playOnAwake is true, the music will start playing immediately. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">musicPath</td><td>The path of the music to play. </td></tr>
+    <tr><td class="paramname">playOnAwake</td><td>Whether the music should start playing immediately. </td></tr>
+    <tr><td class="paramname">loop</td><td>The number of times the music should loop. If loop is -1, the music will loop indefinitely. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a2da55f8a89e7f1b7d4b6dfd8d3f409ac" name="a2da55f8a89e7f1b7d4b6dfd8d3f409ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2da55f8a89e7f1b7d4b6dfd8d3f409ac">&#9670;&#160;</a></span>play()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Music::play </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>loop</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Starts playing the music with the specified number of loops. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">loop</td><td>The number of times the music should loop. If loop is -1, the music will loop indefinitely. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a2c51d02bb8795c6b03d30e47f0a62fda" name="a2c51d02bb8795c6b03d30e47f0a62fda"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c51d02bb8795c6b03d30e47f0a62fda">&#9670;&#160;</a></span>stop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Music::stop </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>delay</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Stops the music after the specified delay. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">delay</td><td>The delay in milliseconds before the music stops. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
 <li>dodoi-engine-ns/src/engine/ecs/component/<a class="el" href="_music_8h_source.html">Music.h</a></li>
 </ul>
 </div><!-- contents -->

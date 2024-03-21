@@ -20,8 +20,8 @@ A class that represents a color.
 \Hypertarget{class_color_a2a84d3b91f2999a11b6728a4b8f85ae4}\label{class_color_a2a84d3b91f2999a11b6728a4b8f85ae4} 
 {\bfseries \texorpdfstring{$\sim$}{\string~}\+Color} ()=default
 \begin{DoxyCompactList}\small\item\em Default destructor. \end{DoxyCompactList}\item 
-unsigned long \mbox{\hyperlink{class_color_a126ab6053383326699e61f3e3669d23a}{get\+RGBA}} ()
-\begin{DoxyCompactList}\small\item\em Returns the RGBA value of this color. \end{DoxyCompactList}\end{DoxyCompactItemize}
+unsigned long \mbox{\hyperlink{class_color_a504cb5d99a87f3209c569ce643ccd52f}{get\+Hex}} ()
+\begin{DoxyCompactList}\small\item\em Returns the color as a hexadecimal value in RGBA. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -247,6 +247,19 @@ Returns an SDL\+\_\+\+Color representing green.
 \begin{DoxyReturn}{Returns}
 An SDL\+\_\+\+Color representing green. 
 \end{DoxyReturn}
+\Hypertarget{class_color_a504cb5d99a87f3209c569ce643ccd52f}\label{class_color_a504cb5d99a87f3209c569ce643ccd52f} 
+\index{Color@{Color}!getHex@{getHex}}
+\index{getHex@{getHex}!Color@{Color}}
+\doxysubsubsection{\texorpdfstring{getHex()}{getHex()}}
+{\footnotesize\ttfamily unsigned long Color\+::get\+Hex (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the color as a hexadecimal value in RGBA. 
+
+\begin{DoxyReturn}{Returns}
+long The color as a hexadecimal value. 
+\end{DoxyReturn}
 \Hypertarget{class_color_ac4abf18a9bb4bd2628f89bf566b9ac70}\label{class_color_ac4abf18a9bb4bd2628f89bf566b9ac70} 
 \index{Color@{Color}!getOrange@{getOrange}}
 \index{getOrange@{getOrange}!Color@{Color}}
@@ -285,19 +298,6 @@ Returns an SDL\+\_\+\+Color representing red.
 
 \begin{DoxyReturn}{Returns}
 An SDL\+\_\+\+Color representing red. 
-\end{DoxyReturn}
-\Hypertarget{class_color_a126ab6053383326699e61f3e3669d23a}\label{class_color_a126ab6053383326699e61f3e3669d23a} 
-\index{Color@{Color}!getRGBA@{getRGBA}}
-\index{getRGBA@{getRGBA}!Color@{Color}}
-\doxysubsubsection{\texorpdfstring{getRGBA()}{getRGBA()}}
-{\footnotesize\ttfamily unsigned long Color\+::get\+RGBA (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
-
-
-
-Returns the RGBA value of this color. 
-
-\begin{DoxyReturn}{Returns}
-The RGBA value of this color. 
 \end{DoxyReturn}
 \Hypertarget{class_color_aafc5056b3e7b8f10ca09d04eb8877e0e}\label{class_color_aafc5056b3e7b8f10ca09d04eb8877e0e} 
 \index{Color@{Color}!getWhite@{getWhite}}

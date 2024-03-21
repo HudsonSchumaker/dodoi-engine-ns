@@ -18,27 +18,26 @@ Inheritance diagram for Music\+:\begin{figure}[H]
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\Hypertarget{class_music_aa55ca850a783bed1afb3d80728363258}\label{class_music_aa55ca850a783bed1afb3d80728363258} 
-{\bfseries Music} (std\+::string music\+Path)
-\item 
-\Hypertarget{class_music_ab7566a1e96897f3da4e23db426301f1d}\label{class_music_ab7566a1e96897f3da4e23db426301f1d} 
-{\bfseries Music} (std\+::string music\+Path, bool play\+On\+Awake, int loop)
-\item 
+\mbox{\hyperlink{class_music_aa55ca850a783bed1afb3d80728363258}{Music}} (std\+::string music\+Path)
+\begin{DoxyCompactList}\small\item\em Constructor that initializes the music\+Path. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_music_ab7566a1e96897f3da4e23db426301f1d}{Music}} (std\+::string music\+Path, bool play\+On\+Awake, int loop)
+\begin{DoxyCompactList}\small\item\em Constructor that initializes the music\+Path, play\+On\+Awake, and loops. If play\+On\+Awake is true, the music will start playing immediately. \end{DoxyCompactList}\item 
+\Hypertarget{class_music_a0b4f3b9a018207e0c08003505f1f87fe}\label{class_music_a0b4f3b9a018207e0c08003505f1f87fe} 
+{\bfseries \texorpdfstring{$\sim$}{\string~}\+Music} ()
+\begin{DoxyCompactList}\small\item\em Destructor that stops the music. If delay is non-\/zero, the music will fade out over the specified delay. \end{DoxyCompactList}\item 
 \Hypertarget{class_music_a54b941f6f7634d7f99b473c78fe6e4da}\label{class_music_a54b941f6f7634d7f99b473c78fe6e4da} 
 void {\bfseries play} ()
-\item 
-\Hypertarget{class_music_a2da55f8a89e7f1b7d4b6dfd8d3f409ac}\label{class_music_a2da55f8a89e7f1b7d4b6dfd8d3f409ac} 
-void {\bfseries play} (int loop)
-\item 
+\begin{DoxyCompactList}\small\item\em Starts playing the music with the specified number of loops. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_music_a2da55f8a89e7f1b7d4b6dfd8d3f409ac}{play}} (int loop)
+\begin{DoxyCompactList}\small\item\em Starts playing the music with the specified number of loops. \end{DoxyCompactList}\item 
 \Hypertarget{class_music_a10e5537400b6f018a8c86085751a90cb}\label{class_music_a10e5537400b6f018a8c86085751a90cb} 
 void {\bfseries pause} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Toggles the paused state of the music. If the music is currently playing, it will be paused. If it\textquotesingle{}s currently paused, it will be resumed. \end{DoxyCompactList}\item 
 \Hypertarget{class_music_a008211b514c1c89c15399d3384d3fcea}\label{class_music_a008211b514c1c89c15399d3384d3fcea} 
 void {\bfseries stop} ()
-\item 
-\Hypertarget{class_music_a2c51d02bb8795c6b03d30e47f0a62fda}\label{class_music_a2c51d02bb8795c6b03d30e47f0a62fda} 
-void {\bfseries stop} (int delay)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Stops the music immediately. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_music_a2c51d02bb8795c6b03d30e47f0a62fda}{stop}} (int delay)
+\begin{DoxyCompactList}\small\item\em Stops the music after the specified delay. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -67,6 +66,78 @@ unsigned long {\bfseries parent\+Id} = 0
 \doxysubsection{Detailed Description}
 The music component. 
 
+This class represents an music component that can be attached to a game object. It uses the \doxylink{class_audio_manager}{Audio\+Manager} to play, pause, and stop music. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_music_aa55ca850a783bed1afb3d80728363258}\label{class_music_aa55ca850a783bed1afb3d80728363258} 
+\index{Music@{Music}!Music@{Music}}
+\index{Music@{Music}!Music@{Music}}
+\doxysubsubsection{\texorpdfstring{Music()}{Music()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Music\+::\+Music (\begin{DoxyParamCaption}\item[{std\+::string}]{music\+Path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor that initializes the music\+Path. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em music\+Path} & The path of the music to play. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_music_ab7566a1e96897f3da4e23db426301f1d}\label{class_music_ab7566a1e96897f3da4e23db426301f1d} 
+\index{Music@{Music}!Music@{Music}}
+\index{Music@{Music}!Music@{Music}}
+\doxysubsubsection{\texorpdfstring{Music()}{Music()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Music\+::\+Music (\begin{DoxyParamCaption}\item[{std\+::string}]{music\+Path,  }\item[{bool}]{play\+On\+Awake,  }\item[{int}]{loop }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor that initializes the music\+Path, play\+On\+Awake, and loops. If play\+On\+Awake is true, the music will start playing immediately. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em music\+Path} & The path of the music to play. \\
+\hline
+{\em play\+On\+Awake} & Whether the music should start playing immediately. \\
+\hline
+{\em loop} & The number of times the music should loop. If loop is -\/1, the music will loop indefinitely. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_music_a2da55f8a89e7f1b7d4b6dfd8d3f409ac}\label{class_music_a2da55f8a89e7f1b7d4b6dfd8d3f409ac} 
+\index{Music@{Music}!play@{play}}
+\index{play@{play}!Music@{Music}}
+\doxysubsubsection{\texorpdfstring{play()}{play()}}
+{\footnotesize\ttfamily void Music\+::play (\begin{DoxyParamCaption}\item[{int}]{loop }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Starts playing the music with the specified number of loops. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em loop} & The number of times the music should loop. If loop is -\/1, the music will loop indefinitely. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_music_a2c51d02bb8795c6b03d30e47f0a62fda}\label{class_music_a2c51d02bb8795c6b03d30e47f0a62fda} 
+\index{Music@{Music}!stop@{stop}}
+\index{stop@{stop}!Music@{Music}}
+\doxysubsubsection{\texorpdfstring{stop()}{stop()}}
+{\footnotesize\ttfamily void Music\+::stop (\begin{DoxyParamCaption}\item[{int}]{delay }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Stops the music after the specified delay. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em delay} & The delay in milliseconds before the music stops. \\
+\hline
+\end{DoxyParams}
+
+
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-dodoi-\/engine-\/ns/src/engine/ecs/component/Music.\+h\end{DoxyCompactItemize}
+dodoi-\/engine-\/ns/src/engine/ecs/component/\mbox{\hyperlink{_music_8h}{Music.\+h}}\end{DoxyCompactItemize}

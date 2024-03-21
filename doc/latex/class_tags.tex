@@ -1,0 +1,141 @@
+\doxysection{Tags Class Reference}
+\hypertarget{class_tags}{}\label{class_tags}\index{Tags@{Tags}}
+
+
+A singleton class that manages all tags.  
+
+
+
+
+{\ttfamily \#include $<$Tags.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_tags_aa409e5c98783202a08dd70342f0ff9bf}{add\+Tag}} (const std\+::string \&name, short layer)
+\begin{DoxyCompactList}\small\item\em Add a new tag. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_tags_a2bda294cb2f407449bff2637041635c2}{remove\+Tag}} (const std\+::string \&name)
+\begin{DoxyCompactList}\small\item\em Remove a tag. \end{DoxyCompactList}\item 
+short \mbox{\hyperlink{class_tags_a1c991bf5ac2200a1e8aaa9456be5018e}{get\+Layer}} (const std\+::string \&name) const
+\begin{DoxyCompactList}\small\item\em Get the layer of a tag. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_tags_a4ec827acb1377b75c815b87d211c11a4}{get\+Tag}} (short layer) const
+\begin{DoxyCompactList}\small\item\em Get the name of a tag. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_tag}{Tag}} \mbox{\hyperlink{class_tags_a9d6bbd122ccea6d83c2e8c0c73bf043a}{get\+Tag\+By\+Name}} (const std\+::string \&name) const
+\begin{DoxyCompactList}\small\item\em Get a tag by name. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_tags}{Tags}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_tags_a617ebec1c5ce539849442df234fca3f1}{get\+Instance}} ()
+\begin{DoxyCompactList}\small\item\em Get the singleton instance of the \doxylink{class_tags}{Tags} class. If the instance doesn\textquotesingle{}t exist, it\textquotesingle{}s created and initialized with default values. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A singleton class that manages all tags. 
+
+This class provides methods to add, remove, and retrieve tags. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_tags_aa409e5c98783202a08dd70342f0ff9bf}\label{class_tags_aa409e5c98783202a08dd70342f0ff9bf} 
+\index{Tags@{Tags}!addTag@{addTag}}
+\index{addTag@{addTag}!Tags@{Tags}}
+\doxysubsubsection{\texorpdfstring{addTag()}{addTag()}}
+{\footnotesize\ttfamily void Tags\+::add\+Tag (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name,  }\item[{short}]{layer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Add a new tag. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the tag. \\
+\hline
+{\em layer} & The layer of the tag. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_tags_a617ebec1c5ce539849442df234fca3f1}\label{class_tags_a617ebec1c5ce539849442df234fca3f1} 
+\index{Tags@{Tags}!getInstance@{getInstance}}
+\index{getInstance@{getInstance}!Tags@{Tags}}
+\doxysubsubsection{\texorpdfstring{getInstance()}{getInstance()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_tags}{Tags}} \texorpdfstring{$\ast$}{*} Tags\+::get\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Get the singleton instance of the \doxylink{class_tags}{Tags} class. If the instance doesn\textquotesingle{}t exist, it\textquotesingle{}s created and initialized with default values. 
+
+\begin{DoxyReturn}{Returns}
+Tags\texorpdfstring{$\ast$}{*} The singleton instance of the \doxylink{class_tags}{Tags} class. 
+\end{DoxyReturn}
+\Hypertarget{class_tags_a1c991bf5ac2200a1e8aaa9456be5018e}\label{class_tags_a1c991bf5ac2200a1e8aaa9456be5018e} 
+\index{Tags@{Tags}!getLayer@{getLayer}}
+\index{getLayer@{getLayer}!Tags@{Tags}}
+\doxysubsubsection{\texorpdfstring{getLayer()}{getLayer()}}
+{\footnotesize\ttfamily short Tags\+::get\+Layer (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the layer of a tag. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the tag. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+short The layer of the tag. Returns -\/1 if the tag is not found. 
+\end{DoxyReturn}
+\Hypertarget{class_tags_a4ec827acb1377b75c815b87d211c11a4}\label{class_tags_a4ec827acb1377b75c815b87d211c11a4} 
+\index{Tags@{Tags}!getTag@{getTag}}
+\index{getTag@{getTag}!Tags@{Tags}}
+\doxysubsubsection{\texorpdfstring{getTag()}{getTag()}}
+{\footnotesize\ttfamily std\+::string Tags\+::get\+Tag (\begin{DoxyParamCaption}\item[{short}]{layer }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the name of a tag. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em layer} & The layer of the tag. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+std\+::string The name of the tag. Returns an empty string if the tag is not found. 
+\end{DoxyReturn}
+\Hypertarget{class_tags_a9d6bbd122ccea6d83c2e8c0c73bf043a}\label{class_tags_a9d6bbd122ccea6d83c2e8c0c73bf043a} 
+\index{Tags@{Tags}!getTagByName@{getTagByName}}
+\index{getTagByName@{getTagByName}!Tags@{Tags}}
+\doxysubsubsection{\texorpdfstring{getTagByName()}{getTagByName()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_tag}{Tag}} Tags\+::get\+Tag\+By\+Name (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get a tag by name. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the tag. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxylink{class_tag}{Tag} The tag. Returns a tag with an empty name and a layer of -\/1 if the tag is not found. 
+\end{DoxyReturn}
+\Hypertarget{class_tags_a2bda294cb2f407449bff2637041635c2}\label{class_tags_a2bda294cb2f407449bff2637041635c2} 
+\index{Tags@{Tags}!removeTag@{removeTag}}
+\index{removeTag@{removeTag}!Tags@{Tags}}
+\doxysubsubsection{\texorpdfstring{removeTag()}{removeTag()}}
+{\footnotesize\ttfamily void Tags\+::remove\+Tag (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Remove a tag. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the tag to remove. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+dodoi-\/engine-\/ns/src/engine/ecs/\mbox{\hyperlink{_tags_8h}{Tags.\+h}}\end{DoxyCompactItemize}

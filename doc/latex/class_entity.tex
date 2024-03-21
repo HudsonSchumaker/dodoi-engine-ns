@@ -1,0 +1,40 @@
+\doxysection{Entity Class Reference}
+\hypertarget{class_entity}{}\label{class_entity}\index{Entity@{Entity}}
+
+
+The Game\+Object of the engine.  
+
+
+
+
+{\ttfamily \#include $<$Entity.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_entity_ad489ee0d44f9c35d1a61d3a726c5923c}\label{class_entity_ad489ee0d44f9c35d1a61d3a726c5923c} 
+{\footnotesize template$<$typename T $>$ }\\T \texorpdfstring{$\ast$}{*} {\bfseries get\+Component} ()
+\item 
+\Hypertarget{class_entity_a2582f5225b63975a178bd5a565fa1f83}\label{class_entity_a2582f5225b63975a178bd5a565fa1f83} 
+{\footnotesize template$<$typename T $>$ }\\T \texorpdfstring{$\ast$}{*} {\bfseries add\+Component} (T \texorpdfstring{$\ast$}{*}component)
+\item 
+\Hypertarget{class_entity_ae2466ec12cb05f3eb6d4a01dbd841798}\label{class_entity_ae2466ec12cb05f3eb6d4a01dbd841798} 
+void {\bfseries delete\+Components} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_entity_a3cf04dedfdf4cc465423e5038e7c31de}\label{class_entity_a3cf04dedfdf4cc465423e5038e7c31de} 
+unsigned long {\bfseries id} = 0
+\item 
+\Hypertarget{class_entity_a5728d1e44c5daceab3c7d11eba856302}\label{class_entity_a5728d1e44c5daceab3c7d11eba856302} 
+std\+::pair$<$ \mbox{\hyperlink{class_tag}{Tag}}, \mbox{\hyperlink{class_tag}{Tag}} $>$ {\bfseries tags} = \{ \mbox{\hyperlink{class_tags_a617ebec1c5ce539849442df234fca3f1}{Tags\+::get\+Instance}}()-\/$>$get\+Tag\+By\+Name("{}defualt"{}), \mbox{\hyperlink{class_tags_a617ebec1c5ce539849442df234fca3f1}{Tags\+::get\+Instance}}()-\/$>$get\+Tag\+By\+Name("{}defualt"{}) \}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The Game\+Object of the engine. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+dodoi-\/engine-\/ns/src/engine/ecs/\mbox{\hyperlink{_entity_8h}{Entity.\+h}}\end{DoxyCompactItemize}

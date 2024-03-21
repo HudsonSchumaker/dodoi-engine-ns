@@ -1,0 +1,80 @@
+\doxysection{Tags.\+h}
+\hypertarget{_tags_8h_source}{}\label{_tags_8h_source}\index{dodoi-\/engine-\/ns/src/engine/ecs/Tags.h@{dodoi-\/engine-\/ns/src/engine/ecs/Tags.h}}
+\mbox{\hyperlink{_tags_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_common_8h}{../Common.h}}"{}}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00019\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_tag}{Tag}}\ final\ \{}
+\DoxyCodeLine{00020\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00021\ \ \ \ \ std::string\ name;}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordtype}{short}\ layer;}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00031\ \ \ \ \ \mbox{\hyperlink{class_tag_a7be1b60ae44cc12d36cd2b1b335beecd}{Tag}}(\textcolor{keyword}{const}\ std::string\&\ name,\ \textcolor{keywordtype}{short}\ layer)\ :\ name(name),\ layer(layer)\ \{\}}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ \ \ \ \ std::string\ getName()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ name;\ \}}
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keywordtype}{short}\ getLayer()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ layer;\ \}}
+\DoxyCodeLine{00035\ \};}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00043\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_tags}{Tags}}\ final\ \{}
+\DoxyCodeLine{00044\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00045\ \ \ \ \ std::vector<Tag>\ tags;}
+\DoxyCodeLine{00046\ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{class_tags}{Tags}}*\ instance;}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00048\ \ \ \ \ \mbox{\hyperlink{class_tags}{Tags}}()\ \{\}}
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00050\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00057\ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{class_tags}{Tags}}*\ \mbox{\hyperlink{class_tags_a617ebec1c5ce539849442df234fca3f1}{getInstance}}()\ \{}
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!instance)\ \{}
+\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ \ \ \ \ instance\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_tags}{Tags}}();}
+\DoxyCodeLine{00060\ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Initialize\ with\ default\ values}}
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ \ \ \ \ instance-\/>\mbox{\hyperlink{class_tags_aa409e5c98783202a08dd70342f0ff9bf}{addTag}}(\textcolor{stringliteral}{"{}default"{}},\ 0);}
+\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ \ \ \ \ instance-\/>\mbox{\hyperlink{class_tags_aa409e5c98783202a08dd70342f0ff9bf}{addTag}}(\textcolor{stringliteral}{"{}killByTime"{}},\ 1);}
+\DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ \ \ \ \ instance-\/>\mbox{\hyperlink{class_tags_aa409e5c98783202a08dd70342f0ff9bf}{addTag}}(\textcolor{stringliteral}{"{}background"{}},\ 2);}
+\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ \ \ \ \ instance-\/>\mbox{\hyperlink{class_tags_aa409e5c98783202a08dd70342f0ff9bf}{addTag}}(\textcolor{stringliteral}{"{}tile"{}},\ 3);}
+\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ \ \ \ \ instance-\/>\mbox{\hyperlink{class_tags_aa409e5c98783202a08dd70342f0ff9bf}{addTag}}(\textcolor{stringliteral}{"{}enemy"{}},\ 4);}
+\DoxyCodeLine{00067\ \ \ \ \ \ \ \ \ \ \ \ \ instance-\/>\mbox{\hyperlink{class_tags_aa409e5c98783202a08dd70342f0ff9bf}{addTag}}(\textcolor{stringliteral}{"{}player"{}},\ 5);}
+\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ \ \ \ \ instance-\/>\mbox{\hyperlink{class_tags_aa409e5c98783202a08dd70342f0ff9bf}{addTag}}(\textcolor{stringliteral}{"{}shield"{}},\ 6);}
+\DoxyCodeLine{00069\ \ \ \ \ \ \ \ \ \ \ \ \ instance-\/>\mbox{\hyperlink{class_tags_aa409e5c98783202a08dd70342f0ff9bf}{addTag}}(\textcolor{stringliteral}{"{}bullet"{}},\ 7);}
+\DoxyCodeLine{00070\ \ \ \ \ \ \ \ \ \ \ \ \ instance-\/>\mbox{\hyperlink{class_tags_aa409e5c98783202a08dd70342f0ff9bf}{addTag}}(\textcolor{stringliteral}{"{}blade"{}},\ 8);}
+\DoxyCodeLine{00071\ \ \ \ \ \ \ \ \ \ \ \ \ instance-\/>\mbox{\hyperlink{class_tags_aa409e5c98783202a08dd70342f0ff9bf}{addTag}}(\textcolor{stringliteral}{"{}coin"{}},\ 9);}
+\DoxyCodeLine{00072\ \ \ \ \ \ \ \ \ \ \ \ \ instance-\/>\mbox{\hyperlink{class_tags_aa409e5c98783202a08dd70342f0ff9bf}{addTag}}(\textcolor{stringliteral}{"{}ui"{}},\ 10);}
+\DoxyCodeLine{00073\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00074\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ instance;}
+\DoxyCodeLine{00075\ \ \ \ \ \}}
+\DoxyCodeLine{00076\ }
+\DoxyCodeLine{00083\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_tags_aa409e5c98783202a08dd70342f0ff9bf}{addTag}}(\textcolor{keyword}{const}\ std::string\&\ name,\ \textcolor{keywordtype}{short}\ layer)\ \{}
+\DoxyCodeLine{00084\ \ \ \ \ \ \ \ \ tags.push\_back(\mbox{\hyperlink{class_tag}{Tag}}(name,\ layer));}
+\DoxyCodeLine{00085\ \ \ \ \ \}}
+\DoxyCodeLine{00086\ }
+\DoxyCodeLine{00092\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_tags_a2bda294cb2f407449bff2637041635c2}{removeTag}}(\textcolor{keyword}{const}\ std::string\&\ name)\ \{}
+\DoxyCodeLine{00093\ \ \ \ \ \ \ \ \ tags.erase(std::remove\_if(tags.begin(),\ tags.end(),}
+\DoxyCodeLine{00094\ \ \ \ \ \ \ \ \ \ \ \ \ [\&name](\textcolor{keyword}{const}\ \mbox{\hyperlink{class_tag}{Tag}}\&\ tag)\ \{\ return\ tag.getName()\ ==\ name;\ \}),\ tags.end());}
+\DoxyCodeLine{00095\ \ \ \ \ \}}
+\DoxyCodeLine{00096\ }
+\DoxyCodeLine{00103\ \ \ \ \ \textcolor{keywordtype}{short}\ \mbox{\hyperlink{class_tags_a1c991bf5ac2200a1e8aaa9456be5018e}{getLayer}}(\textcolor{keyword}{const}\ std::string\&\ name)\textcolor{keyword}{\ const\ }\{}
+\DoxyCodeLine{00104\ \ \ \ \ \ \ \ \ \textcolor{keyword}{auto}\ it\ =\ std::find\_if(tags.begin(),\ tags.end(),}
+\DoxyCodeLine{00105\ \ \ \ \ \ \ \ \ \ \ \ \ [\&name](\textcolor{keyword}{const}\ \mbox{\hyperlink{class_tag}{Tag}}\&\ tag)\ \{\ return\ tag.getName()\ ==\ name;\ \});}
+\DoxyCodeLine{00106\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ it\ !=\ tags.end()\ ?\ it-\/>getLayer()\ :\ -\/1;}
+\DoxyCodeLine{00107\ \ \ \ \ \}}
+\DoxyCodeLine{00108\ }
+\DoxyCodeLine{00115\ \ \ \ \ std::string\ \mbox{\hyperlink{class_tags_a4ec827acb1377b75c815b87d211c11a4}{getTag}}(\textcolor{keywordtype}{short}\ layer)\textcolor{keyword}{\ const\ }\{}
+\DoxyCodeLine{00116\ \ \ \ \ \ \ \ \ \textcolor{keyword}{auto}\ it\ =\ std::find\_if(tags.begin(),\ tags.end(),}
+\DoxyCodeLine{00117\ \ \ \ \ \ \ \ \ \ \ \ \ [layer](\textcolor{keyword}{const}\ \mbox{\hyperlink{class_tag}{Tag}}\&\ tag)\ \{\ return\ tag.getLayer()\ ==\ layer;\ \});}
+\DoxyCodeLine{00118\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ it\ !=\ tags.end()\ ?\ it-\/>getName()\ :\ \textcolor{stringliteral}{"{}"{}};}
+\DoxyCodeLine{00119\ \ \ \ \ \}}
+\DoxyCodeLine{00120\ }
+\DoxyCodeLine{00127\ \ \ \ \ \mbox{\hyperlink{class_tag}{Tag}}\ \mbox{\hyperlink{class_tags_a9d6bbd122ccea6d83c2e8c0c73bf043a}{getTagByName}}(\textcolor{keyword}{const}\ std::string\&\ name)\textcolor{keyword}{\ const\ }\{}
+\DoxyCodeLine{00128\ \ \ \ \ \ \ \ \ \textcolor{keyword}{auto}\ it\ =\ std::find\_if(tags.begin(),\ tags.end(),}
+\DoxyCodeLine{00129\ \ \ \ \ \ \ \ \ \ \ \ \ [\&name](\textcolor{keyword}{const}\ \mbox{\hyperlink{class_tag}{Tag}}\&\ tag)\ \{\ return\ tag.getName()\ ==\ name;\ \});}
+\DoxyCodeLine{00130\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (it\ !=\ tags.end())\ \{}
+\DoxyCodeLine{00131\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ *it;}
+\DoxyCodeLine{00132\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00133\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_tag}{Tag}}(\textcolor{stringliteral}{"{}"{}},\ -\/1);}
+\DoxyCodeLine{00134\ \ \ \ \ \}}
+\DoxyCodeLine{00135\ \};}
+
+\end{DoxyCode}

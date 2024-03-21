@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['gameobject_0',['GameObject',['../class_game_object.html',1,'']]],
-  ['gfx_1',['Gfx',['../class_gfx.html',1,'']]]
+  ['fileutils_0',['FileUtils',['../class_file_utils.html',1,'']]]
 ];
