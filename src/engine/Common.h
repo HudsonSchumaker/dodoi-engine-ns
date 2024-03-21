@@ -1,19 +1,15 @@
 /**
- * @file Common.h
- * @author Hudson Schumaker
- * @brief Common includes and definitions for the Dodoi-Engine.
- * @version 1.0.0
- * @date 2024-03-01
- * 
- * Dodoi-Engine-NS is a game engine developed by Dodoi-Lab.
- * This file includes the necessary C++ and SDL2 libraries that are used throughout the dodoi-engine-ns.
- * It also defines constants for the paths to various types of assets.
- * 
- * @copyright Copyright (c) 2024, Dodoi-Lab
- * 
- */
+* @file Common.h
+* @author Hudson Schumaker
+* @brief Common includes and definitions for the Dodoi-Engine.
+* @version 1.0.0
+* 
+* Dodoi-Engine-NS is a game engine developed by Dodoi-Lab.
+* This file includes the necessary C++ and SDL2 libraries that are used throughout the dodoi-engine-ns.
+* It also defines constants for the paths to various types of assets.
+* @copyright Copyright (c) 2024, Dodoi-Lab
+*/
 #pragma once
-
 // C++ includes
 #include <set>
 #include <map>
@@ -43,27 +39,82 @@
 #include <SDL_image.h>
 #include <SDL_mixer.h>
 
+// Switch includes
+#include <switch.h>
+#include <unistd.h>
+#include <sys/stat.h>
+
 /**
- * @def AUDIO_FOLDER
- * @brief The path to the folder containing audio assets.
- */
+* @def AUDIO_FOLDER
+* @brief The path to the folder containing audio assets.
+*/
 #define AUDIO_FOLDER "./assets/audios/"
 
 /**
- * @def FONT_FOLDER
- * @brief The path to the folder containing font assets.
- */
+* @def FONT_FOLDER
+* @brief The path to the folder containing font assets.
+*/
 #define FONT_FOLDER "./assets/fonts/"
 
 /**
- * @def IMAGE_FOLDER
- * @brief The path to the folder containing image assets.
- */
+* @def IMAGE_FOLDER
+* @brief The path to the folder containing image assets.
+*/
 #define IMAGE_FOLDER "./assets/images/"
 
 /**
- * @def MAP_FOLDER
- * @brief The path to the folder containing map assets.
- */
+* @def MAP_FOLDER
+* @brief The path to the folder containing map assets.
+*/
 #define MAP_FOLDER "./assets/maps/"
 
+/**
+* @def SCREEN_WIDTH
+* @brief The width of the game screen in pixels.
+*/
+#define SCREEN_WIDTH 1280
+
+/**
+* @def SCREEN_H_WIDTH
+* @brief Half of the width of the game screen in pixels.
+*/
+#define SCREEN_H_WIDTH SCREEN_WIDTH/2
+
+/**
+* @def SCREEN_HEIGHT
+* @brief The height of the game screen in pixels.
+*/
+#define SCREEN_HEIGHT 720
+
+/**
+* @def SCREEN_H_HEIGHT
+* @brief Half of the height of the game screen in pixels.
+*/
+#define SCREEN_H_HEIGHT SCREEN_HEIGHT/2 
+
+/**
+* @class Common
+* @brief Contains common constants and definitions for the Dodoi-Engine.
+*/
+class Common final {
+public:
+    /**
+    * @brief The name of the engine.
+    */
+    inline static const char NAME[] = "dodoi-engine v.0.0.0-ns";
+
+    /**
+    * @brief The target frames per second for the game.
+    */
+    static const int FPS = 60;
+
+    /**
+    * @brief The number of milliseconds per frame at the target FPS.
+    */
+    static const int MILLISECS_PER_FRAME = 1000 / FPS;
+
+    /**
+    * @brief The value of Pi.
+    */
+    constexpr static float PI = 3.1415926535f;
+};
