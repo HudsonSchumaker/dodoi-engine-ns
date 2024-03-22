@@ -6,7 +6,7 @@
 \DoxyCodeLine{00010\ \textcolor{preprocessor}{\#pragma\ once}}
 \DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_common_8h}{../Common.h}}"{}}}
 \DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_tags_8h}{Tags.h}}"{}}}
-\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_component_8h}{Component.h}}"{}}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_component_8h}{component/Component.h}}"{}}}
 \DoxyCodeLine{00014\ }
 \DoxyCodeLine{00019\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_entity}{Entity}}\ final\ \{}
 \DoxyCodeLine{00020\ \textcolor{keyword}{private}:}
@@ -14,9 +14,9 @@
 \DoxyCodeLine{00022\ }
 \DoxyCodeLine{00023\ \textcolor{keyword}{public}:}
 \DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{long}\ \textcolor{keywordtype}{id}\ =\ 0;}
-\DoxyCodeLine{00025\ \ \ \ \ std::pair<Tag,\ Tag>\ tags\ =\ \{\ \mbox{\hyperlink{class_tags_a617ebec1c5ce539849442df234fca3f1}{Tags::getInstance}}()-\/>\mbox{\hyperlink{class_tags_a9d6bbd122ccea6d83c2e8c0c73bf043a}{getTagByName}}(\textcolor{stringliteral}{"{}defualt"{}}),\ \mbox{\hyperlink{class_tags_a617ebec1c5ce539849442df234fca3f1}{Tags::getInstance}}()-\/>\mbox{\hyperlink{class_tags_a9d6bbd122ccea6d83c2e8c0c73bf043a}{getTagByName}}(\textcolor{stringliteral}{"{}defualt"{}})\ \};}
+\DoxyCodeLine{00025\ \ \ \ \ std::pair<Tag,\ Tag>\ tags\ =\ \{\ \mbox{\hyperlink{class_tags_a617ebec1c5ce539849442df234fca3f1}{Tags::getInstance}}()-\/>\mbox{\hyperlink{class_tags_a9d6bbd122ccea6d83c2e8c0c73bf043a}{getTagByName}}(\textcolor{stringliteral}{"{}default"{}}),\ \mbox{\hyperlink{class_tags_a617ebec1c5ce539849442df234fca3f1}{Tags::getInstance}}()-\/>\mbox{\hyperlink{class_tags_a9d6bbd122ccea6d83c2e8c0c73bf043a}{getTagByName}}(\textcolor{stringliteral}{"{}default"{}})\ \};}
 \DoxyCodeLine{00026\ }
-\DoxyCodeLine{00027\ \ \ \ \ \mbox{\hyperlink{class_entity}{Entity}}()\ \{\}}
+\DoxyCodeLine{00027\ \ \ \ \ \mbox{\hyperlink{class_entity}{Entity}}(\textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{long}\ \textcolor{keywordtype}{id})\ :\ id(\textcolor{keywordtype}{id})\ \{\}}
 \DoxyCodeLine{00028\ \ \ \ \ \mbox{\hyperlink{class_entity}{\string~Entity}}()\ \{}
 \DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ deleteComponents();}
 \DoxyCodeLine{00030\ \ \ \ \ \}}
