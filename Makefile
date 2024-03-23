@@ -11,7 +11,7 @@ include $(DEVKITPRO)/libnx/switch_rules
 
 TARGET		:=	dodoi-engine-ns
 BUILD		:=	build
-SOURCES		:=	src src/engine src/engine/ecs src/engine/ecs/components src/engine/ecs/systems src/engine/gfx src/engine/io src/engine/physics src/engine/sfx
+SOURCES		:=	src src/engine src/engine/ecs src/engine/ecs/components src/engine/ecs/systems src/engine/gfx src/engine/io src/engine/math src/engine/physics src/engine/sfx
 DATA		:=	data
 INCLUDES	:=	include
 ROMFS		:=	romfs
@@ -24,7 +24,7 @@ APP_AUTHOR  := Dodoi Lab
 #---------------------------------------------------------------------------------
 ARCH	:=	-march=armv8-a+crc+crypto -mtune=cortex-a57 -mtp=soft -fPIE
 
-CFLAGS	:=	`$(PREFIX)pkg-config --cflags sdl2 SDL2_mixer SDL2_image SDL2_ttf` -Wall -O2 -ffunction-sections \
+CFLAGS	:=	`$(PREFIX)pkg-config --cflags sdl2 sdl2_image sdl2_mixer sdl2_ttf sdl2_gfx` -Wall -O2 -ffunction-sections \
 			$(ARCH) $(DEFINES)
 
 CFLAGS	+=	$(INCLUDE) -D__SWITCH__
@@ -34,7 +34,7 @@ CXXFLAGS	:= $(CFLAGS) -fno-exceptions
 ASFLAGS	:=	-g $(ARCH)
 LDFLAGS	=	-specs=$(DEVKITPRO)/libnx/switch.specs -g $(ARCH) -Wl,-Map,$(notdir $*.map)
 
-LIBS	:=	`$(PREFIX)pkg-config --libs sdl2 SDL2_mixer SDL2_image SDL2_ttf` \
+LIBS	:=	`$(PREFIX)pkg-config --libs sdl2 sdl2_image sdl2_mixer sdl2_ttf sdl2_gfx` \
 			-lnx
 
 #---------------------------------------------------------------------------------
