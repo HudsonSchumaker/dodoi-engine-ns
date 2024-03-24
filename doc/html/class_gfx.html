@@ -89,23 +89,463 @@ $(function() {
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a9dfbb666e2f64ccf98a45328a858a13e" id="r_a9dfbb666e2f64ccf98a45328a858a13e"><td class="memItemLeft" align="right" valign="top"><a id="a9dfbb666e2f64ccf98a45328a858a13e" name="a9dfbb666e2f64ccf98a45328a858a13e"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>setGfxContext</b> ()</td></tr>
+<tr class="memdesc:a9dfbb666e2f64ccf98a45328a858a13e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the SDL library and creates the SDL_Window and SDL_Renderer. <br /></td></tr>
 <tr class="separator:a9dfbb666e2f64ccf98a45328a858a13e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8e74aca9b083c5c58639b94f2f07e55d" id="r_a8e74aca9b083c5c58639b94f2f07e55d"><td class="memItemLeft" align="right" valign="top"><a id="a8e74aca9b083c5c58639b94f2f07e55d" name="a8e74aca9b083c5c58639b94f2f07e55d"></a>
-SDL_Window *&#160;</td><td class="memItemRight" valign="bottom"><b>getWindow</b> ()</td></tr>
+<tr class="memitem:a8e74aca9b083c5c58639b94f2f07e55d" id="r_a8e74aca9b083c5c58639b94f2f07e55d"><td class="memItemLeft" align="right" valign="top">SDL_Window *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8e74aca9b083c5c58639b94f2f07e55d">getWindow</a> ()</td></tr>
+<tr class="memdesc:a8e74aca9b083c5c58639b94f2f07e55d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the SDL_Window.  <br /></td></tr>
 <tr class="separator:a8e74aca9b083c5c58639b94f2f07e55d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aec8ecbe8f5e03115056672317a973d38" id="r_aec8ecbe8f5e03115056672317a973d38"><td class="memItemLeft" align="right" valign="top"><a id="aec8ecbe8f5e03115056672317a973d38" name="aec8ecbe8f5e03115056672317a973d38"></a>
-SDL_Renderer *&#160;</td><td class="memItemRight" valign="bottom"><b>getRenderer</b> ()</td></tr>
+<tr class="memitem:aec8ecbe8f5e03115056672317a973d38" id="r_aec8ecbe8f5e03115056672317a973d38"><td class="memItemLeft" align="right" valign="top">SDL_Renderer *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aec8ecbe8f5e03115056672317a973d38">getRenderer</a> ()</td></tr>
+<tr class="memdesc:aec8ecbe8f5e03115056672317a973d38"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the SDL_Renderer.  <br /></td></tr>
 <tr class="separator:aec8ecbe8f5e03115056672317a973d38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3454f8f5c236f195bf4c4edadb5b8614" id="r_a3454f8f5c236f195bf4c4edadb5b8614"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3454f8f5c236f195bf4c4edadb5b8614">showMouseCursor</a> (bool value)</td></tr>
+<tr class="memdesc:a3454f8f5c236f195bf4c4edadb5b8614"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shows or hides the mouse cursor.  <br /></td></tr>
+<tr class="separator:a3454f8f5c236f195bf4c4edadb5b8614"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52d8b8276eeb60de16a95a2b812ac5be" id="r_a52d8b8276eeb60de16a95a2b812ac5be"><td class="memItemLeft" align="right" valign="top">SDL_Texture *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a52d8b8276eeb60de16a95a2b812ac5be">createText</a> (std::string fontName, std::string text, short size, SDL_Color color)</td></tr>
+<tr class="memdesc:a52d8b8276eeb60de16a95a2b812ac5be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an SDL_Texture from a string of text.  <br /></td></tr>
+<tr class="separator:a52d8b8276eeb60de16a95a2b812ac5be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90619ed3b9f2215788930009d767acee" id="r_a90619ed3b9f2215788930009d767acee"><td class="memItemLeft" align="right" valign="top">SDL_Texture *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a90619ed3b9f2215788930009d767acee">loadTexture</a> (std::string name)</td></tr>
+<tr class="memdesc:a90619ed3b9f2215788930009d767acee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads an image file into an SDL_Texture.  <br /></td></tr>
+<tr class="separator:a90619ed3b9f2215788930009d767acee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaaf022dae46e58e6a0a0a31b3bf7f4cb" id="r_aaaf022dae46e58e6a0a0a31b3bf7f4cb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_dimension.html">Dimension</a>&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaaf022dae46e58e6a0a0a31b3bf7f4cb">getTextureSize</a> (SDL_Texture *texture)</td></tr>
+<tr class="memdesc:aaaf022dae46e58e6a0a0a31b3bf7f4cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the size of an SDL_Texture.  <br /></td></tr>
+<tr class="separator:aaaf022dae46e58e6a0a0a31b3bf7f4cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0921090f6d0d03bb1454900d79e3706" id="r_ac0921090f6d0d03bb1454900d79e3706"><td class="memItemLeft" align="right" valign="top">SDL_Rect&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac0921090f6d0d03bb1454900d79e3706">getTextureBounds</a> (SDL_Texture *texture)</td></tr>
+<tr class="memdesc:ac0921090f6d0d03bb1454900d79e3706"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the bounds of an SDL_Texture as an SDL_Rect.  <br /></td></tr>
+<tr class="separator:ac0921090f6d0d03bb1454900d79e3706"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a056cc7452d826c577ded98fca78db6ff" id="r_a056cc7452d826c577ded98fca78db6ff"><td class="memItemLeft" align="right" valign="top">SDL_FRect&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a056cc7452d826c577ded98fca78db6ff">getTextureFBounds</a> (SDL_Texture *texture)</td></tr>
+<tr class="memdesc:a056cc7452d826c577ded98fca78db6ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the bounds of an SDL_Texture as an SDL_FRect.  <br /></td></tr>
+<tr class="separator:a056cc7452d826c577ded98fca78db6ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0a319d4ee624ff22232ea001439f545" id="r_ac0a319d4ee624ff22232ea001439f545"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac0a319d4ee624ff22232ea001439f545">drawLine</a> (int x0, int y0, int x1, int y1, SDL_Color color)</td></tr>
+<tr class="memdesc:ac0a319d4ee624ff22232ea001439f545"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws a line on the renderer.  <br /></td></tr>
+<tr class="separator:ac0a319d4ee624ff22232ea001439f545"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93ba2f8d2f8413aba890f703270204e4" id="r_a93ba2f8d2f8413aba890f703270204e4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a93ba2f8d2f8413aba890f703270204e4">drawCircle</a> (int centerX, int centerY, int radius, SDL_Color color)</td></tr>
+<tr class="memdesc:a93ba2f8d2f8413aba890f703270204e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws a circle on the renderer.  <br /></td></tr>
+<tr class="separator:a93ba2f8d2f8413aba890f703270204e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa639e20fabf1c7b0146c5af16bd400d8" id="r_aa639e20fabf1c7b0146c5af16bd400d8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa639e20fabf1c7b0146c5af16bd400d8">drawDashedCircle</a> (int centerX, int centerY, int radius, int dashLength, SDL_Color color)</td></tr>
+<tr class="memdesc:aa639e20fabf1c7b0146c5af16bd400d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws a dashed circle on the renderer.  <br /></td></tr>
+<tr class="separator:aa639e20fabf1c7b0146c5af16bd400d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9a8a204b40178f29984d15e1e4c13bc" id="r_ab9a8a204b40178f29984d15e1e4c13bc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab9a8a204b40178f29984d15e1e4c13bc">drawBox</a> (SDL_Rect rect, SDL_Color color)</td></tr>
+<tr class="memdesc:ab9a8a204b40178f29984d15e1e4c13bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws a box on the renderer.  <br /></td></tr>
+<tr class="separator:ab9a8a204b40178f29984d15e1e4c13bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a626e3182389659a38ac64b9b5b7d8b0f" id="r_a626e3182389659a38ac64b9b5b7d8b0f"><td class="memItemLeft" align="right" valign="top"><a id="a626e3182389659a38ac64b9b5b7d8b0f" name="a626e3182389659a38ac64b9b5b7d8b0f"></a>
-static <a class="el" href="class_gfx.html">Gfx</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>getInstance</b> ()</td></tr>
+<tr class="memitem:a626e3182389659a38ac64b9b5b7d8b0f" id="r_a626e3182389659a38ac64b9b5b7d8b0f"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_gfx.html">Gfx</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a626e3182389659a38ac64b9b5b7d8b0f">getInstance</a> ()</td></tr>
+<tr class="memdesc:a626e3182389659a38ac64b9b5b7d8b0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the singleton instance of the <a class="el" href="class_gfx.html" title="The graphics hanlder class.">Gfx</a> class.  <br /></td></tr>
 <tr class="separator:a626e3182389659a38ac64b9b5b7d8b0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The graphics hanlder class. </p>
-</div><hr/>The documentation for this class was generated from the following files:<ul>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a52d8b8276eeb60de16a95a2b812ac5be" name="a52d8b8276eeb60de16a95a2b812ac5be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a52d8b8276eeb60de16a95a2b812ac5be">&#9670;&#160;</a></span>createText()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">SDL_Texture * Gfx::createText </td>
+          <td>(</td>
+          <td class="paramtype">std::string</td>          <td class="paramname"><span class="paramname"><em>fontName</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string</td>          <td class="paramname"><span class="paramname"><em>text</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">short</td>          <td class="paramname"><span class="paramname"><em>size</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SDL_Color</td>          <td class="paramname"><span class="paramname"><em>color</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Creates an SDL_Texture from a string of text. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fontName</td><td>The name of the font to use. </td></tr>
+    <tr><td class="paramname">text</td><td>The text to render. </td></tr>
+    <tr><td class="paramname">size</td><td>The size of the text. </td></tr>
+    <tr><td class="paramname">color</td><td>The color of the text. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Pointer to the created SDL_Texture. </dd></dl>
+
+</div>
+</div>
+<a id="ab9a8a204b40178f29984d15e1e4c13bc" name="ab9a8a204b40178f29984d15e1e4c13bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9a8a204b40178f29984d15e1e4c13bc">&#9670;&#160;</a></span>drawBox()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Gfx::drawBox </td>
+          <td>(</td>
+          <td class="paramtype">SDL_Rect</td>          <td class="paramname"><span class="paramname"><em>rect</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SDL_Color</td>          <td class="paramname"><span class="paramname"><em>color</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Draws a box on the renderer. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rect</td><td>The SDL_Rect defining the box. </td></tr>
+    <tr><td class="paramname">color</td><td>The color of the box. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a93ba2f8d2f8413aba890f703270204e4" name="a93ba2f8d2f8413aba890f703270204e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a93ba2f8d2f8413aba890f703270204e4">&#9670;&#160;</a></span>drawCircle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Gfx::drawCircle </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>centerX</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>centerY</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>radius</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SDL_Color</td>          <td class="paramname"><span class="paramname"><em>color</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Draws a circle on the renderer. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">centerX</td><td>The x-coordinate of the center of the circle. </td></tr>
+    <tr><td class="paramname">centerY</td><td>The y-coordinate of the center of the circle. </td></tr>
+    <tr><td class="paramname">radius</td><td>The radius of the circle. </td></tr>
+    <tr><td class="paramname">color</td><td>The color of the circle. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aa639e20fabf1c7b0146c5af16bd400d8" name="aa639e20fabf1c7b0146c5af16bd400d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa639e20fabf1c7b0146c5af16bd400d8">&#9670;&#160;</a></span>drawDashedCircle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Gfx::drawDashedCircle </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>centerX</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>centerY</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>radius</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>dashLength</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SDL_Color</td>          <td class="paramname"><span class="paramname"><em>color</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Draws a dashed circle on the renderer. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">centerX</td><td>The x-coordinate of the center of the circle. </td></tr>
+    <tr><td class="paramname">centerY</td><td>The y-coordinate of the center of the circle. </td></tr>
+    <tr><td class="paramname">radius</td><td>The radius of the circle. </td></tr>
+    <tr><td class="paramname">dashLength</td><td>The length of the dashes. </td></tr>
+    <tr><td class="paramname">color</td><td>The color of the circle. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ac0a319d4ee624ff22232ea001439f545" name="ac0a319d4ee624ff22232ea001439f545"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0a319d4ee624ff22232ea001439f545">&#9670;&#160;</a></span>drawLine()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Gfx::drawLine </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>x0</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>y0</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>x1</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>y1</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SDL_Color</td>          <td class="paramname"><span class="paramname"><em>color</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Draws a line on the renderer. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x0</td><td>The x-coordinate of the start point of the line. </td></tr>
+    <tr><td class="paramname">y0</td><td>The y-coordinate of the start point of the line. </td></tr>
+    <tr><td class="paramname">x1</td><td>The x-coordinate of the end point of the line. </td></tr>
+    <tr><td class="paramname">y1</td><td>The y-coordinate of the end point of the line. </td></tr>
+    <tr><td class="paramname">color</td><td>The color of the line. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a626e3182389659a38ac64b9b5b7d8b0f" name="a626e3182389659a38ac64b9b5b7d8b0f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a626e3182389659a38ac64b9b5b7d8b0f">&#9670;&#160;</a></span>getInstance()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_gfx.html">Gfx</a> * Gfx::getInstance </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the singleton instance of the <a class="el" href="class_gfx.html" title="The graphics hanlder class.">Gfx</a> class. </p>
+<dl class="section return"><dt>Returns</dt><dd>Pointer to the singleton instance. </dd></dl>
+
+</div>
+</div>
+<a id="aec8ecbe8f5e03115056672317a973d38" name="aec8ecbe8f5e03115056672317a973d38"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec8ecbe8f5e03115056672317a973d38">&#9670;&#160;</a></span>getRenderer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">SDL_Renderer * Gfx::getRenderer </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the SDL_Renderer. </p>
+<dl class="section return"><dt>Returns</dt><dd>Pointer to the SDL_Renderer. </dd></dl>
+
+</div>
+</div>
+<a id="ac0921090f6d0d03bb1454900d79e3706" name="ac0921090f6d0d03bb1454900d79e3706"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0921090f6d0d03bb1454900d79e3706">&#9670;&#160;</a></span>getTextureBounds()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">SDL_Rect Gfx::getTextureBounds </td>
+          <td>(</td>
+          <td class="paramtype">SDL_Texture *</td>          <td class="paramname"><span class="paramname"><em>texture</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the bounds of an SDL_Texture as an SDL_Rect. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">texture</td><td>Pointer to the SDL_Texture. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The bounds of the texture as an SDL_Rect. </dd></dl>
+
+</div>
+</div>
+<a id="a056cc7452d826c577ded98fca78db6ff" name="a056cc7452d826c577ded98fca78db6ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a056cc7452d826c577ded98fca78db6ff">&#9670;&#160;</a></span>getTextureFBounds()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">SDL_FRect Gfx::getTextureFBounds </td>
+          <td>(</td>
+          <td class="paramtype">SDL_Texture *</td>          <td class="paramname"><span class="paramname"><em>texture</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the bounds of an SDL_Texture as an SDL_FRect. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">texture</td><td>Pointer to the SDL_Texture. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The bounds of the texture as an SDL_FRect. </dd></dl>
+
+</div>
+</div>
+<a id="aaaf022dae46e58e6a0a0a31b3bf7f4cb" name="aaaf022dae46e58e6a0a0a31b3bf7f4cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaaf022dae46e58e6a0a0a31b3bf7f4cb">&#9670;&#160;</a></span>getTextureSize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_dimension.html">Dimension</a>&lt; int &gt; Gfx::getTextureSize </td>
+          <td>(</td>
+          <td class="paramtype">SDL_Texture *</td>          <td class="paramname"><span class="paramname"><em>texture</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the size of an SDL_Texture. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">texture</td><td>Pointer to the SDL_Texture. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The size of the texture as a Dimension&lt;int&gt;. </dd></dl>
+
+</div>
+</div>
+<a id="a8e74aca9b083c5c58639b94f2f07e55d" name="a8e74aca9b083c5c58639b94f2f07e55d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e74aca9b083c5c58639b94f2f07e55d">&#9670;&#160;</a></span>getWindow()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">SDL_Window * Gfx::getWindow </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the SDL_Window. </p>
+<dl class="section return"><dt>Returns</dt><dd>Pointer to the SDL_Window. </dd></dl>
+
+</div>
+</div>
+<a id="a90619ed3b9f2215788930009d767acee" name="a90619ed3b9f2215788930009d767acee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a90619ed3b9f2215788930009d767acee">&#9670;&#160;</a></span>loadTexture()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">SDL_Texture * Gfx::loadTexture </td>
+          <td>(</td>
+          <td class="paramtype">std::string</td>          <td class="paramname"><span class="paramname"><em>name</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Loads an image file into an SDL_Texture. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>The name (path) of the image file. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Pointer to the loaded SDL_Texture. </dd></dl>
+
+</div>
+</div>
+<a id="a3454f8f5c236f195bf4c4edadb5b8614" name="a3454f8f5c236f195bf4c4edadb5b8614"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3454f8f5c236f195bf4c4edadb5b8614">&#9670;&#160;</a></span>showMouseCursor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Gfx::showMouseCursor </td>
+          <td>(</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>value</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Shows or hides the mouse cursor. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>If true, the mouse cursor is shown. If false, the mouse cursor is hidden. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li>dodoi-engine-ns/src/engine/gfx/<a class="el" href="_gfx_8h_source.html">Gfx.h</a></li>
 <li>dodoi-engine-ns/src/engine/gfx/<b>Gfx.cpp</b></li>
 </ul>

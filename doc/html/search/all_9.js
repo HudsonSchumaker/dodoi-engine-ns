@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['name_0',['NAME',['../class_common.html#a1f16971f6660be0df79f7351f0f40a40',1,'Common']]]
+  ['killentity_0',['killEntity',['../class_entity_manager.html#aabf4e360fe0449c88d9a36e1906f21e4',1,'EntityManager']]]
 ];

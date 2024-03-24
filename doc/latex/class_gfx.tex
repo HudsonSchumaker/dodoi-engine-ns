@@ -14,23 +14,277 @@ The graphics hanlder class.
 \item 
 \Hypertarget{class_gfx_a9dfbb666e2f64ccf98a45328a858a13e}\label{class_gfx_a9dfbb666e2f64ccf98a45328a858a13e} 
 void {\bfseries set\+Gfx\+Context} ()
-\item 
-\Hypertarget{class_gfx_a8e74aca9b083c5c58639b94f2f07e55d}\label{class_gfx_a8e74aca9b083c5c58639b94f2f07e55d} 
-SDL\+\_\+\+Window \texorpdfstring{$\ast$}{*} {\bfseries get\+Window} ()
-\item 
-\Hypertarget{class_gfx_aec8ecbe8f5e03115056672317a973d38}\label{class_gfx_aec8ecbe8f5e03115056672317a973d38} 
-SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*} {\bfseries get\+Renderer} ()
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Initializes the SDL library and creates the SDL\+\_\+\+Window and SDL\+\_\+\+Renderer. \end{DoxyCompactList}\item 
+SDL\+\_\+\+Window \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_gfx_a8e74aca9b083c5c58639b94f2f07e55d}{get\+Window}} ()
+\begin{DoxyCompactList}\small\item\em Returns the SDL\+\_\+\+Window. \end{DoxyCompactList}\item 
+SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_gfx_aec8ecbe8f5e03115056672317a973d38}{get\+Renderer}} ()
+\begin{DoxyCompactList}\small\item\em Returns the SDL\+\_\+\+Renderer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_gfx_a3454f8f5c236f195bf4c4edadb5b8614}{show\+Mouse\+Cursor}} (bool value)
+\begin{DoxyCompactList}\small\item\em Shows or hides the mouse cursor. \end{DoxyCompactList}\item 
+SDL\+\_\+\+Texture \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_gfx_a52d8b8276eeb60de16a95a2b812ac5be}{create\+Text}} (std\+::string font\+Name, std\+::string text, short size, SDL\+\_\+\+Color color)
+\begin{DoxyCompactList}\small\item\em Creates an SDL\+\_\+\+Texture from a string of text. \end{DoxyCompactList}\item 
+SDL\+\_\+\+Texture \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_gfx_a90619ed3b9f2215788930009d767acee}{load\+Texture}} (std\+::string name)
+\begin{DoxyCompactList}\small\item\em Loads an image file into an SDL\+\_\+\+Texture. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_dimension}{Dimension}}$<$ int $>$ \mbox{\hyperlink{class_gfx_aaaf022dae46e58e6a0a0a31b3bf7f4cb}{get\+Texture\+Size}} (SDL\+\_\+\+Texture \texorpdfstring{$\ast$}{*}texture)
+\begin{DoxyCompactList}\small\item\em Returns the size of an SDL\+\_\+\+Texture. \end{DoxyCompactList}\item 
+SDL\+\_\+\+Rect \mbox{\hyperlink{class_gfx_ac0921090f6d0d03bb1454900d79e3706}{get\+Texture\+Bounds}} (SDL\+\_\+\+Texture \texorpdfstring{$\ast$}{*}texture)
+\begin{DoxyCompactList}\small\item\em Returns the bounds of an SDL\+\_\+\+Texture as an SDL\+\_\+\+Rect. \end{DoxyCompactList}\item 
+SDL\+\_\+\+FRect \mbox{\hyperlink{class_gfx_a056cc7452d826c577ded98fca78db6ff}{get\+Texture\+FBounds}} (SDL\+\_\+\+Texture \texorpdfstring{$\ast$}{*}texture)
+\begin{DoxyCompactList}\small\item\em Returns the bounds of an SDL\+\_\+\+Texture as an SDL\+\_\+\+FRect. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_gfx_ac0a319d4ee624ff22232ea001439f545}{draw\+Line}} (int x0, int y0, int x1, int y1, SDL\+\_\+\+Color color)
+\begin{DoxyCompactList}\small\item\em Draws a line on the renderer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_gfx_a93ba2f8d2f8413aba890f703270204e4}{draw\+Circle}} (int centerX, int centerY, int radius, SDL\+\_\+\+Color color)
+\begin{DoxyCompactList}\small\item\em Draws a circle on the renderer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_gfx_aa639e20fabf1c7b0146c5af16bd400d8}{draw\+Dashed\+Circle}} (int centerX, int centerY, int radius, int dash\+Length, SDL\+\_\+\+Color color)
+\begin{DoxyCompactList}\small\item\em Draws a dashed circle on the renderer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_gfx_ab9a8a204b40178f29984d15e1e4c13bc}{draw\+Box}} (SDL\+\_\+\+Rect rect, SDL\+\_\+\+Color color)
+\begin{DoxyCompactList}\small\item\em Draws a box on the renderer. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\Hypertarget{class_gfx_a626e3182389659a38ac64b9b5b7d8b0f}\label{class_gfx_a626e3182389659a38ac64b9b5b7d8b0f} 
-static \mbox{\hyperlink{class_gfx}{Gfx}} \texorpdfstring{$\ast$}{*} {\bfseries get\+Instance} ()
-\end{DoxyCompactItemize}
+static \mbox{\hyperlink{class_gfx}{Gfx}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_gfx_a626e3182389659a38ac64b9b5b7d8b0f}{get\+Instance}} ()
+\begin{DoxyCompactList}\small\item\em Returns the singleton instance of the \doxylink{class_gfx}{Gfx} class. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
 The graphics hanlder class. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_gfx_a52d8b8276eeb60de16a95a2b812ac5be}\label{class_gfx_a52d8b8276eeb60de16a95a2b812ac5be} 
+\index{Gfx@{Gfx}!createText@{createText}}
+\index{createText@{createText}!Gfx@{Gfx}}
+\doxysubsubsection{\texorpdfstring{createText()}{createText()}}
+{\footnotesize\ttfamily SDL\+\_\+\+Texture \texorpdfstring{$\ast$}{*} Gfx\+::create\+Text (\begin{DoxyParamCaption}\item[{std\+::string}]{font\+Name,  }\item[{std\+::string}]{text,  }\item[{short}]{size,  }\item[{SDL\+\_\+\+Color}]{color }\end{DoxyParamCaption})}
+
+
+
+Creates an SDL\+\_\+\+Texture from a string of text. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em font\+Name} & The name of the font to use. \\
+\hline
+{\em text} & The text to render. \\
+\hline
+{\em size} & The size of the text. \\
+\hline
+{\em color} & The color of the text. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer to the created SDL\+\_\+\+Texture. 
+\end{DoxyReturn}
+\Hypertarget{class_gfx_ab9a8a204b40178f29984d15e1e4c13bc}\label{class_gfx_ab9a8a204b40178f29984d15e1e4c13bc} 
+\index{Gfx@{Gfx}!drawBox@{drawBox}}
+\index{drawBox@{drawBox}!Gfx@{Gfx}}
+\doxysubsubsection{\texorpdfstring{drawBox()}{drawBox()}}
+{\footnotesize\ttfamily void Gfx\+::draw\+Box (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Rect}]{rect,  }\item[{SDL\+\_\+\+Color}]{color }\end{DoxyParamCaption})}
+
+
+
+Draws a box on the renderer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rect} & The SDL\+\_\+\+Rect defining the box. \\
+\hline
+{\em color} & The color of the box. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_gfx_a93ba2f8d2f8413aba890f703270204e4}\label{class_gfx_a93ba2f8d2f8413aba890f703270204e4} 
+\index{Gfx@{Gfx}!drawCircle@{drawCircle}}
+\index{drawCircle@{drawCircle}!Gfx@{Gfx}}
+\doxysubsubsection{\texorpdfstring{drawCircle()}{drawCircle()}}
+{\footnotesize\ttfamily void Gfx\+::draw\+Circle (\begin{DoxyParamCaption}\item[{int}]{centerX,  }\item[{int}]{centerY,  }\item[{int}]{radius,  }\item[{SDL\+\_\+\+Color}]{color }\end{DoxyParamCaption})}
+
+
+
+Draws a circle on the renderer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em centerX} & The x-\/coordinate of the center of the circle. \\
+\hline
+{\em centerY} & The y-\/coordinate of the center of the circle. \\
+\hline
+{\em radius} & The radius of the circle. \\
+\hline
+{\em color} & The color of the circle. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_gfx_aa639e20fabf1c7b0146c5af16bd400d8}\label{class_gfx_aa639e20fabf1c7b0146c5af16bd400d8} 
+\index{Gfx@{Gfx}!drawDashedCircle@{drawDashedCircle}}
+\index{drawDashedCircle@{drawDashedCircle}!Gfx@{Gfx}}
+\doxysubsubsection{\texorpdfstring{drawDashedCircle()}{drawDashedCircle()}}
+{\footnotesize\ttfamily void Gfx\+::draw\+Dashed\+Circle (\begin{DoxyParamCaption}\item[{int}]{centerX,  }\item[{int}]{centerY,  }\item[{int}]{radius,  }\item[{int}]{dash\+Length,  }\item[{SDL\+\_\+\+Color}]{color }\end{DoxyParamCaption})}
+
+
+
+Draws a dashed circle on the renderer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em centerX} & The x-\/coordinate of the center of the circle. \\
+\hline
+{\em centerY} & The y-\/coordinate of the center of the circle. \\
+\hline
+{\em radius} & The radius of the circle. \\
+\hline
+{\em dash\+Length} & The length of the dashes. \\
+\hline
+{\em color} & The color of the circle. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_gfx_ac0a319d4ee624ff22232ea001439f545}\label{class_gfx_ac0a319d4ee624ff22232ea001439f545} 
+\index{Gfx@{Gfx}!drawLine@{drawLine}}
+\index{drawLine@{drawLine}!Gfx@{Gfx}}
+\doxysubsubsection{\texorpdfstring{drawLine()}{drawLine()}}
+{\footnotesize\ttfamily void Gfx\+::draw\+Line (\begin{DoxyParamCaption}\item[{int}]{x0,  }\item[{int}]{y0,  }\item[{int}]{x1,  }\item[{int}]{y1,  }\item[{SDL\+\_\+\+Color}]{color }\end{DoxyParamCaption})}
+
+
+
+Draws a line on the renderer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x0} & The x-\/coordinate of the start point of the line. \\
+\hline
+{\em y0} & The y-\/coordinate of the start point of the line. \\
+\hline
+{\em x1} & The x-\/coordinate of the end point of the line. \\
+\hline
+{\em y1} & The y-\/coordinate of the end point of the line. \\
+\hline
+{\em color} & The color of the line. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_gfx_a626e3182389659a38ac64b9b5b7d8b0f}\label{class_gfx_a626e3182389659a38ac64b9b5b7d8b0f} 
+\index{Gfx@{Gfx}!getInstance@{getInstance}}
+\index{getInstance@{getInstance}!Gfx@{Gfx}}
+\doxysubsubsection{\texorpdfstring{getInstance()}{getInstance()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_gfx}{Gfx}} \texorpdfstring{$\ast$}{*} Gfx\+::get\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns the singleton instance of the \doxylink{class_gfx}{Gfx} class. 
+
+\begin{DoxyReturn}{Returns}
+Pointer to the singleton instance. 
+\end{DoxyReturn}
+\Hypertarget{class_gfx_aec8ecbe8f5e03115056672317a973d38}\label{class_gfx_aec8ecbe8f5e03115056672317a973d38} 
+\index{Gfx@{Gfx}!getRenderer@{getRenderer}}
+\index{getRenderer@{getRenderer}!Gfx@{Gfx}}
+\doxysubsubsection{\texorpdfstring{getRenderer()}{getRenderer()}}
+{\footnotesize\ttfamily SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*} Gfx\+::get\+Renderer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the SDL\+\_\+\+Renderer. 
+
+\begin{DoxyReturn}{Returns}
+Pointer to the SDL\+\_\+\+Renderer. 
+\end{DoxyReturn}
+\Hypertarget{class_gfx_ac0921090f6d0d03bb1454900d79e3706}\label{class_gfx_ac0921090f6d0d03bb1454900d79e3706} 
+\index{Gfx@{Gfx}!getTextureBounds@{getTextureBounds}}
+\index{getTextureBounds@{getTextureBounds}!Gfx@{Gfx}}
+\doxysubsubsection{\texorpdfstring{getTextureBounds()}{getTextureBounds()}}
+{\footnotesize\ttfamily SDL\+\_\+\+Rect Gfx\+::get\+Texture\+Bounds (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Texture \texorpdfstring{$\ast$}{*}}]{texture }\end{DoxyParamCaption})}
+
+
+
+Returns the bounds of an SDL\+\_\+\+Texture as an SDL\+\_\+\+Rect. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em texture} & Pointer to the SDL\+\_\+\+Texture. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The bounds of the texture as an SDL\+\_\+\+Rect. 
+\end{DoxyReturn}
+\Hypertarget{class_gfx_a056cc7452d826c577ded98fca78db6ff}\label{class_gfx_a056cc7452d826c577ded98fca78db6ff} 
+\index{Gfx@{Gfx}!getTextureFBounds@{getTextureFBounds}}
+\index{getTextureFBounds@{getTextureFBounds}!Gfx@{Gfx}}
+\doxysubsubsection{\texorpdfstring{getTextureFBounds()}{getTextureFBounds()}}
+{\footnotesize\ttfamily SDL\+\_\+\+FRect Gfx\+::get\+Texture\+FBounds (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Texture \texorpdfstring{$\ast$}{*}}]{texture }\end{DoxyParamCaption})}
+
+
+
+Returns the bounds of an SDL\+\_\+\+Texture as an SDL\+\_\+\+FRect. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em texture} & Pointer to the SDL\+\_\+\+Texture. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The bounds of the texture as an SDL\+\_\+\+FRect. 
+\end{DoxyReturn}
+\Hypertarget{class_gfx_aaaf022dae46e58e6a0a0a31b3bf7f4cb}\label{class_gfx_aaaf022dae46e58e6a0a0a31b3bf7f4cb} 
+\index{Gfx@{Gfx}!getTextureSize@{getTextureSize}}
+\index{getTextureSize@{getTextureSize}!Gfx@{Gfx}}
+\doxysubsubsection{\texorpdfstring{getTextureSize()}{getTextureSize()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_dimension}{Dimension}}$<$ int $>$ Gfx\+::get\+Texture\+Size (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Texture \texorpdfstring{$\ast$}{*}}]{texture }\end{DoxyParamCaption})}
+
+
+
+Returns the size of an SDL\+\_\+\+Texture. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em texture} & Pointer to the SDL\+\_\+\+Texture. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The size of the texture as a Dimension$<$int$>$. 
+\end{DoxyReturn}
+\Hypertarget{class_gfx_a8e74aca9b083c5c58639b94f2f07e55d}\label{class_gfx_a8e74aca9b083c5c58639b94f2f07e55d} 
+\index{Gfx@{Gfx}!getWindow@{getWindow}}
+\index{getWindow@{getWindow}!Gfx@{Gfx}}
+\doxysubsubsection{\texorpdfstring{getWindow()}{getWindow()}}
+{\footnotesize\ttfamily SDL\+\_\+\+Window \texorpdfstring{$\ast$}{*} Gfx\+::get\+Window (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the SDL\+\_\+\+Window. 
+
+\begin{DoxyReturn}{Returns}
+Pointer to the SDL\+\_\+\+Window. 
+\end{DoxyReturn}
+\Hypertarget{class_gfx_a90619ed3b9f2215788930009d767acee}\label{class_gfx_a90619ed3b9f2215788930009d767acee} 
+\index{Gfx@{Gfx}!loadTexture@{loadTexture}}
+\index{loadTexture@{loadTexture}!Gfx@{Gfx}}
+\doxysubsubsection{\texorpdfstring{loadTexture()}{loadTexture()}}
+{\footnotesize\ttfamily SDL\+\_\+\+Texture \texorpdfstring{$\ast$}{*} Gfx\+::load\+Texture (\begin{DoxyParamCaption}\item[{std\+::string}]{name }\end{DoxyParamCaption})}
+
+
+
+Loads an image file into an SDL\+\_\+\+Texture. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name (path) of the image file. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer to the loaded SDL\+\_\+\+Texture. 
+\end{DoxyReturn}
+\Hypertarget{class_gfx_a3454f8f5c236f195bf4c4edadb5b8614}\label{class_gfx_a3454f8f5c236f195bf4c4edadb5b8614} 
+\index{Gfx@{Gfx}!showMouseCursor@{showMouseCursor}}
+\index{showMouseCursor@{showMouseCursor}!Gfx@{Gfx}}
+\doxysubsubsection{\texorpdfstring{showMouseCursor()}{showMouseCursor()}}
+{\footnotesize\ttfamily void Gfx\+::show\+Mouse\+Cursor (\begin{DoxyParamCaption}\item[{bool}]{value }\end{DoxyParamCaption})}
+
+
+
+Shows or hides the mouse cursor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & If true, the mouse cursor is shown. If false, the mouse cursor is hidden. \\
+\hline
+\end{DoxyParams}
+
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 

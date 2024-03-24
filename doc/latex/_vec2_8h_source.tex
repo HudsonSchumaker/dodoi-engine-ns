@@ -1,5 +1,5 @@
 \doxysection{Vec2.\+h}
-\hypertarget{_vec2_8h_source}{}\label{_vec2_8h_source}\index{dodoi-\/engine-\/ns/src/engine/physics/Vec2.h@{dodoi-\/engine-\/ns/src/engine/physics/Vec2.h}}
+\hypertarget{_vec2_8h_source}{}\label{_vec2_8h_source}\index{dodoi-\/engine-\/ns/src/engine/math/Vec2.h@{dodoi-\/engine-\/ns/src/engine/math/Vec2.h}}
 \mbox{\hyperlink{_vec2_8h}{Go to the documentation of this file.}}
 \begin{DoxyCode}{0}
 \DoxyCodeLine{00001\ }
@@ -12,6 +12,80 @@
 \DoxyCodeLine{00021\ \ \ \ \ \mbox{\hyperlink{class_vec2}{Vec2}}(\textcolor{keywordtype}{float}\ value);}
 \DoxyCodeLine{00022\ \ \ \ \ \mbox{\hyperlink{class_vec2}{Vec2}}(\textcolor{keywordtype}{float}\ x,\ \textcolor{keywordtype}{float}\ y);}
 \DoxyCodeLine{00023\ \ \ \ \ \mbox{\hyperlink{class_vec2}{\string~Vec2}}()\ \{\}}
-\DoxyCodeLine{00024\ \};}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{class_vec2}{Vec2}}\ \mbox{\hyperlink{class_vec2_a128c1d2b4b11ea7b0491dc5987b2a2c4}{foward}}()\ \{}
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_vec2}{Vec2}}(1.0f,\ 0.0f);}
+\DoxyCodeLine{00031\ \ \ \ \ \}}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{class_vec2}{Vec2}}\ \mbox{\hyperlink{class_vec2_abf0374a029f88c54c86dab5fa29b7ffe}{backward}}()\ \{}
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_vec2}{Vec2}}(-\/1.0f,\ 0.0f);}
+\DoxyCodeLine{00039\ \ \ \ \ \}}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{class_vec2}{Vec2}}\ \mbox{\hyperlink{class_vec2_a4e98ab87f027bd6e1828349355e626ec}{up}}()\ \{}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_vec2}{Vec2}}(0.0,\ -\/1.0f);}
+\DoxyCodeLine{00047\ \ \ \ \ \}}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00053\ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{class_vec2}{Vec2}}\ \mbox{\hyperlink{class_vec2_a91d1d1fc83ab700b83ff0f311501f247}{down}}()\ \{}
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_vec2}{Vec2}}(0.0f,\ 1.0f);}
+\DoxyCodeLine{00055\ \ \ \ \ \}}
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00061\ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{class_vec2}{Vec2}}\ \mbox{\hyperlink{class_vec2_acea8cb761ff774c939b9460a820998a4}{zero}}()\ \{}
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_vec2}{Vec2}}(0.0f,\ 0.0f);}
+\DoxyCodeLine{00063\ \ \ \ \ \}}
+\DoxyCodeLine{00064\ }
+\DoxyCodeLine{00069\ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{class_vec2}{Vec2}}\ \mbox{\hyperlink{class_vec2_abcdd1b939496182921714e9b39f1c7f1}{one}}()\ \{}
+\DoxyCodeLine{00070\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_vec2}{Vec2}}(1.0f,\ 1.0f);}
+\DoxyCodeLine{00071\ \ \ \ \ \}}
+\DoxyCodeLine{00072\ }
+\DoxyCodeLine{00077\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_vec2_ad201f9c3a32ac3e34d3a59059b0e9c36}{add}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_vec2}{Vec2}}\&\ b);\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ a.add(b)}}
+\DoxyCodeLine{00078\ }
+\DoxyCodeLine{00083\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_vec2_aa13f47eeb7dff3abc9ae7a931e081697}{sub}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_vec2}{Vec2}}\&\ b);\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ a.sub(b)}}
+\DoxyCodeLine{00084\ }
+\DoxyCodeLine{00089\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_vec2_a212a75b69cd6ca8f50eae90e8643551b}{scale}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{float}\ n);\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ a.scale(n)}}
+\DoxyCodeLine{00090\ }
+\DoxyCodeLine{00096\ \ \ \ \ \mbox{\hyperlink{class_vec2}{Vec2}}\ \mbox{\hyperlink{class_vec2_a4a2574b556510bd6ec633dd873643608}{rotate}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{class_vec2_a7ed5c7e955797827bf92b8e342c18355}{angle}})\ \textcolor{keyword}{const};\ \ \ \ \textcolor{comment}{//\ a.rotate(angle)}}
+\DoxyCodeLine{00097\ }
+\DoxyCodeLine{00102\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{class_vec2_afdf4c645f0df071759a34d312c50aa3b}{magnitude}}()\ \textcolor{keyword}{const};\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ a.magnitude()}}
+\DoxyCodeLine{00103\ }
+\DoxyCodeLine{00108\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{class_vec2_ac0374cd653227fd4ed4f5a752e9c467e}{magnitudeSquared}}()\ \textcolor{keyword}{const};\ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ a.magnitudeSquared()}}
+\DoxyCodeLine{00109\ }
+\DoxyCodeLine{00114\ \ \ \ \ \mbox{\hyperlink{class_vec2}{Vec2}}\&\ \mbox{\hyperlink{class_vec2_aadca70afd11794c024aad558bf7e032a}{normalize}}();\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ a.normalize()}}
+\DoxyCodeLine{00115\ }
+\DoxyCodeLine{00120\ \ \ \ \ \mbox{\hyperlink{class_vec2}{Vec2}}\ \mbox{\hyperlink{class_vec2_a5c51b1a77f35f79a369b162892a4df11}{unitVector}}()\ \textcolor{keyword}{const};\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ a.unitVector()}}
+\DoxyCodeLine{00121\ }
+\DoxyCodeLine{00126\ \ \ \ \ \mbox{\hyperlink{class_vec2}{Vec2}}\ \mbox{\hyperlink{class_vec2_a3a90a064b7a12818e9884fcb9842dacb}{normal}}()\ \textcolor{keyword}{const};\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ n\ =\ a.normal()}}
+\DoxyCodeLine{00127\ }
+\DoxyCodeLine{00133\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{class_vec2_a9f1993e097c51cbc2680381d9e39c3aa}{dot}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_vec2}{Vec2}}\&\ b)\ \textcolor{keyword}{const};\ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ a.dot(b)}}
+\DoxyCodeLine{00134\ }
+\DoxyCodeLine{00140\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{class_vec2_a16083e0c4265d906679404b1cf4fff02}{cross}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_vec2}{Vec2}}\&\ b)\ \textcolor{keyword}{const};\ \ \ \ \ \ \ \ \textcolor{comment}{//\ a.cross(b)}}
+\DoxyCodeLine{00141\ }
+\DoxyCodeLine{00147\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{class_vec2_a1aeb15891789dcc54f694a9f57f60191}{distance}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_vec2}{Vec2}}\&\ a)\ \textcolor{keyword}{const};\ \ \ \ \ \textcolor{comment}{//\ b.distance(a)}}
+\DoxyCodeLine{00148\ }
+\DoxyCodeLine{00154\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{class_vec2_a7ed5c7e955797827bf92b8e342c18355}{angle}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_vec2}{Vec2}}\&\ b)\ \textcolor{keyword}{const};\ \ \ \ \ \ \ \ \textcolor{comment}{//\ a.angle(b)}}
+\DoxyCodeLine{00155\ }
+\DoxyCodeLine{00161\ \ \ \ \ \mbox{\hyperlink{class_vec2}{Vec2}}\&\ \mbox{\hyperlink{class_vec2_abdc87157732ecbbf02a80866ec9e0060}{operator\ =\ }}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_vec2}{Vec2}}\&\ b);\ \ \ \ \ \ \ \ \textcolor{comment}{//\ a\ =\ b}}
+\DoxyCodeLine{00162\ }
+\DoxyCodeLine{00168\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_vec2_a3f6c71e756869c6a67c906e228aef31a}{operator\ ==\ }}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_vec2}{Vec2}}\&\ b)\ \textcolor{keyword}{const};\ \ \textcolor{comment}{//\ a\ ==\ b}}
+\DoxyCodeLine{00169\ }
+\DoxyCodeLine{00175\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_vec2_add67e938c12afb04e7870ba2a81ee43c}{operator\ !=\ }}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_vec2}{Vec2}}\&\ b)\ \textcolor{keyword}{const};\ \ \textcolor{comment}{//\ a\ !=\ b}}
+\DoxyCodeLine{00176\ }
+\DoxyCodeLine{00182\ \ \ \ \ \mbox{\hyperlink{class_vec2}{Vec2}}\ \mbox{\hyperlink{class_vec2_aa6851a8715bf7fc979eb930af8304d07}{operator\ +\ }}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_vec2}{Vec2}}\&\ b)\ \textcolor{keyword}{const};\ \ \ \textcolor{comment}{//\ a\ +\ b}}
+\DoxyCodeLine{00183\ }
+\DoxyCodeLine{00189\ \ \ \ \ \mbox{\hyperlink{class_vec2}{Vec2}}\ \mbox{\hyperlink{class_vec2_a76c6a5ae5f82c674b0dc2a97dc2f55c7}{operator\ -\/\ }}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_vec2}{Vec2}}\&\ b)\ \textcolor{keyword}{const};\ \ \ \textcolor{comment}{//\ a\ -\/\ b}}
+\DoxyCodeLine{00190\ }
+\DoxyCodeLine{00196\ \ \ \ \ \mbox{\hyperlink{class_vec2}{Vec2}}\ \mbox{\hyperlink{class_vec2_a7c385d148abc844e37c9d7e0f8b2ea51}{operator\ *\ }}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{float}\ n)\ \textcolor{keyword}{const};\ \ \ \textcolor{comment}{//\ a\ *\ n}}
+\DoxyCodeLine{00197\ }
+\DoxyCodeLine{00203\ \ \ \ \ \mbox{\hyperlink{class_vec2}{Vec2}}\ \mbox{\hyperlink{class_vec2_ad3f6d88d5ed3f3fde41d5c54bec73f54}{operator\ /\ }}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{float}\ n)\ \textcolor{keyword}{const};\ \ \ \textcolor{comment}{//\ a\ /\ n}}
+\DoxyCodeLine{00204\ }
+\DoxyCodeLine{00209\ \ \ \ \ \mbox{\hyperlink{class_vec2}{Vec2}}\ \mbox{\hyperlink{class_vec2_a76c6a5ae5f82c674b0dc2a97dc2f55c7}{operator\ -\/\ }}();\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ -\/a}}
+\DoxyCodeLine{00210\ }
+\DoxyCodeLine{00216\ \ \ \ \ \mbox{\hyperlink{class_vec2}{Vec2}}\&\ \mbox{\hyperlink{class_vec2_a0a01aca42d3fac106bdd8bb91acea0dd}{operator\ +=\ }}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_vec2}{Vec2}}\&\ b);\ \ \ \ \ \ \ \textcolor{comment}{//\ a\ +=\ b}}
+\DoxyCodeLine{00217\ }
+\DoxyCodeLine{00223\ \ \ \ \ \mbox{\hyperlink{class_vec2}{Vec2}}\&\ \mbox{\hyperlink{class_vec2_a7a361c5a0aba6e8fe0dcf6105f17a9f5}{operator\ -\/=\ }}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_vec2}{Vec2}}\&\ b);\ \ \ \ \ \ \ \textcolor{comment}{//\ a\ -\/=\ b}}
+\DoxyCodeLine{00224\ }
+\DoxyCodeLine{00230\ \ \ \ \ \mbox{\hyperlink{class_vec2}{Vec2}}\&\ \mbox{\hyperlink{class_vec2_a61f1baf44850ab1b93c0747c3b77836d}{operator\ *=\ }}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{float}\ n);\ \ \ \ \ \ \ \textcolor{comment}{//\ a\ *=\ n}}
+\DoxyCodeLine{00231\ }
+\DoxyCodeLine{00237\ \ \ \ \ \mbox{\hyperlink{class_vec2}{Vec2}}\&\ \mbox{\hyperlink{class_vec2_a9cd63cfb68b920598dd306669d70e3ca}{operator\ /=\ }}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{float}\ n);\ \ \ \ \ \ \ \textcolor{comment}{//\ a\ /=\ n}}
+\DoxyCodeLine{00238\ \};}
 
 \end{DoxyCode}
