@@ -33,6 +33,38 @@
                 ],
                 "limitSymbolsToIncludedHeaders": true
             }
+        },
+        {
+            "name": "x64",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "c:/devkitPro/portlibs/switch/include/**",
+                "c:/devkitPro/portlibs/switch/include/SDL2/**",
+                "c:/devkitPro/libnx/include/**",
+                "c:/devkitPro/devkitA64/aarch64-none-elf/include/**",
+                "c:/devkitPro/devkitA64/aarch64-none-elf/include/c++/13.2.0/**"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ],
+            "compilerPath": "c:/devkitPro/devkitA64/bin/aarch64-none-elf-g++",
+            "cStandard": "c17",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "windows-gcc-x64",
+            "mergeConfigurations": false,
+            "browse": {
+                "path": [
+                    "${workspaceFolder}/**",
+                    "c:/devkitPro/portlibs/switch/include/**",
+                    "c:/devkitPro/portlibs/switch/include/SDL2/**",
+                    "c:/devkitPro/libnx/include/**",
+                    "c:/devkitPro/devkitA64/aarch64-none-elf/include/**",
+                    "c:/devkitPro/devkitA64/aarch64-none-elf/include/c++/13.2.0/**"
+                ],
+                "limitSymbolsToIncludedHeaders": true
+            }
         }
     ],
     "version": 4
