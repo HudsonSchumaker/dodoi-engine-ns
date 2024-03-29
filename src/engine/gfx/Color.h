@@ -71,12 +71,44 @@ public:
     */
     static Uint32 createARGB(int a, int r, int g, int b);
 
+    /**
+    * @brief Returns the hexadecimal representation of the current color in RGBA format.
+    * @return The hexadecimal representation of the current color.
+    */
     Uint32 getHexRGBA();
+
+    /**
+    * @brief Returns the hexadecimal representation of the given SDL_Color in RGBA format.
+    * @param color The SDL_Color to convert.
+    * @return The hexadecimal representation of the given color.
+    */
     Uint32 getHexRGBA(SDL_Color color);
+
+    /**
+    * @brief Returns the hexadecimal representation of the current color in ARGB format.
+    * @return The hexadecimal representation of the current color.
+    */
     Uint32 getHexARGB();
+
+    /**
+    * @brief Returns the hexadecimal representation of the given SDL_Color in ARGB format.
+    * @param color The SDL_Color to convert.
+    * @return The hexadecimal representation of the given color.
+    */
     Uint32 getHexARGB(SDL_Color color);
 
+    /**
+    * @brief Converts a hexadecimal color in RGBA format to an SDL_Color.
+    * @param hex The hexadecimal color to convert.
+    * @return The converted SDL_Color.
+    */
     static SDL_Color fromHexRGBA(Uint32 hex);
+
+    /**
+    * @brief Converts a hexadecimal color in ARGB format to an SDL_Color.
+    * @param hex The hexadecimal color to convert.
+    * @return The converted SDL_Color.
+    */
     static SDL_Color fromHexARGB(Uint32 hex);
 
     /**
@@ -139,14 +171,63 @@ public:
     */
     static SDL_Color getBrown();
 
+    /**
+    * @brief Returns an SDL_Color representing purple.
+    * @return An SDL_Color representing purple.
+    */
     static SDL_Color getPurple();
+
+    /**
+    * @brief Returns an SDL_Color representing teal.
+    * @return An SDL_Color representing teal.
+    */
     static SDL_Color getTeal();
+
+    /**
+    * @brief Returns an SDL_Color representing lime.
+    * @return An SDL_Color representing lime.
+    */
     static SDL_Color getLime();
+
+    /**
+    * @brief Returns an SDL_Color representing maroon.
+    * @return An SDL_Color representing maroon.
+    */
     static SDL_Color getMaroon();
+
+    /**
+    * @brief Returns an SDL_Color representing olive.
+    * @return An SDL_Color representing olive.
+    */
     static SDL_Color getOlive();
+
+    /**
+    * @brief Returns an SDL_Color representing navy.
+    * @return An SDL_Color representing navy.
+    */
     static SDL_Color getNavy();
+
+    /**
+    * @brief Returns an SDL_Color representing magenta.
+    * @return An SDL_Color representing magenta.
+    */
     static SDL_Color getMagenta();    
+
+    /**
+    * @brief Returns an SDL_Color representing cyan.
+    * @return An SDL_Color representing cyan.
+    */
     static SDL_Color getCyan();
+
+    /**
+    * @brief Returns an SDL_Color representing silver.
+    * @return An SDL_Color representing silver.
+    */
     static SDL_Color getSilver();
+
+    /**
+    * @brief Returns an SDL_Color representing gold.
+    * @return An SDL_Color representing gold.
+    */
     static SDL_Color getGold();
 };
