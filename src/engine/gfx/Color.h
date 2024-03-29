@@ -71,13 +71,13 @@ public:
     */
     static Uint32 createARGB(int a, int r, int g, int b);
 
-    unsigned long getHexRGBA();
-    static unsigned long getHexRGBA(SDL_Color color);
-    unsigned long getHexARGB();
-    static unsigned long getHexARGB(SDL_Color color);
+    Uint32 getHexRGBA();
+    Uint32 getHexRGBA(SDL_Color color);
+    Uint32 getHexARGB();
+    Uint32 getHexARGB(SDL_Color color);
 
-    static SDL_Color fromHexRGBA(unsigned long hex);
-    static SDL_Color fromHexARGB(unsigned long hex);
+    static SDL_Color fromHexRGBA(Uint32 hex);
+    static SDL_Color fromHexARGB(Uint32 hex);
 
     /**
     * @brief Returns an SDL_Color representing red.

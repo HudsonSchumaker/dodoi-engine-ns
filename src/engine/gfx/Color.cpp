@@ -24,23 +24,23 @@ Uint32 Color::createARGB(int a, int r, int g, int b) {
         + (a & 0xff);
 }
 
-unsigned long Color::getHexRGBA() {
+Uint32 Color::getHexRGBA() {
     return createRGBA(this->r, this->g, this->b, this->a);
 }
 
-unsigned long Color::getHexRGBA(SDL_Color color) {
+Uint32 Color::getHexRGBA(SDL_Color color) {
     return createRGBA(color);
 }
 
-unsigned long Color::getHexARGB() {
+Uint32 Color::getHexARGB() {
     return createARGB(this->a, this->r, this->g, this->b);
 }
 
-unsigned long Color::getHexARGB(SDL_Color color) {
+Uint32 Color::getHexARGB(SDL_Color color) {
     return createARGB(color);
 }
 
-SDL_Color Color::fromHexRGBA(unsigned long hex) {
+SDL_Color Color::fromHexRGBA(Uint32 hex) {
     SDL_Color color;
     color.r = (hex >> 16) & 0xFF;
     color.g = (hex >> 8) & 0xFF;
@@ -49,7 +49,7 @@ SDL_Color Color::fromHexRGBA(unsigned long hex) {
     return color;
 }
 
-SDL_Color Color::fromHexARGB(unsigned long hex) {
+SDL_Color Color::fromHexARGB(Uint32 hex) {
     SDL_Color color;
     color.r = (hex >> 24) & 0xFF;
     color.g = (hex >> 16) & 0xFF;
