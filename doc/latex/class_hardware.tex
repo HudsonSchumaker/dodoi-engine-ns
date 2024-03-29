@@ -1,0 +1,49 @@
+\doxysection{Hardware Class Reference}
+\hypertarget{class_hardware}{}\label{class_hardware}\index{Hardware@{Hardware}}
+\doxysubsubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_hardware_a270fc0e124db7eda91b42a282c054edb}\label{class_hardware_a270fc0e124db7eda91b42a282c054edb} 
+enum class {\bfseries Joy\+Pad\+Types} \{ \newline
+{\bfseries ONE}
+, {\bfseries PS4}
+, {\bfseries SWITCH}
+, {\bfseries PS5}
+, \newline
+{\bfseries UNKNOWN}
+ \}
+\item 
+\Hypertarget{class_hardware_a4efb45935a4b425355a9be58efeb76ff}\label{class_hardware_a4efb45935a4b425355a9be58efeb76ff} 
+enum class {\bfseries Joy\+Pad\+Buttons} \{ \newline
+{\bfseries A}
+, {\bfseries B}
+, {\bfseries X}
+, {\bfseries Y}
+, \newline
+{\bfseries L}
+, {\bfseries R}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_hardware_aca5c05de9d2dcad65732e571296a4006}\label{class_hardware_aca5c05de9d2dcad65732e571296a4006} 
+static int {\bfseries get\+Cpu\+Number} ()
+\item 
+\Hypertarget{class_hardware_aa913c6054bbe9bbf7b0d40ddec0f3dc3}\label{class_hardware_aa913c6054bbe9bbf7b0d40ddec0f3dc3} 
+static int {\bfseries get\+Thread\+Number} (int size)
+\item 
+\Hypertarget{class_hardware_aff642012cce01a668fd3e21c035cfaec}\label{class_hardware_aff642012cce01a668fd3e21c035cfaec} 
+static float {\bfseries get\+PIfrom\+FPU} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_hardware_ae89907949cf26df43b46ebe70e45aab6}\label{class_hardware_ae89907949cf26df43b46ebe70e45aab6} 
+std\+::map$<$ Hardware\+::\+Joy\+Pad\+Types, std\+::map$<$ Hardware\+::\+Joy\+Pad\+Buttons, std\+::string $>$ $>$ {\bfseries joypads}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+dodoi-\/engine-\/ns/src/engine/core/Hardware.\+h\end{DoxyCompactItemize}

@@ -99,9 +99,18 @@ Public Member Functions</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><b>~Color</b> ()=default</td></tr>
 <tr class="memdesc:a2a84d3b91f2999a11b6728a4b8f85ae4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default destructor. <br /></td></tr>
 <tr class="separator:a2a84d3b91f2999a11b6728a4b8f85ae4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a504cb5d99a87f3209c569ce643ccd52f" id="r_a504cb5d99a87f3209c569ce643ccd52f"><td class="memItemLeft" align="right" valign="top">unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a504cb5d99a87f3209c569ce643ccd52f">getHex</a> ()</td></tr>
-<tr class="memdesc:a504cb5d99a87f3209c569ce643ccd52f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the color as a hexadecimal value in RGBA.  <br /></td></tr>
-<tr class="separator:a504cb5d99a87f3209c569ce643ccd52f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a144fb450064e2979e64722ae28d25fb5" id="r_a144fb450064e2979e64722ae28d25fb5"><td class="memItemLeft" align="right" valign="top">Uint32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a144fb450064e2979e64722ae28d25fb5">getHexRGBA</a> ()</td></tr>
+<tr class="memdesc:a144fb450064e2979e64722ae28d25fb5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the hexadecimal representation of the current color in RGBA format.  <br /></td></tr>
+<tr class="separator:a144fb450064e2979e64722ae28d25fb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab9d4cc4376e9a5532567ddecbaf1cb9" id="r_aab9d4cc4376e9a5532567ddecbaf1cb9"><td class="memItemLeft" align="right" valign="top">Uint32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aab9d4cc4376e9a5532567ddecbaf1cb9">getHexRGBA</a> (SDL_Color color)</td></tr>
+<tr class="memdesc:aab9d4cc4376e9a5532567ddecbaf1cb9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the hexadecimal representation of the given SDL_Color in RGBA format.  <br /></td></tr>
+<tr class="separator:aab9d4cc4376e9a5532567ddecbaf1cb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86794f71e1dc3fc0a0e893e1b7b7c50d" id="r_a86794f71e1dc3fc0a0e893e1b7b7c50d"><td class="memItemLeft" align="right" valign="top">Uint32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a86794f71e1dc3fc0a0e893e1b7b7c50d">getHexARGB</a> ()</td></tr>
+<tr class="memdesc:a86794f71e1dc3fc0a0e893e1b7b7c50d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the hexadecimal representation of the current color in ARGB format.  <br /></td></tr>
+<tr class="separator:a86794f71e1dc3fc0a0e893e1b7b7c50d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7dd7ba9161d7bbfed45312ee5da924d2" id="r_a7dd7ba9161d7bbfed45312ee5da924d2"><td class="memItemLeft" align="right" valign="top">Uint32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7dd7ba9161d7bbfed45312ee5da924d2">getHexARGB</a> (SDL_Color color)</td></tr>
+<tr class="memdesc:a7dd7ba9161d7bbfed45312ee5da924d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the hexadecimal representation of the given SDL_Color in ARGB format.  <br /></td></tr>
+<tr class="separator:a7dd7ba9161d7bbfed45312ee5da924d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -117,6 +126,12 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a1bbdd24bf8a2b461a6ce68baea92dcea" id="r_a1bbdd24bf8a2b461a6ce68baea92dcea"><td class="memItemLeft" align="right" valign="top">static Uint32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1bbdd24bf8a2b461a6ce68baea92dcea">createARGB</a> (int a, int r, int g, int b)</td></tr>
 <tr class="memdesc:a1bbdd24bf8a2b461a6ce68baea92dcea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a ARGB value from individual color components.  <br /></td></tr>
 <tr class="separator:a1bbdd24bf8a2b461a6ce68baea92dcea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2afe14804082533c1d333cb6ea425e4" id="r_af2afe14804082533c1d333cb6ea425e4"><td class="memItemLeft" align="right" valign="top">static SDL_Color&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af2afe14804082533c1d333cb6ea425e4">fromHexRGBA</a> (Uint32 hex)</td></tr>
+<tr class="memdesc:af2afe14804082533c1d333cb6ea425e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a hexadecimal color in RGBA format to an SDL_Color.  <br /></td></tr>
+<tr class="separator:af2afe14804082533c1d333cb6ea425e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c55e65bc0ff48add51588f21269ea17" id="r_a0c55e65bc0ff48add51588f21269ea17"><td class="memItemLeft" align="right" valign="top">static SDL_Color&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0c55e65bc0ff48add51588f21269ea17">fromHexARGB</a> (Uint32 hex)</td></tr>
+<tr class="memdesc:a0c55e65bc0ff48add51588f21269ea17"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a hexadecimal color in ARGB format to an SDL_Color.  <br /></td></tr>
+<tr class="separator:a0c55e65bc0ff48add51588f21269ea17"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a832111d9c4a8339b0213f72372f4d1a5" id="r_a832111d9c4a8339b0213f72372f4d1a5"><td class="memItemLeft" align="right" valign="top">static SDL_Color&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a832111d9c4a8339b0213f72372f4d1a5">getRed</a> ()</td></tr>
 <tr class="memdesc:a832111d9c4a8339b0213f72372f4d1a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an SDL_Color representing red.  <br /></td></tr>
 <tr class="separator:a832111d9c4a8339b0213f72372f4d1a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -147,6 +162,36 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a02061c62d3c48d442cc533aa8070c154" id="r_a02061c62d3c48d442cc533aa8070c154"><td class="memItemLeft" align="right" valign="top">static SDL_Color&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a02061c62d3c48d442cc533aa8070c154">getBrown</a> ()</td></tr>
 <tr class="memdesc:a02061c62d3c48d442cc533aa8070c154"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an SDL_Color representing brown.  <br /></td></tr>
 <tr class="separator:a02061c62d3c48d442cc533aa8070c154"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a448ee9fecb422fdc48032f2cf3d0ac0f" id="r_a448ee9fecb422fdc48032f2cf3d0ac0f"><td class="memItemLeft" align="right" valign="top">static SDL_Color&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a448ee9fecb422fdc48032f2cf3d0ac0f">getPurple</a> ()</td></tr>
+<tr class="memdesc:a448ee9fecb422fdc48032f2cf3d0ac0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an SDL_Color representing purple.  <br /></td></tr>
+<tr class="separator:a448ee9fecb422fdc48032f2cf3d0ac0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a138b83900e597d331843358efa2830fb" id="r_a138b83900e597d331843358efa2830fb"><td class="memItemLeft" align="right" valign="top">static SDL_Color&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a138b83900e597d331843358efa2830fb">getTeal</a> ()</td></tr>
+<tr class="memdesc:a138b83900e597d331843358efa2830fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an SDL_Color representing teal.  <br /></td></tr>
+<tr class="separator:a138b83900e597d331843358efa2830fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8e7f5449cb8551e6d60545f1be5c414" id="r_ae8e7f5449cb8551e6d60545f1be5c414"><td class="memItemLeft" align="right" valign="top">static SDL_Color&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae8e7f5449cb8551e6d60545f1be5c414">getLime</a> ()</td></tr>
+<tr class="memdesc:ae8e7f5449cb8551e6d60545f1be5c414"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an SDL_Color representing lime.  <br /></td></tr>
+<tr class="separator:ae8e7f5449cb8551e6d60545f1be5c414"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a004204682a7e4d90835b560e1667f157" id="r_a004204682a7e4d90835b560e1667f157"><td class="memItemLeft" align="right" valign="top">static SDL_Color&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a004204682a7e4d90835b560e1667f157">getMaroon</a> ()</td></tr>
+<tr class="memdesc:a004204682a7e4d90835b560e1667f157"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an SDL_Color representing maroon.  <br /></td></tr>
+<tr class="separator:a004204682a7e4d90835b560e1667f157"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a108336c8833999670acf5d5cea6077aa" id="r_a108336c8833999670acf5d5cea6077aa"><td class="memItemLeft" align="right" valign="top">static SDL_Color&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a108336c8833999670acf5d5cea6077aa">getOlive</a> ()</td></tr>
+<tr class="memdesc:a108336c8833999670acf5d5cea6077aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an SDL_Color representing olive.  <br /></td></tr>
+<tr class="separator:a108336c8833999670acf5d5cea6077aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15b961f4e969ab7ea37e2b5e998b97bd" id="r_a15b961f4e969ab7ea37e2b5e998b97bd"><td class="memItemLeft" align="right" valign="top">static SDL_Color&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a15b961f4e969ab7ea37e2b5e998b97bd">getNavy</a> ()</td></tr>
+<tr class="memdesc:a15b961f4e969ab7ea37e2b5e998b97bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an SDL_Color representing navy.  <br /></td></tr>
+<tr class="separator:a15b961f4e969ab7ea37e2b5e998b97bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf4de71366bea2335c8d147f3d587f72" id="r_aaf4de71366bea2335c8d147f3d587f72"><td class="memItemLeft" align="right" valign="top">static SDL_Color&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaf4de71366bea2335c8d147f3d587f72">getMagenta</a> ()</td></tr>
+<tr class="memdesc:aaf4de71366bea2335c8d147f3d587f72"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an SDL_Color representing magenta.  <br /></td></tr>
+<tr class="separator:aaf4de71366bea2335c8d147f3d587f72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac506b1feb71299def1639c9758944631" id="r_ac506b1feb71299def1639c9758944631"><td class="memItemLeft" align="right" valign="top">static SDL_Color&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac506b1feb71299def1639c9758944631">getCyan</a> ()</td></tr>
+<tr class="memdesc:ac506b1feb71299def1639c9758944631"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an SDL_Color representing cyan.  <br /></td></tr>
+<tr class="separator:ac506b1feb71299def1639c9758944631"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c973b50999e8f36c7a9c199fc7f6e15" id="r_a3c973b50999e8f36c7a9c199fc7f6e15"><td class="memItemLeft" align="right" valign="top">static SDL_Color&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3c973b50999e8f36c7a9c199fc7f6e15">getSilver</a> ()</td></tr>
+<tr class="memdesc:a3c973b50999e8f36c7a9c199fc7f6e15"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an SDL_Color representing silver.  <br /></td></tr>
+<tr class="separator:a3c973b50999e8f36c7a9c199fc7f6e15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9bbe7ba9dc16057a306343149934efc7" id="r_a9bbe7ba9dc16057a306343149934efc7"><td class="memItemLeft" align="right" valign="top">static SDL_Color&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9bbe7ba9dc16057a306343149934efc7">getGold</a> ()</td></tr>
+<tr class="memdesc:a9bbe7ba9dc16057a306343149934efc7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an SDL_Color representing gold.  <br /></td></tr>
+<tr class="separator:a9bbe7ba9dc16057a306343149934efc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -379,6 +424,74 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>a</b> = 255</td></tr>
 
 </div>
 </div>
+<a id="a0c55e65bc0ff48add51588f21269ea17" name="a0c55e65bc0ff48add51588f21269ea17"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c55e65bc0ff48add51588f21269ea17">&#9670;&#160;</a></span>fromHexARGB()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">SDL_Color Color::fromHexARGB </td>
+          <td>(</td>
+          <td class="paramtype">Uint32</td>          <td class="paramname"><span class="paramname"><em>hex</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Converts a hexadecimal color in ARGB format to an SDL_Color. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">hex</td><td>The hexadecimal color to convert. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The converted SDL_Color. </dd></dl>
+
+</div>
+</div>
+<a id="af2afe14804082533c1d333cb6ea425e4" name="af2afe14804082533c1d333cb6ea425e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2afe14804082533c1d333cb6ea425e4">&#9670;&#160;</a></span>fromHexRGBA()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">SDL_Color Color::fromHexRGBA </td>
+          <td>(</td>
+          <td class="paramtype">Uint32</td>          <td class="paramname"><span class="paramname"><em>hex</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Converts a hexadecimal color in RGBA format to an SDL_Color. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">hex</td><td>The hexadecimal color to convert. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The converted SDL_Color. </dd></dl>
+
+</div>
+</div>
 <a id="a82def235754627a151f961e6976e1c1a" name="a82def235754627a151f961e6976e1c1a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a82def235754627a151f961e6976e1c1a">&#9670;&#160;</a></span>getBlack()</h2>
 
@@ -463,6 +576,62 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>a</b> = 255</td></tr>
 
 </div>
 </div>
+<a id="ac506b1feb71299def1639c9758944631" name="ac506b1feb71299def1639c9758944631"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac506b1feb71299def1639c9758944631">&#9670;&#160;</a></span>getCyan()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">SDL_Color Color::getCyan </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns an SDL_Color representing cyan. </p>
+<dl class="section return"><dt>Returns</dt><dd>An SDL_Color representing cyan. </dd></dl>
+
+</div>
+</div>
+<a id="a9bbe7ba9dc16057a306343149934efc7" name="a9bbe7ba9dc16057a306343149934efc7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9bbe7ba9dc16057a306343149934efc7">&#9670;&#160;</a></span>getGold()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">SDL_Color Color::getGold </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns an SDL_Color representing gold. </p>
+<dl class="section return"><dt>Returns</dt><dd>An SDL_Color representing gold. </dd></dl>
+
+</div>
+</div>
 <a id="a040e83cf2633d74481c45b0f9aad0afe" name="a040e83cf2633d74481c45b0f9aad0afe"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a040e83cf2633d74481c45b0f9aad0afe">&#9670;&#160;</a></span>getGray()</h2>
 
@@ -519,14 +688,14 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>a</b> = 255</td></tr>
 
 </div>
 </div>
-<a id="a504cb5d99a87f3209c569ce643ccd52f" name="a504cb5d99a87f3209c569ce643ccd52f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a504cb5d99a87f3209c569ce643ccd52f">&#9670;&#160;</a></span>getHex()</h2>
+<a id="a86794f71e1dc3fc0a0e893e1b7b7c50d" name="a86794f71e1dc3fc0a0e893e1b7b7c50d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86794f71e1dc3fc0a0e893e1b7b7c50d">&#9670;&#160;</a></span>getHexARGB() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">unsigned long Color::getHex </td>
+          <td class="memname">Uint32 Color::getHexARGB </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"></span></td><td>)</td>
           <td></td>
@@ -534,8 +703,220 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>a</b> = 255</td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Returns the color as a hexadecimal value in RGBA. </p>
-<dl class="section return"><dt>Returns</dt><dd>long The color as a hexadecimal value. </dd></dl>
+<p>Returns the hexadecimal representation of the current color in ARGB format. </p>
+<dl class="section return"><dt>Returns</dt><dd>The hexadecimal representation of the current color. </dd></dl>
+
+</div>
+</div>
+<a id="a7dd7ba9161d7bbfed45312ee5da924d2" name="a7dd7ba9161d7bbfed45312ee5da924d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7dd7ba9161d7bbfed45312ee5da924d2">&#9670;&#160;</a></span>getHexARGB() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Uint32 Color::getHexARGB </td>
+          <td>(</td>
+          <td class="paramtype">SDL_Color</td>          <td class="paramname"><span class="paramname"><em>color</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the hexadecimal representation of the given SDL_Color in ARGB format. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">color</td><td>The SDL_Color to convert. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The hexadecimal representation of the given color. </dd></dl>
+
+</div>
+</div>
+<a id="a144fb450064e2979e64722ae28d25fb5" name="a144fb450064e2979e64722ae28d25fb5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a144fb450064e2979e64722ae28d25fb5">&#9670;&#160;</a></span>getHexRGBA() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Uint32 Color::getHexRGBA </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the hexadecimal representation of the current color in RGBA format. </p>
+<dl class="section return"><dt>Returns</dt><dd>The hexadecimal representation of the current color. </dd></dl>
+
+</div>
+</div>
+<a id="aab9d4cc4376e9a5532567ddecbaf1cb9" name="aab9d4cc4376e9a5532567ddecbaf1cb9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab9d4cc4376e9a5532567ddecbaf1cb9">&#9670;&#160;</a></span>getHexRGBA() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Uint32 Color::getHexRGBA </td>
+          <td>(</td>
+          <td class="paramtype">SDL_Color</td>          <td class="paramname"><span class="paramname"><em>color</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the hexadecimal representation of the given SDL_Color in RGBA format. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">color</td><td>The SDL_Color to convert. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The hexadecimal representation of the given color. </dd></dl>
+
+</div>
+</div>
+<a id="ae8e7f5449cb8551e6d60545f1be5c414" name="ae8e7f5449cb8551e6d60545f1be5c414"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae8e7f5449cb8551e6d60545f1be5c414">&#9670;&#160;</a></span>getLime()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">SDL_Color Color::getLime </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns an SDL_Color representing lime. </p>
+<dl class="section return"><dt>Returns</dt><dd>An SDL_Color representing lime. </dd></dl>
+
+</div>
+</div>
+<a id="aaf4de71366bea2335c8d147f3d587f72" name="aaf4de71366bea2335c8d147f3d587f72"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf4de71366bea2335c8d147f3d587f72">&#9670;&#160;</a></span>getMagenta()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">SDL_Color Color::getMagenta </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns an SDL_Color representing magenta. </p>
+<dl class="section return"><dt>Returns</dt><dd>An SDL_Color representing magenta. </dd></dl>
+
+</div>
+</div>
+<a id="a004204682a7e4d90835b560e1667f157" name="a004204682a7e4d90835b560e1667f157"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a004204682a7e4d90835b560e1667f157">&#9670;&#160;</a></span>getMaroon()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">SDL_Color Color::getMaroon </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns an SDL_Color representing maroon. </p>
+<dl class="section return"><dt>Returns</dt><dd>An SDL_Color representing maroon. </dd></dl>
+
+</div>
+</div>
+<a id="a15b961f4e969ab7ea37e2b5e998b97bd" name="a15b961f4e969ab7ea37e2b5e998b97bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15b961f4e969ab7ea37e2b5e998b97bd">&#9670;&#160;</a></span>getNavy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">SDL_Color Color::getNavy </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns an SDL_Color representing navy. </p>
+<dl class="section return"><dt>Returns</dt><dd>An SDL_Color representing navy. </dd></dl>
+
+</div>
+</div>
+<a id="a108336c8833999670acf5d5cea6077aa" name="a108336c8833999670acf5d5cea6077aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a108336c8833999670acf5d5cea6077aa">&#9670;&#160;</a></span>getOlive()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">SDL_Color Color::getOlive </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns an SDL_Color representing olive. </p>
+<dl class="section return"><dt>Returns</dt><dd>An SDL_Color representing olive. </dd></dl>
 
 </div>
 </div>
@@ -595,6 +976,34 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>a</b> = 255</td></tr>
 
 </div>
 </div>
+<a id="a448ee9fecb422fdc48032f2cf3d0ac0f" name="a448ee9fecb422fdc48032f2cf3d0ac0f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a448ee9fecb422fdc48032f2cf3d0ac0f">&#9670;&#160;</a></span>getPurple()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">SDL_Color Color::getPurple </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns an SDL_Color representing purple. </p>
+<dl class="section return"><dt>Returns</dt><dd>An SDL_Color representing purple. </dd></dl>
+
+</div>
+</div>
 <a id="a832111d9c4a8339b0213f72372f4d1a5" name="a832111d9c4a8339b0213f72372f4d1a5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a832111d9c4a8339b0213f72372f4d1a5">&#9670;&#160;</a></span>getRed()</h2>
 
@@ -620,6 +1029,62 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>a</b> = 255</td></tr>
 
 <p>Returns an SDL_Color representing red. </p>
 <dl class="section return"><dt>Returns</dt><dd>An SDL_Color representing red. </dd></dl>
+
+</div>
+</div>
+<a id="a3c973b50999e8f36c7a9c199fc7f6e15" name="a3c973b50999e8f36c7a9c199fc7f6e15"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c973b50999e8f36c7a9c199fc7f6e15">&#9670;&#160;</a></span>getSilver()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">SDL_Color Color::getSilver </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns an SDL_Color representing silver. </p>
+<dl class="section return"><dt>Returns</dt><dd>An SDL_Color representing silver. </dd></dl>
+
+</div>
+</div>
+<a id="a138b83900e597d331843358efa2830fb" name="a138b83900e597d331843358efa2830fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a138b83900e597d331843358efa2830fb">&#9670;&#160;</a></span>getTeal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">SDL_Color Color::getTeal </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns an SDL_Color representing teal. </p>
+<dl class="section return"><dt>Returns</dt><dd>An SDL_Color representing teal. </dd></dl>
 
 </div>
 </div>

@@ -1,20 +1,103 @@
 \doxysection{De\+Math Class Reference}
 \hypertarget{class_de_math}{}\label{class_de_math}\index{DeMath@{DeMath}}
+
+
+A utility class for mathematical operations. This class provides static methods for various mathematical operations such as square root calculation and angle conversion.  
+
+
+
+
+{\ttfamily \#include $<$De\+Math.\+h$>$}
+
 \doxysubsubsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
+static double \mbox{\hyperlink{class_de_math_ab0cd756c8ce25725f55070a9ad2e9bf9}{rootD}} (double n)
+\begin{DoxyCompactList}\small\item\em Calculates the square root of a double precision number using the Newton-\/\+Raphson method. \end{DoxyCompactList}\item 
+static float \mbox{\hyperlink{class_de_math_abac1d6a2001d1cfaf4aa13add01b224e}{rootF}} (float n)
+\begin{DoxyCompactList}\small\item\em Calculates the square root of a single precision number using the Newton-\/\+Raphson method. \end{DoxyCompactList}\item 
+static float \mbox{\hyperlink{class_de_math_accf3b7140ae67c3d52a8f3b52744cf0b}{deg2\+Rad}} (float angle)
+\begin{DoxyCompactList}\small\item\em Converts an angle from degrees to radians. \end{DoxyCompactList}\item 
+static float \mbox{\hyperlink{class_de_math_a5e8d25327e1b88953fd874a609ede434}{rad2\+Deg}} (float angle)
+\begin{DoxyCompactList}\small\item\em Converts an angle from radians to degrees. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A utility class for mathematical operations. This class provides static methods for various mathematical operations such as square root calculation and angle conversion. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_de_math_accf3b7140ae67c3d52a8f3b52744cf0b}\label{class_de_math_accf3b7140ae67c3d52a8f3b52744cf0b} 
+\index{DeMath@{DeMath}!deg2Rad@{deg2Rad}}
+\index{deg2Rad@{deg2Rad}!DeMath@{DeMath}}
+\doxysubsubsection{\texorpdfstring{deg2Rad()}{deg2Rad()}}
+{\footnotesize\ttfamily static float De\+Math\+::deg2\+Rad (\begin{DoxyParamCaption}\item[{float}]{angle }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Converts an angle from degrees to radians. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em angle} & The angle in degrees. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The angle in radians. 
+\end{DoxyReturn}
+\Hypertarget{class_de_math_a5e8d25327e1b88953fd874a609ede434}\label{class_de_math_a5e8d25327e1b88953fd874a609ede434} 
+\index{DeMath@{DeMath}!rad2Deg@{rad2Deg}}
+\index{rad2Deg@{rad2Deg}!DeMath@{DeMath}}
+\doxysubsubsection{\texorpdfstring{rad2Deg()}{rad2Deg()}}
+{\footnotesize\ttfamily static float De\+Math\+::rad2\+Deg (\begin{DoxyParamCaption}\item[{float}]{angle }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Converts an angle from radians to degrees. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em angle} & The angle in radians. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The angle in degrees. 
+\end{DoxyReturn}
 \Hypertarget{class_de_math_ab0cd756c8ce25725f55070a9ad2e9bf9}\label{class_de_math_ab0cd756c8ce25725f55070a9ad2e9bf9} 
-static double {\bfseries rootD} (double n)
-\item 
+\index{DeMath@{DeMath}!rootD@{rootD}}
+\index{rootD@{rootD}!DeMath@{DeMath}}
+\doxysubsubsection{\texorpdfstring{rootD()}{rootD()}}
+{\footnotesize\ttfamily static double De\+Math\+::rootD (\begin{DoxyParamCaption}\item[{double}]{n }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Calculates the square root of a double precision number using the Newton-\/\+Raphson method. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & The number to calculate the square root of. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The square root of the input number. 
+\end{DoxyReturn}
 \Hypertarget{class_de_math_abac1d6a2001d1cfaf4aa13add01b224e}\label{class_de_math_abac1d6a2001d1cfaf4aa13add01b224e} 
-static float {\bfseries rootF} (float n)
-\item 
-\Hypertarget{class_de_math_a413d1318e90ef2f2927da4d810d8b253}\label{class_de_math_a413d1318e90ef2f2927da4d810d8b253} 
-static float {\bfseries degree2\+Rad} (float angle)
-\item 
-\Hypertarget{class_de_math_a6f463e7f464fe2f0309f4766dc8cd646}\label{class_de_math_a6f463e7f464fe2f0309f4766dc8cd646} 
-static float {\bfseries rad2\+Degree} (float angle)
-\end{DoxyCompactItemize}
+\index{DeMath@{DeMath}!rootF@{rootF}}
+\index{rootF@{rootF}!DeMath@{DeMath}}
+\doxysubsubsection{\texorpdfstring{rootF()}{rootF()}}
+{\footnotesize\ttfamily static float De\+Math\+::rootF (\begin{DoxyParamCaption}\item[{float}]{n }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Calculates the square root of a single precision number using the Newton-\/\+Raphson method. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & The number to calculate the square root of. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The square root of the input number. 
+\end{DoxyReturn}
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
