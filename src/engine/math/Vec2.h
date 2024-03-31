@@ -166,7 +166,7 @@ public:
     */
     float angle(const Vec2& b) const;        // a.angle(b)
 
-     /**
+    /**
     * @brief Assignment operator. Assigns another vector to this vector.
     * @param b The other vector.
     * @return A reference to this vector after the assignment.
