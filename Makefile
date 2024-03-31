@@ -139,7 +139,6 @@ else
 	@rm -fr $(BUILD) $(TARGET).nsp $(TARGET).nso $(TARGET).npdm $(TARGET).elf
 endif
 
-
 #---------------------------------------------------------------------------------
 else
 .PHONY:	all
