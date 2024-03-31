@@ -1,13 +1,25 @@
 /**
-* @file Common.h
+* @file Defs.h
 * @author Hudson Schumaker
-* @brief Common includes and definitions for the Dodoi-Engine.
+* @brief Defs includes and definitions for the Dodoi-Engine.
 * @version 1.0.0
 * 
 * Dodoi-Engine-NS is a game engine developed by Dodoi-Lab.
 * This file includes the necessary C++ and SDL2 libraries that are used throughout the dodoi-engine-ns.
 * It also defines constants for the paths to various types of assets.
 * @copyright Copyright (c) 2024, Dodoi-Lab
+*
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+* 
+*     http://www.apache.org/licenses/LICENSE-2.0
+* 
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
 */
 #pragma once
 // C++ includes
@@ -93,10 +105,10 @@
 #define SCREEN_H_HEIGHT SCREEN_HEIGHT/2 
 
 /**
-* @class Common
+* @class Defs
 * @brief Contains common constants and definitions for the Dodoi-Engine.
 */
-class Common final {
+class Defs final {
 public:
     /**
     * @brief The name of the engine.
@@ -116,5 +128,5 @@ public:
     /**
     * @brief The value of Pi.
     */
-    constexpr static float PI = 3.141592653589793;
+    constexpr static float PI = 3.141592653589793f;
 };
