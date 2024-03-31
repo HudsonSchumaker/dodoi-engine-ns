@@ -3,50 +3,49 @@
 \mbox{\hyperlink{_gfx_8h}{Go to the documentation of this file.}}
 \begin{DoxyCode}{0}
 \DoxyCodeLine{00001\ }
-\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#pragma\ once}}
-\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_common_8h}{../Common.h}}"{}}}
-\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_dimension_8h}{../math/Dimension.h}}"{}}}
-\DoxyCodeLine{00013\ }
-\DoxyCodeLine{00018\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_gfx}{Gfx}}\ final\ \{}
-\DoxyCodeLine{00019\ \textcolor{keyword}{private}:}
-\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keyword}{static}\ \mbox{\hyperlink{class_gfx}{Gfx}}*\ instance\ =\ \textcolor{keyword}{nullptr};}
-\DoxyCodeLine{00021\ \ \ \ \ SDL\_Window*\ window\ =\ \textcolor{keyword}{nullptr};}
-\DoxyCodeLine{00022\ \ \ \ \ SDL\_Renderer*\ renderer\ =\ \textcolor{keyword}{nullptr};}
-\DoxyCodeLine{00023\ }
-\DoxyCodeLine{00024\ \ \ \ \ \mbox{\hyperlink{class_gfx}{Gfx}}();}
-\DoxyCodeLine{00025\ \ \ \ \ }
-\DoxyCodeLine{00026\ \textcolor{keyword}{public}:}
-\DoxyCodeLine{00027\ \ \ \ \ \mbox{\hyperlink{class_gfx}{\string~Gfx}}();}
-\DoxyCodeLine{00028\ }
-\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{class_gfx}{Gfx}}*\ \mbox{\hyperlink{class_gfx_a626e3182389659a38ac64b9b5b7d8b0f}{getInstance}}();}
-\DoxyCodeLine{00034\ \ \ \ \ }
-\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_gfx_a9dfbb666e2f64ccf98a45328a858a13e}{setGfxContext}}();}
-\DoxyCodeLine{00039\ }
-\DoxyCodeLine{00044\ \ \ \ \ SDL\_Window*\ \mbox{\hyperlink{class_gfx_a8e74aca9b083c5c58639b94f2f07e55d}{getWindow}}();}
-\DoxyCodeLine{00045\ }
-\DoxyCodeLine{00050\ \ \ \ \ SDL\_Renderer*\ \mbox{\hyperlink{class_gfx_aec8ecbe8f5e03115056672317a973d38}{getRenderer}}();}
+\DoxyCodeLine{00022\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00023\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_defs_8h}{../Defs.h}}"{}}}
+\DoxyCodeLine{00024\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_dimension_8h}{../math/Dimension.h}}"{}}}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00030\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_gfx}{Gfx}}\ final\ \{}
+\DoxyCodeLine{00031\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keyword}{static}\ \mbox{\hyperlink{class_gfx}{Gfx}}*\ instance\ =\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{00033\ \ \ \ \ SDL\_Window*\ window\ =\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{00034\ \ \ \ \ SDL\_Renderer*\ renderer\ =\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00036\ \ \ \ \ \mbox{\hyperlink{class_gfx}{Gfx}}();}
+\DoxyCodeLine{00037\ \ \ \ \ }
+\DoxyCodeLine{00038\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00039\ \ \ \ \ \mbox{\hyperlink{class_gfx}{\string~Gfx}}();}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{class_gfx}{Gfx}}*\ \mbox{\hyperlink{class_gfx_a626e3182389659a38ac64b9b5b7d8b0f}{getInstance}}();}
+\DoxyCodeLine{00046\ \ \ \ \ }
+\DoxyCodeLine{00050\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_gfx_a9dfbb666e2f64ccf98a45328a858a13e}{setGfxContext}}();}
 \DoxyCodeLine{00051\ }
-\DoxyCodeLine{00056\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_gfx_a3454f8f5c236f195bf4c4edadb5b8614}{showMouseCursor}}(\textcolor{keywordtype}{bool}\ value);}
+\DoxyCodeLine{00056\ \ \ \ \ SDL\_Window*\ \mbox{\hyperlink{class_gfx_a8e74aca9b083c5c58639b94f2f07e55d}{getWindow}}();}
 \DoxyCodeLine{00057\ }
-\DoxyCodeLine{00066\ \ \ \ \ SDL\_Texture*\ \mbox{\hyperlink{class_gfx_a52d8b8276eeb60de16a95a2b812ac5be}{createText}}(std::string\ fontName,\ std::string\ text,\ \textcolor{keywordtype}{short}\ size,\ SDL\_Color\ color);}
-\DoxyCodeLine{00067\ }
-\DoxyCodeLine{00073\ \ \ \ \ SDL\_Texture*\ \mbox{\hyperlink{class_gfx_a90619ed3b9f2215788930009d767acee}{loadTexture}}(std::string\ name);}
-\DoxyCodeLine{00074\ }
-\DoxyCodeLine{00080\ \ \ \ \ \mbox{\hyperlink{struct_dimension}{Dimension<int>}}\ \mbox{\hyperlink{class_gfx_aaaf022dae46e58e6a0a0a31b3bf7f4cb}{getTextureSize}}(SDL\_Texture*\ texture);}
-\DoxyCodeLine{00081\ }
-\DoxyCodeLine{00087\ \ \ \ \ SDL\_Rect\ \mbox{\hyperlink{class_gfx_ac0921090f6d0d03bb1454900d79e3706}{getTextureBounds}}(SDL\_Texture*\ texture);}
-\DoxyCodeLine{00088\ }
-\DoxyCodeLine{00094\ \ \ \ \ SDL\_FRect\ \mbox{\hyperlink{class_gfx_a056cc7452d826c577ded98fca78db6ff}{getTextureFBounds}}(SDL\_Texture*\ texture);}
-\DoxyCodeLine{00095\ }
-\DoxyCodeLine{00096\ \ \ \ \ \textcolor{comment}{//\ Primitives}}
-\DoxyCodeLine{00097\ }
-\DoxyCodeLine{00106\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_gfx_ac0a319d4ee624ff22232ea001439f545}{drawLine}}(\textcolor{keywordtype}{int}\ x0,\ \textcolor{keywordtype}{int}\ y0,\ \textcolor{keywordtype}{int}\ x1,\ \textcolor{keywordtype}{int}\ y1,\ SDL\_Color\ color);}
+\DoxyCodeLine{00062\ \ \ \ \ SDL\_Renderer*\ \mbox{\hyperlink{class_gfx_aec8ecbe8f5e03115056672317a973d38}{getRenderer}}();}
+\DoxyCodeLine{00063\ }
+\DoxyCodeLine{00068\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_gfx_a3454f8f5c236f195bf4c4edadb5b8614}{showMouseCursor}}(\textcolor{keywordtype}{bool}\ value);}
+\DoxyCodeLine{00069\ }
+\DoxyCodeLine{00078\ \ \ \ \ SDL\_Texture*\ \mbox{\hyperlink{class_gfx_a52d8b8276eeb60de16a95a2b812ac5be}{createText}}(std::string\ fontName,\ std::string\ text,\ \textcolor{keywordtype}{short}\ size,\ SDL\_Color\ color);}
+\DoxyCodeLine{00079\ }
+\DoxyCodeLine{00085\ \ \ \ \ SDL\_Texture*\ \mbox{\hyperlink{class_gfx_a90619ed3b9f2215788930009d767acee}{loadTexture}}(std::string\ name);}
+\DoxyCodeLine{00086\ }
+\DoxyCodeLine{00092\ \ \ \ \ \mbox{\hyperlink{struct_dimension}{Dimension<int>}}\ \mbox{\hyperlink{class_gfx_aaaf022dae46e58e6a0a0a31b3bf7f4cb}{getTextureSize}}(SDL\_Texture*\ texture);}
+\DoxyCodeLine{00093\ }
+\DoxyCodeLine{00099\ \ \ \ \ SDL\_Rect\ \mbox{\hyperlink{class_gfx_ac0921090f6d0d03bb1454900d79e3706}{getTextureBounds}}(SDL\_Texture*\ texture);}
+\DoxyCodeLine{00100\ }
+\DoxyCodeLine{00106\ \ \ \ \ SDL\_FRect\ \mbox{\hyperlink{class_gfx_a056cc7452d826c577ded98fca78db6ff}{getTextureFBounds}}(SDL\_Texture*\ texture);}
 \DoxyCodeLine{00107\ }
-\DoxyCodeLine{00115\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_gfx_a93ba2f8d2f8413aba890f703270204e4}{drawCircle}}(\textcolor{keywordtype}{int}\ centerX,\ \textcolor{keywordtype}{int}\ centerY,\ \textcolor{keywordtype}{int}\ radius,\ SDL\_Color\ color);}
-\DoxyCodeLine{00116\ }
-\DoxyCodeLine{00125\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_gfx_aa639e20fabf1c7b0146c5af16bd400d8}{drawDashedCircle}}(\textcolor{keywordtype}{int}\ centerX,\ \textcolor{keywordtype}{int}\ centerY,\ \textcolor{keywordtype}{int}\ radius,\ \textcolor{keywordtype}{int}\ dashLength,\ SDL\_Color\ color);}
-\DoxyCodeLine{00126\ }
-\DoxyCodeLine{00132\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_gfx_ab9a8a204b40178f29984d15e1e4c13bc}{drawBox}}(SDL\_Rect\ rect,\ SDL\_Color\ color);}
-\DoxyCodeLine{00133\ \};}
+\DoxyCodeLine{00108\ \ \ \ \ \textcolor{comment}{//\ Primitives}}
+\DoxyCodeLine{00117\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_gfx_ac0a319d4ee624ff22232ea001439f545}{drawLine}}(\textcolor{keywordtype}{int}\ x0,\ \textcolor{keywordtype}{int}\ y0,\ \textcolor{keywordtype}{int}\ x1,\ \textcolor{keywordtype}{int}\ y1,\ SDL\_Color\ color);}
+\DoxyCodeLine{00118\ }
+\DoxyCodeLine{00126\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_gfx_a93ba2f8d2f8413aba890f703270204e4}{drawCircle}}(\textcolor{keywordtype}{int}\ centerX,\ \textcolor{keywordtype}{int}\ centerY,\ \textcolor{keywordtype}{int}\ radius,\ SDL\_Color\ color);}
+\DoxyCodeLine{00127\ }
+\DoxyCodeLine{00136\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_gfx_aa639e20fabf1c7b0146c5af16bd400d8}{drawDashedCircle}}(\textcolor{keywordtype}{int}\ centerX,\ \textcolor{keywordtype}{int}\ centerY,\ \textcolor{keywordtype}{int}\ radius,\ \textcolor{keywordtype}{int}\ dashLength,\ SDL\_Color\ color);}
+\DoxyCodeLine{00137\ }
+\DoxyCodeLine{00143\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_gfx_ab9a8a204b40178f29984d15e1e4c13bc}{drawBox}}(SDL\_Rect\ rect,\ SDL\_Color\ color);}
+\DoxyCodeLine{00144\ \};}
 
 \end{DoxyCode}

@@ -3,36 +3,37 @@
 \mbox{\hyperlink{_audio_8h}{Go to the documentation of this file.}}
 \begin{DoxyCode}{0}
 \DoxyCodeLine{00001\ }
-\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#pragma\ once}}
-\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_component_8h}{Component.h}}"{}}}
-\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_audio_manager_8h}{../../sfx/AudioManager.h}}"{}}}
-\DoxyCodeLine{00013\ }
-\DoxyCodeLine{00021\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_audio}{Audio}}\ final\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_component}{Component}}\ \{}
-\DoxyCodeLine{00022\ \textcolor{keyword}{private}:}
-\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keywordtype}{bool}\ paused\ =\ \textcolor{keyword}{false};}
-\DoxyCodeLine{00024\ }
-\DoxyCodeLine{00025\ \textcolor{keyword}{public}:}
-\DoxyCodeLine{00026\ \ \ \ \ std::string\ audioId;}
-\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{int}\ loops\ =\ 0;}
-\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordtype}{bool}\ playOnAwake\ =\ \textcolor{keyword}{false};}
-\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordtype}{int}\ channel\ =\ -\/1;}
-\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordtype}{int}\ delay\ =\ 0;}
-\DoxyCodeLine{00031\ }
-\DoxyCodeLine{00036\ \ \ \ \ \mbox{\hyperlink{class_audio_a3e621b5ca5bafeb413a60b854dab9d73}{Audio}}(std::string\ audioId);}
+\DoxyCodeLine{00022\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00023\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_defs_8h}{Defs.h}}"{}}}
+\DoxyCodeLine{00024\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_component_8h}{Component.h}}"{}}}
+\DoxyCodeLine{00025\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_audio_manager_8h}{../../sfx/AudioManager.h}}"{}}}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00034\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_audio}{Audio}}\ final\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_component}{Component}}\ \{}
+\DoxyCodeLine{00035\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keywordtype}{bool}\ paused\ =\ \textcolor{keyword}{false};}
 \DoxyCodeLine{00037\ }
-\DoxyCodeLine{00044\ \ \ \ \ \mbox{\hyperlink{class_audio_a79ea1dedc42e4622766c756cd51e2a29}{Audio}}(std::string\ audioId,\ \textcolor{keywordtype}{bool}\ playOnAwake,\ \textcolor{keywordtype}{int}\ loop);}
-\DoxyCodeLine{00045\ }
-\DoxyCodeLine{00049\ \ \ \ \ \mbox{\hyperlink{class_audio_ae8f54deecb5f48511aaab469e80294d6}{\string~Audio}}();}
+\DoxyCodeLine{00038\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00039\ \ \ \ \ std::string\ audioId;}
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keywordtype}{int}\ loops\ =\ 0;}
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keywordtype}{bool}\ playOnAwake\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{keywordtype}{int}\ channel\ =\ -\/1;}
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keywordtype}{int}\ delay\ =\ 0;}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00049\ \ \ \ \ \mbox{\hyperlink{class_audio_a3e621b5ca5bafeb413a60b854dab9d73}{Audio}}(std::string\ audioId);}
 \DoxyCodeLine{00050\ }
-\DoxyCodeLine{00054\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_audio_a2916f9015031bee9abb98adf0d83e7ee}{play}}();}
-\DoxyCodeLine{00055\ }
-\DoxyCodeLine{00060\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_audio_a2ebc8bd97c5bf4cbfbddca46c15ce46c}{play}}(\textcolor{keywordtype}{int}\ loop);}
-\DoxyCodeLine{00061\ }
-\DoxyCodeLine{00065\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_audio_a82c1018cf778eccc8819acfb64be53b2}{pause}}();}
-\DoxyCodeLine{00066\ }
-\DoxyCodeLine{00070\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_audio_af628fdffa4dba3866e6e801fdda123ea}{stop}}();}
-\DoxyCodeLine{00071\ }
-\DoxyCodeLine{00075\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_audio_ad2b666f1d68d7673636064e42c66b15b}{stop}}(\textcolor{keywordtype}{int}\ delay);}
-\DoxyCodeLine{00076\ \};}
+\DoxyCodeLine{00057\ \ \ \ \ \mbox{\hyperlink{class_audio_a79ea1dedc42e4622766c756cd51e2a29}{Audio}}(std::string\ audioId,\ \textcolor{keywordtype}{bool}\ playOnAwake,\ \textcolor{keywordtype}{int}\ loop);}
+\DoxyCodeLine{00058\ }
+\DoxyCodeLine{00062\ \ \ \ \ \mbox{\hyperlink{class_audio_ae8f54deecb5f48511aaab469e80294d6}{\string~Audio}}();}
+\DoxyCodeLine{00063\ }
+\DoxyCodeLine{00067\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_audio_a2916f9015031bee9abb98adf0d83e7ee}{play}}();}
+\DoxyCodeLine{00068\ }
+\DoxyCodeLine{00073\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_audio_a2ebc8bd97c5bf4cbfbddca46c15ce46c}{play}}(\textcolor{keywordtype}{int}\ loop);}
+\DoxyCodeLine{00074\ }
+\DoxyCodeLine{00078\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_audio_a82c1018cf778eccc8819acfb64be53b2}{pause}}();}
+\DoxyCodeLine{00079\ }
+\DoxyCodeLine{00083\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_audio_af628fdffa4dba3866e6e801fdda123ea}{stop}}();}
+\DoxyCodeLine{00084\ }
+\DoxyCodeLine{00088\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_audio_ad2b666f1d68d7673636064e42c66b15b}{stop}}(\textcolor{keywordtype}{int}\ delay);}
+\DoxyCodeLine{00089\ \};}
 
 \end{DoxyCode}

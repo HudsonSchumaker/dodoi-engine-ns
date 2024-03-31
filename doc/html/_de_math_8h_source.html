@@ -84,61 +84,62 @@ $(function() { codefold.init(0); });
   <div class="headertitle"><div class="title">DeMath.h</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &quot;<a class="code" href="_common_8h.html">../Common.h</a>&quot;</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
-<div class="foldopen" id="foldopen00009" data-start="{" data-end="};">
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="class_de_math.html">    9</a></span><span class="keyword">class </span><a class="code hl_class" href="class_de_math.html">DeMath</a> final {</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
-<div class="foldopen" id="foldopen00017" data-start="{" data-end="}">
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="class_de_math.html#ab0cd756c8ce25725f55070a9ad2e9bf9">   17</a></span>    <span class="keyword">static</span> <span class="keywordtype">double</span> <a class="code hl_function" href="class_de_math.html#ab0cd756c8ce25725f55070a9ad2e9bf9">rootD</a>(<span class="keywordtype">double</span> n) {</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>        <span class="keywordtype">double</span> x = n / 2.0;</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>        <span class="keywordflow">for</span> (<span class="keywordtype">short</span> i = 0; i &lt; 1000; i++) {</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>            <span class="keywordtype">double</span> newX = x - (x * x - n) / (2.0 * x);</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>            <span class="keywordflow">if</span> (fabs(newX - x) &lt; 0.000001) {</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>                <span class="keywordflow">return</span> newX;</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>            }</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>            x = newX;</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>        }</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>        <span class="keywordflow">return</span> x;</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    }</div>
+<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#include &quot;<a class="code" href="_defs_8h.html">../Defs.h</a>&quot;</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="foldopen" id="foldopen00030" data-start="{" data-end="};">
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="class_de_math.html">   30</a></span><span class="keyword">class </span><a class="code hl_class" href="class_de_math.html">DeMath</a> final {</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="foldopen" id="foldopen00038" data-start="{" data-end="}">
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="class_de_math.html#ab0cd756c8ce25725f55070a9ad2e9bf9">   38</a></span>    <span class="keyword">static</span> <span class="keywordtype">double</span> <a class="code hl_function" href="class_de_math.html#ab0cd756c8ce25725f55070a9ad2e9bf9">rootD</a>(<span class="keywordtype">double</span> n) {</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        <span class="keywordtype">double</span> x = n / 2.0;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        <span class="keywordflow">for</span> (<span class="keywordtype">short</span> i = 0; i &lt; 1000; i++) {</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>            <span class="keywordtype">double</span> newX = x - (x * x - n) / (2.0 * x);</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>            <span class="keywordflow">if</span> (fabs(newX - x) &lt; 0.000001) {</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>                <span class="keywordflow">return</span> newX;</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>            }</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>            x = newX;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        }</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        <span class="keywordflow">return</span> x;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    }</div>
 </div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
-<div class="foldopen" id="foldopen00034" data-start="{" data-end="}">
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="class_de_math.html#abac1d6a2001d1cfaf4aa13add01b224e">   34</a></span>    <span class="keyword">static</span> <span class="keywordtype">float</span> <a class="code hl_function" href="class_de_math.html#abac1d6a2001d1cfaf4aa13add01b224e">rootF</a>(<span class="keywordtype">float</span> n) {</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        <span class="keywordtype">float</span> x = n / 2.0f;</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        <span class="keywordflow">for</span> (<span class="keywordtype">short</span> i = 0; i &lt; 1000; i++) {</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>            <span class="keywordtype">float</span> newX = x - (x * x - n) / (2.0f * x);</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>            <span class="keywordflow">if</span> (fabs(newX - x) &lt; 0.000001) {</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>                <span class="keywordflow">return</span> newX;</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>            }</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>            x = newX;</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>         }</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        <span class="keywordflow">return</span> x;</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    }</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="foldopen" id="foldopen00055" data-start="{" data-end="}">
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="class_de_math.html#abac1d6a2001d1cfaf4aa13add01b224e">   55</a></span>    <span class="keyword">static</span> <span class="keywordtype">float</span> <a class="code hl_function" href="class_de_math.html#abac1d6a2001d1cfaf4aa13add01b224e">rootF</a>(<span class="keywordtype">float</span> n) {</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        <span class="keywordtype">float</span> x = n / 2.0f;</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        <span class="keywordflow">for</span> (<span class="keywordtype">short</span> i = 0; i &lt; 1000; i++) {</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>            <span class="keywordtype">float</span> newX = x - (x * x - n) / (2.0f * x);</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>            <span class="keywordflow">if</span> (fabs(newX - x) &lt; 0.000001) {</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>                <span class="keywordflow">return</span> newX;</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>            }</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>            x = newX;</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>         }</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        <span class="keywordflow">return</span> x;</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    }</div>
 </div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
-<div class="foldopen" id="foldopen00051" data-start="{" data-end="}">
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="class_de_math.html#accf3b7140ae67c3d52a8f3b52744cf0b">   51</a></span>    <span class="keyword">static</span> <span class="keywordtype">float</span> <a class="code hl_function" href="class_de_math.html#accf3b7140ae67c3d52a8f3b52744cf0b">deg2Rad</a>(<span class="keywordtype">float</span> angle) {</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        <span class="keywordflow">return</span> angle * <a class="code hl_variable" href="class_common.html#acb4e699df5f652b0bf53fc88aa201319">Common::PI</a> / 180.0f;</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    }</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
+<div class="foldopen" id="foldopen00072" data-start="{" data-end="}">
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno"><a class="line" href="class_de_math.html#accf3b7140ae67c3d52a8f3b52744cf0b">   72</a></span>    <span class="keyword">static</span> <span class="keywordtype">float</span> <a class="code hl_function" href="class_de_math.html#accf3b7140ae67c3d52a8f3b52744cf0b">deg2Rad</a>(<span class="keywordtype">float</span> angle) {</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        <span class="keywordflow">return</span> angle * <a class="code hl_variable" href="class_defs.html#a1658f3516a744374a14e0229e2ff45cd">Defs::PI</a> / 180.0f;</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    }</div>
 </div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
-<div class="foldopen" id="foldopen00060" data-start="{" data-end="}">
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="class_de_math.html#a5e8d25327e1b88953fd874a609ede434">   60</a></span>    <span class="keyword">static</span> <span class="keywordtype">float</span> <a class="code hl_function" href="class_de_math.html#a5e8d25327e1b88953fd874a609ede434">rad2Deg</a>(<span class="keywordtype">float</span> angle) {</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        <span class="keywordflow">return</span> angle * 180.0f / <a class="code hl_variable" href="class_common.html#acb4e699df5f652b0bf53fc88aa201319">Common::PI</a>;</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    }</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
+<div class="foldopen" id="foldopen00081" data-start="{" data-end="}">
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno"><a class="line" href="class_de_math.html#a5e8d25327e1b88953fd874a609ede434">   81</a></span>    <span class="keyword">static</span> <span class="keywordtype">float</span> <a class="code hl_function" href="class_de_math.html#a5e8d25327e1b88953fd874a609ede434">rad2Deg</a>(<span class="keywordtype">float</span> angle) {</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>        <span class="keywordflow">return</span> angle * 180.0f / <a class="code hl_variable" href="class_defs.html#a1658f3516a744374a14e0229e2ff45cd">Defs::PI</a>;</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    }</div>
 </div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>};</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>};</div>
 </div>
-<div class="ttc" id="a_common_8h_html"><div class="ttname"><a href="_common_8h.html">Common.h</a></div><div class="ttdoc">Common includes and definitions for the Dodoi-Engine.</div></div>
-<div class="ttc" id="aclass_common_html_acb4e699df5f652b0bf53fc88aa201319"><div class="ttname"><a href="class_common.html#acb4e699df5f652b0bf53fc88aa201319">Common::PI</a></div><div class="ttdeci">static constexpr float PI</div><div class="ttdoc">The value of Pi.</div><div class="ttdef"><b>Definition</b> Common.h:119</div></div>
-<div class="ttc" id="aclass_de_math_html"><div class="ttname"><a href="class_de_math.html">DeMath</a></div><div class="ttdoc">A utility class for mathematical operations. This class provides static methods for various mathemati...</div><div class="ttdef"><b>Definition</b> DeMath.h:9</div></div>
-<div class="ttc" id="aclass_de_math_html_a5e8d25327e1b88953fd874a609ede434"><div class="ttname"><a href="class_de_math.html#a5e8d25327e1b88953fd874a609ede434">DeMath::rad2Deg</a></div><div class="ttdeci">static float rad2Deg(float angle)</div><div class="ttdoc">Converts an angle from radians to degrees.</div><div class="ttdef"><b>Definition</b> DeMath.h:60</div></div>
-<div class="ttc" id="aclass_de_math_html_ab0cd756c8ce25725f55070a9ad2e9bf9"><div class="ttname"><a href="class_de_math.html#ab0cd756c8ce25725f55070a9ad2e9bf9">DeMath::rootD</a></div><div class="ttdeci">static double rootD(double n)</div><div class="ttdoc">Calculates the square root of a double precision number using the Newton-Raphson method.</div><div class="ttdef"><b>Definition</b> DeMath.h:17</div></div>
-<div class="ttc" id="aclass_de_math_html_abac1d6a2001d1cfaf4aa13add01b224e"><div class="ttname"><a href="class_de_math.html#abac1d6a2001d1cfaf4aa13add01b224e">DeMath::rootF</a></div><div class="ttdeci">static float rootF(float n)</div><div class="ttdoc">Calculates the square root of a single precision number using the Newton-Raphson method.</div><div class="ttdef"><b>Definition</b> DeMath.h:34</div></div>
-<div class="ttc" id="aclass_de_math_html_accf3b7140ae67c3d52a8f3b52744cf0b"><div class="ttname"><a href="class_de_math.html#accf3b7140ae67c3d52a8f3b52744cf0b">DeMath::deg2Rad</a></div><div class="ttdeci">static float deg2Rad(float angle)</div><div class="ttdoc">Converts an angle from degrees to radians.</div><div class="ttdef"><b>Definition</b> DeMath.h:51</div></div>
+<div class="ttc" id="a_defs_8h_html"><div class="ttname"><a href="_defs_8h.html">Defs.h</a></div><div class="ttdoc">Defs includes and definitions for the Dodoi-Engine.</div></div>
+<div class="ttc" id="aclass_de_math_html"><div class="ttname"><a href="class_de_math.html">DeMath</a></div><div class="ttdoc">A utility class for mathematical operations. This class provides static methods for various mathemati...</div><div class="ttdef"><b>Definition</b> DeMath.h:30</div></div>
+<div class="ttc" id="aclass_de_math_html_a5e8d25327e1b88953fd874a609ede434"><div class="ttname"><a href="class_de_math.html#a5e8d25327e1b88953fd874a609ede434">DeMath::rad2Deg</a></div><div class="ttdeci">static float rad2Deg(float angle)</div><div class="ttdoc">Converts an angle from radians to degrees.</div><div class="ttdef"><b>Definition</b> DeMath.h:81</div></div>
+<div class="ttc" id="aclass_de_math_html_ab0cd756c8ce25725f55070a9ad2e9bf9"><div class="ttname"><a href="class_de_math.html#ab0cd756c8ce25725f55070a9ad2e9bf9">DeMath::rootD</a></div><div class="ttdeci">static double rootD(double n)</div><div class="ttdoc">Calculates the square root of a double precision number using the Newton-Raphson method.</div><div class="ttdef"><b>Definition</b> DeMath.h:38</div></div>
+<div class="ttc" id="aclass_de_math_html_abac1d6a2001d1cfaf4aa13add01b224e"><div class="ttname"><a href="class_de_math.html#abac1d6a2001d1cfaf4aa13add01b224e">DeMath::rootF</a></div><div class="ttdeci">static float rootF(float n)</div><div class="ttdoc">Calculates the square root of a single precision number using the Newton-Raphson method.</div><div class="ttdef"><b>Definition</b> DeMath.h:55</div></div>
+<div class="ttc" id="aclass_de_math_html_accf3b7140ae67c3d52a8f3b52744cf0b"><div class="ttname"><a href="class_de_math.html#accf3b7140ae67c3d52a8f3b52744cf0b">DeMath::deg2Rad</a></div><div class="ttdeci">static float deg2Rad(float angle)</div><div class="ttdoc">Converts an angle from degrees to radians.</div><div class="ttdef"><b>Definition</b> DeMath.h:72</div></div>
+<div class="ttc" id="aclass_defs_html_a1658f3516a744374a14e0229e2ff45cd"><div class="ttname"><a href="class_defs.html#a1658f3516a744374a14e0229e2ff45cd">Defs::PI</a></div><div class="ttdeci">static constexpr float PI</div><div class="ttdoc">The value of Pi.</div><div class="ttdef"><b>Definition</b> Defs.h:131</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

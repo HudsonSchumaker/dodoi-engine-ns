@@ -1,81 +1,81 @@
 \doxysection{Hardware.\+h}
 \hypertarget{_hardware_8h_source}{}\label{_hardware_8h_source}\index{dodoi-\/engine-\/ns/src/engine/core/Hardware.h@{dodoi-\/engine-\/ns/src/engine/core/Hardware.h}}
-
+\mbox{\hyperlink{_hardware_8h}{Go to the documentation of this file.}}
 \begin{DoxyCode}{0}
 \DoxyCodeLine{00001\ }
-\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#pragma\ once}}
-\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_common_8h}{../Common.h}}"{}}}
-\DoxyCodeLine{00004\ }
-\DoxyCodeLine{00005\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_hardware}{Hardware}}\ \{}
-\DoxyCodeLine{00006\ \textcolor{keyword}{public}:}
-\DoxyCodeLine{00007\ \ \ \ \ \textcolor{keyword}{enum\ class}\ JoyPadTypes\ \{}
-\DoxyCodeLine{00008\ \ \ \ \ \ \ \ \ ONE,\ PS4,\ SWITCH,\ PS5,\ UNKNOWN,}
-\DoxyCodeLine{00009\ \ \ \ \ \};}
-\DoxyCodeLine{00010\ }
-\DoxyCodeLine{00011\ \ \ \ \ \textcolor{keyword}{enum\ class}\ JoyPadButtons\ \{}
-\DoxyCodeLine{00012\ \ \ \ \ \ \ \ \ A,\ B,\ X,\ Y,\ L,\ R,}
-\DoxyCodeLine{00013\ \ \ \ \ \};}
-\DoxyCodeLine{00014\ }
-\DoxyCodeLine{00015\ \ \ \ \ std::map<Hardware::JoyPadTypes,\ std::map<Hardware::JoyPadButtons,\ std::string>>\ joypads;}
-\DoxyCodeLine{00016\ }
-\DoxyCodeLine{00017\ \ \ \ \ \mbox{\hyperlink{class_hardware}{Hardware}}()\ \{}
-\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ joypads[JoyPadTypes::ONE]\ =\ \{}
-\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \ \ \ \ \{\ JoyPadButtons::A,\ \textcolor{stringliteral}{"{}axb"{}}\ \},}
-\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ \ \ \ \ \{\ JoyPadButtons::B,\ \textcolor{stringliteral}{"{}bxb"{}}\ \},}
-\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \ \ \ \ \{\ JoyPadButtons::X,\ \textcolor{stringliteral}{"{}xxb"{}}\ \},}
-\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \ \ \ \ \{\ JoyPadButtons::Y,\ \textcolor{stringliteral}{"{}yxb"{}}\ \},}
-\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \ \ \ \ \{\ JoyPadButtons::L,\ \textcolor{stringliteral}{"{}lbxb"{}}\ \},}
-\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \ \ \ \ \{\ JoyPadButtons::R,\ \textcolor{stringliteral}{"{}rbxb"{}}\ \}}
-\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \};}
-\DoxyCodeLine{00026\ }
-\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ joypads[JoyPadTypes::PS4]\ =\ \{}
-\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \ \ \ \ \{\ JoyPadButtons::A,\ \textcolor{stringliteral}{"{}crosspsx"{}}\ \},}
-\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \ \ \ \ \{\ JoyPadButtons::B,\ \textcolor{stringliteral}{"{}circlepsx"{}}\ \},}
-\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \ \ \ \ \{\ JoyPadButtons::X,\ \textcolor{stringliteral}{"{}squarepsx"{}}\ \},}
-\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \ \ \ \ \{\ JoyPadButtons::Y,\ \textcolor{stringliteral}{"{}trianglepsx"{}}\ \},}
-\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \ \ \ \ \{\ JoyPadButtons::L,\ \textcolor{stringliteral}{"{}l1psx"{}}\ \},}
-\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \ \ \ \ \{\ JoyPadButtons::R,\ \textcolor{stringliteral}{"{}r1psx"{}}\ \},}
-\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \};}
-\DoxyCodeLine{00035\ }
-\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ joypads[JoyPadTypes::PS5]\ =\ \{}
-\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \ \ \ \ \{\ JoyPadButtons::A,\ \textcolor{stringliteral}{"{}crosspsx"{}}\ \},}
-\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \ \ \ \ \{\ JoyPadButtons::B,\ \textcolor{stringliteral}{"{}circlepsx"{}}\ \},}
-\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \ \ \ \ \{\ JoyPadButtons::X,\ \textcolor{stringliteral}{"{}squarepsx"{}}\ \},}
-\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \ \ \ \ \{\ JoyPadButtons::Y,\ \textcolor{stringliteral}{"{}trianglepsx"{}}\ \},}
-\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \ \ \ \ \{\ JoyPadButtons::L,\ \textcolor{stringliteral}{"{}l1psx"{}}\ \},}
-\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \ \ \ \ \{\ JoyPadButtons::R,\ \textcolor{stringliteral}{"{}r1psx"{}}\ \},}
-\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \};}
-\DoxyCodeLine{00044\ }
-\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ joypads[JoyPadTypes::SWITCH]\ =\ \{}
-\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ \ \ \ \ \{\ JoyPadButtons::A,\ \textcolor{stringliteral}{"{}ans"{}}\ \},}
-\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \ \ \ \ \{\ JoyPadButtons::B,\ \textcolor{stringliteral}{"{}bns"{}}\ \},}
-\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \ \ \ \ \{\ JoyPadButtons::X,\ \textcolor{stringliteral}{"{}xns"{}}\ \},}
-\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \ \ \ \ \{\ JoyPadButtons::Y,\ \textcolor{stringliteral}{"{}yns"{}}\ \},}
-\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ \ \ \ \ \{\ JoyPadButtons::L,\ \textcolor{stringliteral}{"{}lns"{}}\ \},}
-\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ \ \ \ \ \{\ JoyPadButtons::R,\ \textcolor{stringliteral}{"{}rns"{}}\ \},}
-\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ \};}
-\DoxyCodeLine{00053\ }
-\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ joypads[JoyPadTypes::UNKNOWN]\ =\ \{\};\ \textcolor{comment}{//\ Empty\ vector\ for\ unknown\ type}}
-\DoxyCodeLine{00055\ \ \ \ \ \}}
-\DoxyCodeLine{00056\ \ \ \ \ \mbox{\hyperlink{class_hardware}{\string~Hardware}}()\ \{\}}
-\DoxyCodeLine{00057\ }
-\DoxyCodeLine{00058\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{int}\ getCpuNumber()\ \{}
-\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ std::thread::hardware\_concurrency();}
-\DoxyCodeLine{00060\ \ \ \ \ \}}
-\DoxyCodeLine{00061\ }
-\DoxyCodeLine{00062\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{int}\ getThreadNumber(\textcolor{keywordtype}{int}\ size)\ \{}
-\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (size\ <\ 51)\ \{\ \textcolor{keywordflow}{return}\ 2;\ \}}
-\DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (size\ <\ 101)\ \{\ \textcolor{keywordflow}{return}\ 4;\ \}}
-\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (size\ <\ 201)\ \{\ \textcolor{keywordflow}{return}\ 6;\ \}}
-\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (size\ <\ 301)\ \{\ \textcolor{keywordflow}{return}\ 8;\ \}}
-\DoxyCodeLine{00067\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (size\ <\ 401)\ \{\ \textcolor{keywordflow}{return}\ 12;\ \}}
-\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (size\ <\ 501)\ \{\ \textcolor{keywordflow}{return}\ 14;\ \}}
-\DoxyCodeLine{00069\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ 16;}
-\DoxyCodeLine{00070\ \ \ \ \ \}}
-\DoxyCodeLine{00071\ }
-\DoxyCodeLine{00072\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{float}\ getPIfromFPU()\ \{}
-\DoxyCodeLine{00073\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ std::atan(1.0f)\ *\ 4.0f;}
-\DoxyCodeLine{00074\ \ \ \ \ \}\ \ }
-\DoxyCodeLine{00075\ \};}
+\DoxyCodeLine{00022\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00023\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_defs_8h}{../Defs.h}}"{}}}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_hardware}{Hardware}}\ final\ \{}
+\DoxyCodeLine{00026\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keyword}{enum\ class}\ JoyPadTypes\ \{}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ ONE,\ PS4,\ SWITCH,\ PS5,\ UNKNOWN,}
+\DoxyCodeLine{00029\ \ \ \ \ \};}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keyword}{enum\ class}\ JoyPadButtons\ \{}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ A,\ B,\ X,\ Y,\ L,\ R,}
+\DoxyCodeLine{00033\ \ \ \ \ \};}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00035\ \ \ \ \ std::map<Hardware::JoyPadTypes,\ std::map<Hardware::JoyPadButtons,\ std::string>>\ joypads;}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00037\ \ \ \ \ \mbox{\hyperlink{class_hardware}{Hardware}}()\ \{}
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ joypads[JoyPadTypes::ONE]\ =\ \{}
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \ \ \ \ \{\ JoyPadButtons::A,\ \textcolor{stringliteral}{"{}axb"{}}\ \},}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \ \ \ \ \{\ JoyPadButtons::B,\ \textcolor{stringliteral}{"{}bxb"{}}\ \},}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \ \ \ \ \{\ JoyPadButtons::X,\ \textcolor{stringliteral}{"{}xxb"{}}\ \},}
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \ \ \ \ \{\ JoyPadButtons::Y,\ \textcolor{stringliteral}{"{}yxb"{}}\ \},}
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \ \ \ \ \{\ JoyPadButtons::L,\ \textcolor{stringliteral}{"{}lbxb"{}}\ \},}
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \ \ \ \ \{\ JoyPadButtons::R,\ \textcolor{stringliteral}{"{}rbxb"{}}\ \}}
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \};}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ joypads[JoyPadTypes::PS4]\ =\ \{}
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \ \ \ \ \{\ JoyPadButtons::A,\ \textcolor{stringliteral}{"{}crosspsx"{}}\ \},}
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \ \ \ \ \{\ JoyPadButtons::B,\ \textcolor{stringliteral}{"{}circlepsx"{}}\ \},}
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ \ \ \ \ \{\ JoyPadButtons::X,\ \textcolor{stringliteral}{"{}squarepsx"{}}\ \},}
+\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ \ \ \ \ \{\ JoyPadButtons::Y,\ \textcolor{stringliteral}{"{}trianglepsx"{}}\ \},}
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ \ \ \ \ \{\ JoyPadButtons::L,\ \textcolor{stringliteral}{"{}l1psx"{}}\ \},}
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ \ \ \ \ \{\ JoyPadButtons::R,\ \textcolor{stringliteral}{"{}r1psx"{}}\ \},}
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ \};}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00056\ \ \ \ \ \ \ \ \ joypads[JoyPadTypes::PS5]\ =\ \{}
+\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ \ \ \ \ \{\ JoyPadButtons::A,\ \textcolor{stringliteral}{"{}crosspsx"{}}\ \},}
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ \ \ \ \ \{\ JoyPadButtons::B,\ \textcolor{stringliteral}{"{}circlepsx"{}}\ \},}
+\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ \ \ \ \ \{\ JoyPadButtons::X,\ \textcolor{stringliteral}{"{}squarepsx"{}}\ \},}
+\DoxyCodeLine{00060\ \ \ \ \ \ \ \ \ \ \ \ \ \{\ JoyPadButtons::Y,\ \textcolor{stringliteral}{"{}trianglepsx"{}}\ \},}
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ \ \ \ \ \{\ JoyPadButtons::L,\ \textcolor{stringliteral}{"{}l1psx"{}}\ \},}
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ \ \ \ \ \{\ JoyPadButtons::R,\ \textcolor{stringliteral}{"{}r1psx"{}}\ \},}
+\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ \};}
+\DoxyCodeLine{00064\ }
+\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ joypads[JoyPadTypes::SWITCH]\ =\ \{}
+\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ \ \ \ \ \{\ JoyPadButtons::A,\ \textcolor{stringliteral}{"{}ans"{}}\ \},}
+\DoxyCodeLine{00067\ \ \ \ \ \ \ \ \ \ \ \ \ \{\ JoyPadButtons::B,\ \textcolor{stringliteral}{"{}bns"{}}\ \},}
+\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ \ \ \ \ \{\ JoyPadButtons::X,\ \textcolor{stringliteral}{"{}xns"{}}\ \},}
+\DoxyCodeLine{00069\ \ \ \ \ \ \ \ \ \ \ \ \ \{\ JoyPadButtons::Y,\ \textcolor{stringliteral}{"{}yns"{}}\ \},}
+\DoxyCodeLine{00070\ \ \ \ \ \ \ \ \ \ \ \ \ \{\ JoyPadButtons::L,\ \textcolor{stringliteral}{"{}lns"{}}\ \},}
+\DoxyCodeLine{00071\ \ \ \ \ \ \ \ \ \ \ \ \ \{\ JoyPadButtons::R,\ \textcolor{stringliteral}{"{}rns"{}}\ \},}
+\DoxyCodeLine{00072\ \ \ \ \ \ \ \ \ \};}
+\DoxyCodeLine{00073\ }
+\DoxyCodeLine{00074\ \ \ \ \ \ \ \ \ joypads[JoyPadTypes::UNKNOWN]\ =\ \{\};\ \textcolor{comment}{//\ Empty\ vector\ for\ unknown\ type}}
+\DoxyCodeLine{00075\ \ \ \ \ \}}
+\DoxyCodeLine{00076\ \ \ \ \ \mbox{\hyperlink{class_hardware}{\string~Hardware}}()\ \{\}}
+\DoxyCodeLine{00077\ }
+\DoxyCodeLine{00078\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{int}\ getCpuNumber()\ \{}
+\DoxyCodeLine{00079\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ std::thread::hardware\_concurrency();}
+\DoxyCodeLine{00080\ \ \ \ \ \}}
+\DoxyCodeLine{00081\ }
+\DoxyCodeLine{00082\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{int}\ getThreadNumber(\textcolor{keywordtype}{int}\ size)\ \{}
+\DoxyCodeLine{00083\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (size\ <\ 51)\ \{\ \textcolor{keywordflow}{return}\ 2;\ \}}
+\DoxyCodeLine{00084\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (size\ <\ 101)\ \{\ \textcolor{keywordflow}{return}\ 4;\ \}}
+\DoxyCodeLine{00085\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (size\ <\ 201)\ \{\ \textcolor{keywordflow}{return}\ 6;\ \}}
+\DoxyCodeLine{00086\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (size\ <\ 301)\ \{\ \textcolor{keywordflow}{return}\ 8;\ \}}
+\DoxyCodeLine{00087\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (size\ <\ 401)\ \{\ \textcolor{keywordflow}{return}\ 12;\ \}}
+\DoxyCodeLine{00088\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (size\ <\ 501)\ \{\ \textcolor{keywordflow}{return}\ 14;\ \}}
+\DoxyCodeLine{00089\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ 16;}
+\DoxyCodeLine{00090\ \ \ \ \ \}}
+\DoxyCodeLine{00091\ }
+\DoxyCodeLine{00092\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{float}\ getPIfromFPU()\ \{}
+\DoxyCodeLine{00093\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ std::atan(1.0f)\ *\ 4.0f;}
+\DoxyCodeLine{00094\ \ \ \ \ \}\ \ }
+\DoxyCodeLine{00095\ \};}
 
 \end{DoxyCode}

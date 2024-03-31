@@ -54,7 +54,7 @@ void {\bfseries clear\+Assets} ()
 \begin{DoxyCompactItemize}
 \item 
 static \mbox{\hyperlink{class_audio_manager}{Audio\+Manager}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_audio_manager_a77de22887544ce37ae13d7c4d5cf7a79}{get\+Instance}} ()
-\begin{DoxyCompactList}\small\item\em Get the instance of the \doxylink{class_audio_manager}{Audio\+Manager} class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Get the instance of the \doxylink{class_audio_manager}{Audio\+Manager} class. Since \doxylink{class_audio_manager}{Audio\+Manager} is a singleton class, this function provides the global point of access to the instance. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
@@ -99,9 +99,7 @@ The count of audio assets.
 
 
 
-Get the instance of the \doxylink{class_audio_manager}{Audio\+Manager} class. 
-
-Since \doxylink{class_audio_manager}{Audio\+Manager} is a singleton class, this function provides the global point of access to the instance.
+Get the instance of the \doxylink{class_audio_manager}{Audio\+Manager} class. Since \doxylink{class_audio_manager}{Audio\+Manager} is a singleton class, this function provides the global point of access to the instance. 
 
 \begin{DoxyReturn}{Returns}
 A pointer to the instance of the \doxylink{class_audio_manager}{Audio\+Manager} class. 

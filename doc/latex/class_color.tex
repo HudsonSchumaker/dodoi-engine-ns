@@ -43,6 +43,8 @@ static SDL\+\_\+\+Color \mbox{\hyperlink{class_color_af2afe14804082533c1d333cb6e
 \begin{DoxyCompactList}\small\item\em Converts a hexadecimal color in RGBA format to an SDL\+\_\+\+Color. \end{DoxyCompactList}\item 
 static SDL\+\_\+\+Color \mbox{\hyperlink{class_color_a0c55e65bc0ff48add51588f21269ea17}{from\+Hex\+ARGB}} (Uint32 hex)
 \begin{DoxyCompactList}\small\item\em Converts a hexadecimal color in ARGB format to an SDL\+\_\+\+Color. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_color_a84dd0f3236a017bee302b1de43b853fd}{change\+Color\+Intensity}} (Uint32 \texorpdfstring{$\ast$}{*}color, float factor)
+\begin{DoxyCompactList}\small\item\em Changes the intensity of a color. \end{DoxyCompactList}\item 
 static SDL\+\_\+\+Color \mbox{\hyperlink{class_color_a832111d9c4a8339b0213f72372f4d1a5}{get\+Red}} ()
 \begin{DoxyCompactList}\small\item\em Returns an SDL\+\_\+\+Color representing red. \end{DoxyCompactList}\item 
 static SDL\+\_\+\+Color \mbox{\hyperlink{class_color_abdc217b5435d483536346c8c56afe709}{get\+Green}} ()
@@ -128,6 +130,25 @@ Constructor that initializes the color with the given values.
 
 
 \doxysubsection{Member Function Documentation}
+\Hypertarget{class_color_a84dd0f3236a017bee302b1de43b853fd}\label{class_color_a84dd0f3236a017bee302b1de43b853fd} 
+\index{Color@{Color}!changeColorIntensity@{changeColorIntensity}}
+\index{changeColorIntensity@{changeColorIntensity}!Color@{Color}}
+\doxysubsubsection{\texorpdfstring{changeColorIntensity()}{changeColorIntensity()}}
+{\footnotesize\ttfamily void Color\+::change\+Color\+Intensity (\begin{DoxyParamCaption}\item[{Uint32 \texorpdfstring{$\ast$}{*}}]{color,  }\item[{float}]{factor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Changes the intensity of a color. 
+
+This function takes a color and a factor as input. It then multiplies the red, green, and blue components of the color by the factor, effectively changing the color\textquotesingle{}s intensity.
+
+
+\begin{DoxyParams}{Parameters}
+{\em color} & A pointer to the color to change. The color is represented as a 32-\/bit unsigned integer, where each 8 bits represent the alpha, red, green, and blue components, respectively. \\
+\hline
+{\em factor} & The factor to multiply the color\textquotesingle{}s components by. This should be a float between 0.\+0 (no intensity, color turns black) and 1.\+0 (full intensity, color remains the same). \\
+\hline
+\end{DoxyParams}
 \Hypertarget{class_color_a1bbdd24bf8a2b461a6ce68baea92dcea}\label{class_color_a1bbdd24bf8a2b461a6ce68baea92dcea} 
 \index{Color@{Color}!createARGB@{createARGB}}
 \index{createARGB@{createARGB}!Color@{Color}}

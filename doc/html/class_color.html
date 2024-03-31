@@ -132,6 +132,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a0c55e65bc0ff48add51588f21269ea17" id="r_a0c55e65bc0ff48add51588f21269ea17"><td class="memItemLeft" align="right" valign="top">static SDL_Color&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0c55e65bc0ff48add51588f21269ea17">fromHexARGB</a> (Uint32 hex)</td></tr>
 <tr class="memdesc:a0c55e65bc0ff48add51588f21269ea17"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a hexadecimal color in ARGB format to an SDL_Color.  <br /></td></tr>
 <tr class="separator:a0c55e65bc0ff48add51588f21269ea17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84dd0f3236a017bee302b1de43b853fd" id="r_a84dd0f3236a017bee302b1de43b853fd"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a84dd0f3236a017bee302b1de43b853fd">changeColorIntensity</a> (Uint32 *color, float factor)</td></tr>
+<tr class="memdesc:a84dd0f3236a017bee302b1de43b853fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes the intensity of a color.  <br /></td></tr>
+<tr class="separator:a84dd0f3236a017bee302b1de43b853fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a832111d9c4a8339b0213f72372f4d1a5" id="r_a832111d9c4a8339b0213f72372f4d1a5"><td class="memItemLeft" align="right" valign="top">static SDL_Color&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a832111d9c4a8339b0213f72372f4d1a5">getRed</a> ()</td></tr>
 <tr class="memdesc:a832111d9c4a8339b0213f72372f4d1a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an SDL_Color representing red.  <br /></td></tr>
 <tr class="separator:a832111d9c4a8339b0213f72372f4d1a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -254,6 +257,45 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>a</b> = 255</td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a84dd0f3236a017bee302b1de43b853fd" name="a84dd0f3236a017bee302b1de43b853fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a84dd0f3236a017bee302b1de43b853fd">&#9670;&#160;</a></span>changeColorIntensity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Color::changeColorIntensity </td>
+          <td>(</td>
+          <td class="paramtype">Uint32 *</td>          <td class="paramname"><span class="paramname"><em>color</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>factor</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Changes the intensity of a color. </p>
+<p>This function takes a color and a factor as input. It then multiplies the red, green, and blue components of the color by the factor, effectively changing the color's intensity.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">color</td><td>A pointer to the color to change. The color is represented as a 32-bit unsigned integer, where each 8 bits represent the alpha, red, green, and blue components, respectively. </td></tr>
+    <tr><td class="paramname">factor</td><td>The factor to multiply the color's components by. This should be a float between 0.0 (no intensity, color turns black) and 1.0 (full intensity, color remains the same). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a1bbdd24bf8a2b461a6ce68baea92dcea" name="a1bbdd24bf8a2b461a6ce68baea92dcea"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1bbdd24bf8a2b461a6ce68baea92dcea">&#9670;&#160;</a></span>createARGB() <span class="overload">[1/2]</span></h2>
 

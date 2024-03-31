@@ -11,7 +11,7 @@ include $(DEVKITPRO)/libnx/switch_rules
 
 TARGET		:=	dodoi-engine-ns
 BUILD		:=	build
-SOURCES		:=	src src/engine src/engine/ecs src/engine/ecs/components src/engine/ecs/systems src/engine/gfx src/engine/io src/engine/math src/engine/physics src/engine/sfx
+SOURCES		:=	src src/engine src/engine/core src/engine/ecs src/engine/ecs/components src/engine/ecs/systems src/engine/gfx src/engine/io src/engine/math src/engine/physics src/engine/sfx
 DATA		:=	data
 INCLUDES	:=	include
 ROMFS		:=	romfs

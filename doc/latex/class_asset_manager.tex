@@ -1,0 +1,80 @@
+\doxysection{Asset\+Manager Class Reference}
+\hypertarget{class_asset_manager}{}\label{class_asset_manager}\index{AssetManager@{AssetManager}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_asset_manager_ad7ce1ea9b261294b1d762851e22da803}\label{class_asset_manager_ad7ce1ea9b261294b1d762851e22da803} 
+void {\bfseries load} ()
+\begin{DoxyCompactList}\small\item\em Loads the assets. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_asset_manager_ac9a55095ada437e36ad70bcee16f201f}{add\+Texture}} (const std\+::string \&name, const short value, const std\+::string \&file\+Path)
+\begin{DoxyCompactList}\small\item\em Adds a texture to the \doxylink{class_asset_manager}{Asset\+Manager}. \end{DoxyCompactList}\item 
+SDL\+\_\+\+Texture \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_asset_manager_abd1c53231bd524f24127290c4f218ad0}{get\+Texture}} (const std\+::string \&name)
+\begin{DoxyCompactList}\small\item\em Gets a texture by name. \end{DoxyCompactList}\item 
+\Hypertarget{class_asset_manager_ab035e71eca76a4688df2c49e01612319}\label{class_asset_manager_ab035e71eca76a4688df2c49e01612319} 
+int {\bfseries texture\+Count} () const
+\item 
+\Hypertarget{class_asset_manager_a13e8b736e2de62badc8c6e4d889144d1}\label{class_asset_manager_a13e8b736e2de62badc8c6e4d889144d1} 
+void {\bfseries clear\+Assets} ()
+\begin{DoxyCompactList}\small\item\em Clears the assets. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_asset_manager}{Asset\+Manager}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_asset_manager_ad7b081dd469b14930441ec3537d58798}{get\+Instance}} ()
+\begin{DoxyCompactList}\small\item\em Gets the singleton instance of the \doxylink{class_asset_manager}{Asset\+Manager}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_asset_manager_ac9a55095ada437e36ad70bcee16f201f}\label{class_asset_manager_ac9a55095ada437e36ad70bcee16f201f} 
+\index{AssetManager@{AssetManager}!addTexture@{addTexture}}
+\index{addTexture@{addTexture}!AssetManager@{AssetManager}}
+\doxysubsubsection{\texorpdfstring{addTexture()}{addTexture()}}
+{\footnotesize\ttfamily void Asset\+Manager\+::add\+Texture (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name,  }\item[{const short}]{value,  }\item[{const std\+::string \&}]{file\+Path }\end{DoxyParamCaption})}
+
+
+
+Adds a texture to the \doxylink{class_asset_manager}{Asset\+Manager}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the texture. \\
+\hline
+{\em file\+Path} & The file path of the texture. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_asset_manager_ad7b081dd469b14930441ec3537d58798}\label{class_asset_manager_ad7b081dd469b14930441ec3537d58798} 
+\index{AssetManager@{AssetManager}!getInstance@{getInstance}}
+\index{getInstance@{getInstance}!AssetManager@{AssetManager}}
+\doxysubsubsection{\texorpdfstring{getInstance()}{getInstance()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_asset_manager}{Asset\+Manager}} \texorpdfstring{$\ast$}{*} Asset\+Manager\+::get\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Gets the singleton instance of the \doxylink{class_asset_manager}{Asset\+Manager}. 
+
+\begin{DoxyReturn}{Returns}
+A pointer to the \doxylink{class_asset_manager}{Asset\+Manager} instance. 
+\end{DoxyReturn}
+\Hypertarget{class_asset_manager_abd1c53231bd524f24127290c4f218ad0}\label{class_asset_manager_abd1c53231bd524f24127290c4f218ad0} 
+\index{AssetManager@{AssetManager}!getTexture@{getTexture}}
+\index{getTexture@{getTexture}!AssetManager@{AssetManager}}
+\doxysubsubsection{\texorpdfstring{getTexture()}{getTexture()}}
+{\footnotesize\ttfamily SDL\+\_\+\+Texture \texorpdfstring{$\ast$}{*} Asset\+Manager\+::get\+Texture (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name }\end{DoxyParamCaption})}
+
+
+
+Gets a texture by name. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the texture. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pointer to the SDL\+\_\+\+Texture object. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+dodoi-\/engine-\/ns/src/engine/gfx/\mbox{\hyperlink{_asset_manager_8h}{Asset\+Manager.\+h}}\item 
+dodoi-\/engine-\/ns/src/engine/gfx/\mbox{\hyperlink{_asset_manager_8cpp}{Asset\+Manager.\+cpp}}\end{DoxyCompactItemize}

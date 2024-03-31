@@ -1,0 +1,33 @@
+\doxysection{Asset\+Manager.\+h}
+\hypertarget{_asset_manager_8h_source}{}\label{_asset_manager_8h_source}\index{dodoi-\/engine-\/ns/src/engine/gfx/AssetManager.h@{dodoi-\/engine-\/ns/src/engine/gfx/AssetManager.h}}
+\mbox{\hyperlink{_asset_manager_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00023\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00024\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_defs_8h}{../Defs.h}}"{}}}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \textcolor{keyword}{using\ }texture\_t\ =\ std::map<std::string,\ std::pair<short,\ SDL\_Texture*>>;}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_asset_manager}{AssetManager}}\ final\ \{}
+\DoxyCodeLine{00029\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keyword}{static}\ \mbox{\hyperlink{class_asset_manager}{AssetManager}}*\ instance\ =\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{00031\ \ \ \ \ texture\_t\ textures;}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ \ \ \ \ \mbox{\hyperlink{class_asset_manager}{AssetManager}}();}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00035\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00036\ \ \ \ \ \mbox{\hyperlink{class_asset_manager}{\string~AssetManager}}();}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{class_asset_manager}{AssetManager}}*\ \mbox{\hyperlink{class_asset_manager_ad7b081dd469b14930441ec3537d58798}{getInstance}}();}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00048\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_asset_manager_ad7ce1ea9b261294b1d762851e22da803}{load}}();}
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00056\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_asset_manager_ac9a55095ada437e36ad70bcee16f201f}{addTexture}}(\textcolor{keyword}{const}\ std::string\&\ name,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{short}\ value,\ \textcolor{keyword}{const}\ std::string\&\ filePath);}
+\DoxyCodeLine{00057\ \ \ \ \ }
+\DoxyCodeLine{00064\ \ \ \ \ SDL\_Texture*\ \mbox{\hyperlink{class_asset_manager_abd1c53231bd524f24127290c4f218ad0}{getTexture}}(\textcolor{keyword}{const}\ std::string\&\ name);}
+\DoxyCodeLine{00065\ \ \ \ \ \textcolor{keywordtype}{int}\ textureCount()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00066\ }
+\DoxyCodeLine{00070\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_asset_manager_a13e8b736e2de62badc8c6e4d889144d1}{clearAssets}}();}
+\DoxyCodeLine{00071\ \};}
+
+\end{DoxyCode}

@@ -85,42 +85,44 @@ $(function() { codefold.init(0); });
 </div><!--header-->
 <div class="contents">
 <a href="_audio_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#pragma once</span></div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &quot;<a class="code" href="_component_8h.html">Component.h</a>&quot;</span></div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &quot;<a class="code" href="_audio_manager_8h.html">../../sfx/AudioManager.h</a>&quot;</span></div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
-<div class="foldopen" id="foldopen00021" data-start="{" data-end="};">
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="class_audio.html">   21</a></span><span class="keyword">class </span><a class="code hl_class" href="class_audio.html">Audio</a> final : <span class="keyword">public</span> <a class="code hl_class" href="class_component.html">Component</a> {</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <span class="keywordtype">bool</span> paused = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    std::string audioId;</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <span class="keywordtype">int</span> loops = 0;</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <span class="keywordtype">bool</span> playOnAwake = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <span class="keywordtype">int</span> channel = -1;</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <span class="keywordtype">int</span> delay = 0;</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="class_audio.html#a3e621b5ca5bafeb413a60b854dab9d73">   36</a></span>    <a class="code hl_function" href="class_audio.html#a3e621b5ca5bafeb413a60b854dab9d73">Audio</a>(std::string audioId);</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#include &quot;<a class="code" href="_defs_8h.html">Defs.h</a>&quot;</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">#include &quot;<a class="code" href="_component_8h.html">Component.h</a>&quot;</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">#include &quot;<a class="code" href="_audio_manager_8h.html">../../sfx/AudioManager.h</a>&quot;</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="foldopen" id="foldopen00034" data-start="{" data-end="};">
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="class_audio.html">   34</a></span><span class="keyword">class </span><a class="code hl_class" href="class_audio.html">Audio</a> final : <span class="keyword">public</span> <a class="code hl_class" href="class_component.html">Component</a> {</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <span class="keywordtype">bool</span> paused = <span class="keyword">false</span>;</div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="class_audio.html#a79ea1dedc42e4622766c756cd51e2a29">   44</a></span>    <a class="code hl_function" href="class_audio.html#a79ea1dedc42e4622766c756cd51e2a29">Audio</a>(std::string audioId, <span class="keywordtype">bool</span> playOnAwake, <span class="keywordtype">int</span> loop);</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="class_audio.html#ae8f54deecb5f48511aaab469e80294d6">   49</a></span>    <a class="code hl_function" href="class_audio.html#ae8f54deecb5f48511aaab469e80294d6">~Audio</a>();</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    std::string audioId;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="keywordtype">int</span> loops = 0;</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <span class="keywordtype">bool</span> playOnAwake = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="keywordtype">int</span> channel = -1;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <span class="keywordtype">int</span> delay = 0;</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="class_audio.html#a3e621b5ca5bafeb413a60b854dab9d73">   49</a></span>    <a class="code hl_function" href="class_audio.html#a3e621b5ca5bafeb413a60b854dab9d73">Audio</a>(std::string audioId);</div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="class_audio.html#a2916f9015031bee9abb98adf0d83e7ee">   54</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_audio.html#a2916f9015031bee9abb98adf0d83e7ee">play</a>();</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="class_audio.html#a2ebc8bd97c5bf4cbfbddca46c15ce46c">   60</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_audio.html#a2ebc8bd97c5bf4cbfbddca46c15ce46c">play</a>(<span class="keywordtype">int</span> loop);</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="class_audio.html#a82c1018cf778eccc8819acfb64be53b2">   65</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_audio.html#a82c1018cf778eccc8819acfb64be53b2">pause</a>();</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno"><a class="line" href="class_audio.html#af628fdffa4dba3866e6e801fdda123ea">   70</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_audio.html#af628fdffa4dba3866e6e801fdda123ea">stop</a>();</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno"><a class="line" href="class_audio.html#ad2b666f1d68d7673636064e42c66b15b">   75</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_audio.html#ad2b666f1d68d7673636064e42c66b15b">stop</a>(<span class="keywordtype">int</span> delay);</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>};</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="class_audio.html#a79ea1dedc42e4622766c756cd51e2a29">   57</a></span>    <a class="code hl_function" href="class_audio.html#a79ea1dedc42e4622766c756cd51e2a29">Audio</a>(std::string audioId, <span class="keywordtype">bool</span> playOnAwake, <span class="keywordtype">int</span> loop);</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="class_audio.html#ae8f54deecb5f48511aaab469e80294d6">   62</a></span>    <a class="code hl_function" href="class_audio.html#ae8f54deecb5f48511aaab469e80294d6">~Audio</a>();</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno"><a class="line" href="class_audio.html#a2916f9015031bee9abb98adf0d83e7ee">   67</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_audio.html#a2916f9015031bee9abb98adf0d83e7ee">play</a>();</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno"><a class="line" href="class_audio.html#a2ebc8bd97c5bf4cbfbddca46c15ce46c">   73</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_audio.html#a2ebc8bd97c5bf4cbfbddca46c15ce46c">play</a>(<span class="keywordtype">int</span> loop);</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno"><a class="line" href="class_audio.html#a82c1018cf778eccc8819acfb64be53b2">   78</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_audio.html#a82c1018cf778eccc8819acfb64be53b2">pause</a>();</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno"><a class="line" href="class_audio.html#af628fdffa4dba3866e6e801fdda123ea">   83</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_audio.html#af628fdffa4dba3866e6e801fdda123ea">stop</a>();</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno"><a class="line" href="class_audio.html#ad2b666f1d68d7673636064e42c66b15b">   88</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_audio.html#ad2b666f1d68d7673636064e42c66b15b">stop</a>(<span class="keywordtype">int</span> delay);</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>};</div>
 </div>
-<div class="ttc" id="a_audio_manager_8h_html"><div class="ttname"><a href="_audio_manager_8h.html">AudioManager.h</a></div><div class="ttdoc">AudioManager class for the Dodoi-Engine-NS.</div></div>
+<div class="ttc" id="a_audio_manager_8h_html"><div class="ttname"><a href="_audio_manager_8h.html">AudioManager.h</a></div><div class="ttdoc">Implements the AudioManager class.</div></div>
 <div class="ttc" id="a_component_8h_html"><div class="ttname"><a href="_component_8h.html">Component.h</a></div><div class="ttdoc">Defines the Component class.</div></div>
-<div class="ttc" id="aclass_audio_html"><div class="ttname"><a href="class_audio.html">Audio</a></div><div class="ttdoc">The audio component.</div><div class="ttdef"><b>Definition</b> Audio.h:21</div></div>
+<div class="ttc" id="a_defs_8h_html"><div class="ttname"><a href="_defs_8h.html">Defs.h</a></div><div class="ttdoc">Defs includes and definitions for the Dodoi-Engine.</div></div>
+<div class="ttc" id="aclass_audio_html"><div class="ttname"><a href="class_audio.html">Audio</a></div><div class="ttdoc">The audio component.</div><div class="ttdef"><b>Definition</b> Audio.h:34</div></div>
 <div class="ttc" id="aclass_audio_html_a2916f9015031bee9abb98adf0d83e7ee"><div class="ttname"><a href="class_audio.html#a2916f9015031bee9abb98adf0d83e7ee">Audio::play</a></div><div class="ttdeci">void play()</div><div class="ttdoc">Starts playing the audio on the specified channel with the specified number of loops.</div></div>
 <div class="ttc" id="aclass_audio_html_a2ebc8bd97c5bf4cbfbddca46c15ce46c"><div class="ttname"><a href="class_audio.html#a2ebc8bd97c5bf4cbfbddca46c15ce46c">Audio::play</a></div><div class="ttdeci">void play(int loop)</div><div class="ttdoc">Starts playing the audio on the specified channel with the specified number of loops.</div></div>
 <div class="ttc" id="aclass_audio_html_a3e621b5ca5bafeb413a60b854dab9d73"><div class="ttname"><a href="class_audio.html#a3e621b5ca5bafeb413a60b854dab9d73">Audio::Audio</a></div><div class="ttdeci">Audio(std::string audioId)</div><div class="ttdoc">Constructor that initializes the audioId.</div></div>
@@ -129,7 +131,7 @@ $(function() { codefold.init(0); });
 <div class="ttc" id="aclass_audio_html_ad2b666f1d68d7673636064e42c66b15b"><div class="ttname"><a href="class_audio.html#ad2b666f1d68d7673636064e42c66b15b">Audio::stop</a></div><div class="ttdeci">void stop(int delay)</div><div class="ttdoc">Stops the audio with a fade out over the specified delay.</div></div>
 <div class="ttc" id="aclass_audio_html_ae8f54deecb5f48511aaab469e80294d6"><div class="ttname"><a href="class_audio.html#ae8f54deecb5f48511aaab469e80294d6">Audio::~Audio</a></div><div class="ttdeci">~Audio()</div><div class="ttdoc">Destructor that stops the audio. If delay is non-zero, the audio will fade out over the specified del...</div></div>
 <div class="ttc" id="aclass_audio_html_af628fdffa4dba3866e6e801fdda123ea"><div class="ttname"><a href="class_audio.html#af628fdffa4dba3866e6e801fdda123ea">Audio::stop</a></div><div class="ttdeci">void stop()</div><div class="ttdoc">Stops the audio immediately.</div></div>
-<div class="ttc" id="aclass_component_html"><div class="ttname"><a href="class_component.html">Component</a></div><div class="ttdoc">The base class for all components.</div><div class="ttdef"><b>Definition</b> Component.h:17</div></div>
+<div class="ttc" id="aclass_component_html"><div class="ttname"><a href="class_component.html">Component</a></div><div class="ttdoc">The base class for all components.</div><div class="ttdef"><b>Definition</b> Component.h:29</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

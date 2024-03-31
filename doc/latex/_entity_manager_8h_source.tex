@@ -3,64 +3,64 @@
 \mbox{\hyperlink{_entity_manager_8h}{Go to the documentation of this file.}}
 \begin{DoxyCode}{0}
 \DoxyCodeLine{00001\ }
-\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#pragma\ once}}
-\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_entity_8h}{Entity.h}}"{}}}
-\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_common_8h}{../Common.h}}"{}}}
-\DoxyCodeLine{00013\ }
-\DoxyCodeLine{00018\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_entity_comparator}{EntityComparator}}\ \{}
-\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keywordtype}{bool}\ operator()(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_entity}{Entity}}*\ a,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_entity}{Entity}}*\ b)\textcolor{keyword}{\ const\ }\{}
-\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ a-\/>id\ <\ b-\/>id;}
-\DoxyCodeLine{00021\ \ \ \ \ \}}
-\DoxyCodeLine{00022\ \};}
-\DoxyCodeLine{00023\ }
-\DoxyCodeLine{00028\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_entity_manager}{EntityManager}}\ final\ \{}
-\DoxyCodeLine{00029\ \textcolor{keyword}{private}:}
-\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{long}\ index\ =\ 0;}
-\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keyword}{static}\ \mbox{\hyperlink{class_entity_manager}{EntityManager}}*\ instance\ =\ \textcolor{keyword}{nullptr};}
-\DoxyCodeLine{00032\ }
-\DoxyCodeLine{00033\ \ \ \ \ std::vector<Entity*>\ entities;}
-\DoxyCodeLine{00034\ \ \ \ \ std::set<Entity*,\ EntityComparator>\ entitiesToBeKilled;}
+\DoxyCodeLine{00022\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00023\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_defs_8h}{../Defs.h}}"{}}}
+\DoxyCodeLine{00024\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_entity_8h}{Entity.h}}"{}}}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00030\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_entity_comparator}{EntityComparator}}\ \{}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordtype}{bool}\ operator()(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_entity}{Entity}}*\ a,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_entity}{Entity}}*\ b)\textcolor{keyword}{\ const\ }\{}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ a-\/>id\ <\ b-\/>id;}
+\DoxyCodeLine{00033\ \ \ \ \ \}}
+\DoxyCodeLine{00034\ \};}
 \DoxyCodeLine{00035\ }
-\DoxyCodeLine{00036\ \ \ \ \ \mbox{\hyperlink{class_entity_manager}{EntityManager}}();}
-\DoxyCodeLine{00037\ \ \ \ \ \mbox{\hyperlink{class_entity_manager}{\string~EntityManager}}();}
-\DoxyCodeLine{00038\ }
-\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{bool}\ compareAsc(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_entity}{Entity}}*\ e1,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_entity}{Entity}}*\ e2);}
-\DoxyCodeLine{00046\ }
-\DoxyCodeLine{00047\ \textcolor{keyword}{public}:}
-\DoxyCodeLine{00052\ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{class_entity_manager}{EntityManager}}*\ \mbox{\hyperlink{class_entity_manager_a435063a73d18380eb76e6f3cf6d2faf0}{getInstance}}();}
-\DoxyCodeLine{00053\ }
-\DoxyCodeLine{00058\ \ \ \ \ \mbox{\hyperlink{class_entity}{Entity}}*\ \mbox{\hyperlink{class_entity_manager_aa63dee7f54d3db4101b02266959d2201}{createEntity}}();}
-\DoxyCodeLine{00059\ }
-\DoxyCodeLine{00066\ \ \ \ \ \mbox{\hyperlink{class_entity}{Entity}}*\ \mbox{\hyperlink{class_entity_manager_aa63dee7f54d3db4101b02266959d2201}{createEntity}}(\textcolor{keywordtype}{float}\ x,\ \textcolor{keywordtype}{float}\ y);}
-\DoxyCodeLine{00067\ }
-\DoxyCodeLine{00075\ \ \ \ \ \mbox{\hyperlink{class_entity}{Entity}}*\ \mbox{\hyperlink{class_entity_manager_aa63dee7f54d3db4101b02266959d2201}{createEntity}}(\textcolor{keywordtype}{float}\ x,\ \textcolor{keywordtype}{float}\ y,\ \mbox{\hyperlink{class_tag}{Tag}}\ tag);}
-\DoxyCodeLine{00076\ }
-\DoxyCodeLine{00082\ \ \ \ \ \mbox{\hyperlink{class_entity}{Entity}}*\ \mbox{\hyperlink{class_entity_manager_a29efaff52a27f524e454008e6c24cd89}{getEntity}}(\textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{long}\ \textcolor{keywordtype}{id});}
-\DoxyCodeLine{00083\ }
-\DoxyCodeLine{00088\ \ \ \ \ \textcolor{keyword}{const}\ std::vector<Entity*>\&\ \mbox{\hyperlink{class_entity_manager_a46383c7aca14d56bc33a366cd3426c81}{getEntities}}()\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00089\ \ \ \ \ }
-\DoxyCodeLine{00094\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_entity_manager_a8002d877a75545e737e470df782ea098}{removeEntity}}(\mbox{\hyperlink{class_entity}{Entity}}*\ entity);}
-\DoxyCodeLine{00095\ \ \ \ \ }
-\DoxyCodeLine{00100\ \ \ \ \ \textcolor{keyword}{template}<\textcolor{keyword}{typename}\ T>}
-\DoxyCodeLine{00101\ \ \ \ \ std::vector<Entity*>\ \mbox{\hyperlink{class_entity_manager_ac50800671d85061a3d5bc9008b1b4144}{getEntitiesWithComponent}}()\ \{}
-\DoxyCodeLine{00102\ \ \ \ \ \ \ \ \ std::vector<Entity*>\ list;}
-\DoxyCodeLine{00103\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keyword}{auto}\&\ e\ :\ entities)\ \{}
-\DoxyCodeLine{00104\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (e-\/>getComponent<T>())\ \{}
-\DoxyCodeLine{00105\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ list.push\_back(e);}
-\DoxyCodeLine{00106\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
-\DoxyCodeLine{00107\ \ \ \ \ \ \ \ \ \}}
-\DoxyCodeLine{00108\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ list;\ }
-\DoxyCodeLine{00109\ \ \ \ \ \}}
-\DoxyCodeLine{00110\ }
-\DoxyCodeLine{00116\ \ \ \ \ std::vector<Entity*>\ \mbox{\hyperlink{class_entity_manager_a66ebca4d68513b70549cf62315b6f0de}{getEntitiesWithTag}}(\mbox{\hyperlink{class_tag}{Tag}}\ tag);}
-\DoxyCodeLine{00117\ }
-\DoxyCodeLine{00121\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_entity_manager_abc6a2cc5077501f4b06d88f4ed3e7e31}{update}}();}
+\DoxyCodeLine{00040\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_entity_manager}{EntityManager}}\ final\ \{}
+\DoxyCodeLine{00041\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{long}\ index\ =\ 0;}
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keyword}{static}\ \mbox{\hyperlink{class_entity_manager}{EntityManager}}*\ instance\ =\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00045\ \ \ \ \ std::vector<Entity*>\ entities;}
+\DoxyCodeLine{00046\ \ \ \ \ std::set<Entity*,\ EntityComparator>\ entitiesToBeKilled;}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00048\ \ \ \ \ \mbox{\hyperlink{class_entity_manager}{EntityManager}}();}
+\DoxyCodeLine{00049\ \ \ \ \ \mbox{\hyperlink{class_entity_manager}{\string~EntityManager}}();}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00057\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{bool}\ compareAsc(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_entity}{Entity}}*\ e1,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_entity}{Entity}}*\ e2);}
+\DoxyCodeLine{00058\ }
+\DoxyCodeLine{00059\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00064\ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{class_entity_manager}{EntityManager}}*\ \mbox{\hyperlink{class_entity_manager_a435063a73d18380eb76e6f3cf6d2faf0}{getInstance}}();}
+\DoxyCodeLine{00065\ }
+\DoxyCodeLine{00070\ \ \ \ \ \mbox{\hyperlink{class_entity}{Entity}}*\ \mbox{\hyperlink{class_entity_manager_aa63dee7f54d3db4101b02266959d2201}{createEntity}}();}
+\DoxyCodeLine{00071\ }
+\DoxyCodeLine{00078\ \ \ \ \ \mbox{\hyperlink{class_entity}{Entity}}*\ \mbox{\hyperlink{class_entity_manager_aa63dee7f54d3db4101b02266959d2201}{createEntity}}(\textcolor{keywordtype}{float}\ x,\ \textcolor{keywordtype}{float}\ y);}
+\DoxyCodeLine{00079\ }
+\DoxyCodeLine{00087\ \ \ \ \ \mbox{\hyperlink{class_entity}{Entity}}*\ \mbox{\hyperlink{class_entity_manager_aa63dee7f54d3db4101b02266959d2201}{createEntity}}(\textcolor{keywordtype}{float}\ x,\ \textcolor{keywordtype}{float}\ y,\ \mbox{\hyperlink{class_tag}{Tag}}\ tag);}
+\DoxyCodeLine{00088\ }
+\DoxyCodeLine{00094\ \ \ \ \ \mbox{\hyperlink{class_entity}{Entity}}*\ \mbox{\hyperlink{class_entity_manager_a29efaff52a27f524e454008e6c24cd89}{getEntity}}(\textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{long}\ \textcolor{keywordtype}{id});}
+\DoxyCodeLine{00095\ }
+\DoxyCodeLine{00100\ \ \ \ \ \textcolor{keyword}{const}\ std::vector<Entity*>\&\ \mbox{\hyperlink{class_entity_manager_a46383c7aca14d56bc33a366cd3426c81}{getEntities}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00101\ \ \ \ \ }
+\DoxyCodeLine{00106\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_entity_manager_a8002d877a75545e737e470df782ea098}{removeEntity}}(\mbox{\hyperlink{class_entity}{Entity}}*\ entity);}
+\DoxyCodeLine{00107\ \ \ \ \ }
+\DoxyCodeLine{00112\ \ \ \ \ \textcolor{keyword}{template}<\textcolor{keyword}{typename}\ T>}
+\DoxyCodeLine{00113\ \ \ \ \ std::vector<Entity*>\ \mbox{\hyperlink{class_entity_manager_ac50800671d85061a3d5bc9008b1b4144}{getEntitiesWithComponent}}()\ \{}
+\DoxyCodeLine{00114\ \ \ \ \ \ \ \ \ std::vector<Entity*>\ list;}
+\DoxyCodeLine{00115\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keyword}{auto}\&\ e\ :\ entities)\ \{}
+\DoxyCodeLine{00116\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (e-\/>getComponent<T>())\ \{}
+\DoxyCodeLine{00117\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ list.push\_back(e);}
+\DoxyCodeLine{00118\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00119\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00120\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ list;\ }
+\DoxyCodeLine{00121\ \ \ \ \ \}}
 \DoxyCodeLine{00122\ }
-\DoxyCodeLine{00127\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_entity_manager_aabf4e360fe0449c88d9a36e1906f21e4}{killEntity}}(\mbox{\hyperlink{class_entity}{Entity}}*\ entity);}
-\DoxyCodeLine{00128\ }
-\DoxyCodeLine{00132\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_entity_manager_a322d6323d3d2b22581ca50efd1e253f5}{clear}}();}
-\DoxyCodeLine{00133\ }
-\DoxyCodeLine{00138\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_entity_manager_a322d6323d3d2b22581ca50efd1e253f5}{clear}}(\mbox{\hyperlink{class_entity}{Entity}}*\ entity);}
-\DoxyCodeLine{00139\ \};}
+\DoxyCodeLine{00128\ \ \ \ \ std::vector<Entity*>\ \mbox{\hyperlink{class_entity_manager_a66ebca4d68513b70549cf62315b6f0de}{getEntitiesWithTag}}(\mbox{\hyperlink{class_tag}{Tag}}\ tag);}
+\DoxyCodeLine{00129\ }
+\DoxyCodeLine{00133\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_entity_manager_abc6a2cc5077501f4b06d88f4ed3e7e31}{update}}();}
+\DoxyCodeLine{00134\ }
+\DoxyCodeLine{00139\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_entity_manager_aabf4e360fe0449c88d9a36e1906f21e4}{killEntity}}(\mbox{\hyperlink{class_entity}{Entity}}*\ entity);}
+\DoxyCodeLine{00140\ }
+\DoxyCodeLine{00144\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_entity_manager_a322d6323d3d2b22581ca50efd1e253f5}{clear}}();}
+\DoxyCodeLine{00145\ }
+\DoxyCodeLine{00150\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_entity_manager_a322d6323d3d2b22581ca50efd1e253f5}{clear}}(\mbox{\hyperlink{class_entity}{Entity}}*\ entity);}
+\DoxyCodeLine{00151\ \};}
 
 \end{DoxyCode}
