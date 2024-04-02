@@ -1,0 +1,21 @@
+\doxysection{Waypoint.\+h}
+\hypertarget{_waypoint_8h_source}{}\label{_waypoint_8h_source}\index{dodoi-\/engine-\/ns/src/engine/ecs/component/Waypoint.h@{dodoi-\/engine-\/ns/src/engine/ecs/component/Waypoint.h}}
+\mbox{\hyperlink{_waypoint_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00022\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00023\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_defs_8h}{Defs.h}}"{}}}
+\DoxyCodeLine{00024\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_component_8h}{Component.h}}"{}}}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00027\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_waypoint}{Waypoint}}\ final\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_component}{Component}}\ \{\ }
+\DoxyCodeLine{00028\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00029\ \ \ \ \ std::vector<std::pair<short,\ short>>\ waypoints;}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ \ \ \ \ \mbox{\hyperlink{class_waypoint}{Waypoint}}(\textcolor{keyword}{const}\ std::vector<std::pair<short,\ short>>\&\ points)\ :\ waypoints(points)\ \{\}}
+\DoxyCodeLine{00032\ \ \ \ \ \mbox{\hyperlink{class_waypoint}{\string~Waypoint}}()\ \{}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ waypoints.clear();}
+\DoxyCodeLine{00034\ \ \ \ \ \}}
+\DoxyCodeLine{00035\ \};}
+
+\end{DoxyCode}

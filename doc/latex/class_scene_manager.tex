@@ -1,0 +1,82 @@
+\doxysection{Scene\+Manager Class Reference}
+\hypertarget{class_scene_manager}{}\label{class_scene_manager}\index{SceneManager@{SceneManager}}
+
+
+Manages the lifecycle of game scenes.  
+
+
+
+
+{\ttfamily \#include $<$Scene\+Manager.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_scene_manager_a30b86a110bd426ea044b6260712bf5c5}{add\+Scene}} (const std\+::string \&scene\+Name, std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{class_scene}{Scene}} $>$ scene)
+\begin{DoxyCompactList}\small\item\em Adds a scene to the \doxylink{class_scene_manager}{Scene\+Manager}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scene_manager_a8084baf622b144978ab87cba5ad4d323}{load\+Scene\+Async}} (const std\+::string \&scene\+Name)
+\begin{DoxyCompactList}\small\item\em Loads a scene asynchronously. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_scene_manager}{Scene\+Manager}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_scene_manager_a51b97c5e92bc7b56492b3e96c0f37146}{get\+Instance}} ()
+\begin{DoxyCompactList}\small\item\em Returns the singleton instance of \doxylink{class_scene_manager}{Scene\+Manager}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Manages the lifecycle of game scenes. 
+
+The \doxylink{class_scene_manager}{Scene\+Manager} class is responsible for managing the lifecycle of game scenes. It provides methods to add scenes, load scenes asynchronously, and get the instance of the \doxylink{class_scene_manager}{Scene\+Manager}. It uses the Singleton design pattern. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_scene_manager_a30b86a110bd426ea044b6260712bf5c5}\label{class_scene_manager_a30b86a110bd426ea044b6260712bf5c5} 
+\index{SceneManager@{SceneManager}!addScene@{addScene}}
+\index{addScene@{addScene}!SceneManager@{SceneManager}}
+\doxysubsubsection{\texorpdfstring{addScene()}{addScene()}}
+{\footnotesize\ttfamily void Scene\+Manager\+::add\+Scene (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{scene\+Name,  }\item[{std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{class_scene}{Scene}} $>$}]{scene }\end{DoxyParamCaption})}
+
+
+
+Adds a scene to the \doxylink{class_scene_manager}{Scene\+Manager}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em scene\+Name} & The name of the scene. \\
+\hline
+{\em scene} & The unique pointer to the \doxylink{class_scene}{Scene} object. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_scene_manager_a51b97c5e92bc7b56492b3e96c0f37146}\label{class_scene_manager_a51b97c5e92bc7b56492b3e96c0f37146} 
+\index{SceneManager@{SceneManager}!getInstance@{getInstance}}
+\index{getInstance@{getInstance}!SceneManager@{SceneManager}}
+\doxysubsubsection{\texorpdfstring{getInstance()}{getInstance()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_scene_manager}{Scene\+Manager}} \texorpdfstring{$\ast$}{*} Scene\+Manager\+::get\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns the singleton instance of \doxylink{class_scene_manager}{Scene\+Manager}. 
+
+\begin{DoxyReturn}{Returns}
+Scene\+Manager\texorpdfstring{$\ast$}{*} The singleton instance of \doxylink{class_scene_manager}{Scene\+Manager}. 
+\end{DoxyReturn}
+\Hypertarget{class_scene_manager_a8084baf622b144978ab87cba5ad4d323}\label{class_scene_manager_a8084baf622b144978ab87cba5ad4d323} 
+\index{SceneManager@{SceneManager}!loadSceneAsync@{loadSceneAsync}}
+\index{loadSceneAsync@{loadSceneAsync}!SceneManager@{SceneManager}}
+\doxysubsubsection{\texorpdfstring{loadSceneAsync()}{loadSceneAsync()}}
+{\footnotesize\ttfamily void Scene\+Manager\+::load\+Scene\+Async (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{scene\+Name }\end{DoxyParamCaption})}
+
+
+
+Loads a scene asynchronously. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em scene\+Name} & The name of the scene to load. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+dodoi-\/engine-\/ns/src/engine/core/\mbox{\hyperlink{_scene_manager_8h}{Scene\+Manager.\+h}}\item 
+dodoi-\/engine-\/ns/src/engine/core/\mbox{\hyperlink{_scene_manager_8cpp}{Scene\+Manager.\+cpp}}\end{DoxyCompactItemize}

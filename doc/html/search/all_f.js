@@ -7,5 +7,6 @@ var searchData=
   ['rigidbody_2eh_4',['RigidBody.h',['../_rigid_body_8h.html',1,'']]],
   ['rootd_5',['rootD',['../class_de_math.html#ab0cd756c8ce25725f55070a9ad2e9bf9',1,'DeMath']]],
   ['rootf_6',['rootF',['../class_de_math.html#abac1d6a2001d1cfaf4aa13add01b224e',1,'DeMath']]],
-  ['rotate_7',['rotate',['../class_vec2.html#a4a2574b556510bd6ec633dd873643608',1,'Vec2']]]
+  ['rotate_7',['rotate',['../class_vec2.html#a4a2574b556510bd6ec633dd873643608',1,'Vec2']]],
+  ['run_8',['run',['../class_scene.html#ae94f38c35f18de39b316d506055d81ef',1,'Scene']]]
 ];

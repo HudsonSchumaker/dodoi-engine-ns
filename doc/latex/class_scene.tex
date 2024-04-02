@@ -1,0 +1,124 @@
+\doxysection{Scene Class Reference}
+\hypertarget{class_scene}{}\label{class_scene}\index{Scene@{Scene}}
+
+
+Represents a game scene.  
+
+
+
+
+{\ttfamily \#include $<$Scene.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_scene_aa0a5be58e2ee2d1fdafc5fb46b5e661e}\label{class_scene_aa0a5be58e2ee2d1fdafc5fb46b5e661e} 
+virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+Scene} ()
+\begin{DoxyCompactList}\small\item\em Virtual destructor for \doxylink{class_scene}{Scene}. \end{DoxyCompactList}\item 
+virtual short \mbox{\hyperlink{class_scene_ae94f38c35f18de39b316d506055d81ef}{run}} ()=0
+\begin{DoxyCompactList}\small\item\em Runs the scene. Pure virtual function. \end{DoxyCompactList}\item 
+\Hypertarget{class_scene_acbf06616445b1c04f6cf3e8d6ea756e0}\label{class_scene_acbf06616445b1c04f6cf3e8d6ea756e0} 
+void {\bfseries load\+Async} ()
+\begin{DoxyCompactList}\small\item\em Loads the scene asynchronously. \end{DoxyCompactList}\item 
+\Hypertarget{class_scene_ad1b6e620af9a0a43b7b24d59374e6f4a}\label{class_scene_ad1b6e620af9a0a43b7b24d59374e6f4a} 
+void {\bfseries wait\+For\+Load} ()
+\begin{DoxyCompactList}\small\item\em Waits for the scene to finish loading. \end{DoxyCompactList}\item 
+const std\+::string \& \mbox{\hyperlink{class_scene_a33dce9fb47e3ff7b75df5bc2c0d4a13e}{get\+Next\+Scene}} () const
+\begin{DoxyCompactList}\small\item\em Returns the name of the next scene. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_scene_aaebd59f907718f5b6a53594f372f82d0}{get\+Is\+Loaded}} ()
+\begin{DoxyCompactList}\small\item\em Returns whether the scene is loaded. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_scene_acf107563074852f8b8315c9f6fd9a03f}\label{class_scene_acf107563074852f8b8315c9f6fd9a03f} 
+float {\bfseries calculate\+Delta\+Time} ()
+\item 
+\Hypertarget{class_scene_acbdb4b51a2786514cbfd3fc27a602436}\label{class_scene_acbdb4b51a2786514cbfd3fc27a602436} 
+void {\bfseries begin\+Render} ()
+\item 
+\Hypertarget{class_scene_a8fdde63b099361ce5d847c3b3a3983f9}\label{class_scene_a8fdde63b099361ce5d847c3b3a3983f9} 
+void {\bfseries end\+Render} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_scene_afed13ec4ba2d7ab75b273d507911b498}\label{class_scene_afed13ec4ba2d7ab75b273d507911b498} 
+\mbox{\hyperlink{class_camera}{Camera}} {\bfseries camera} = \{ 0, 0, \mbox{\hyperlink{_defs_8h_a2cd109632a6dcccaa80b43561b1ab700}{SCREEN\+\_\+\+WIDTH}}, \mbox{\hyperlink{_defs_8h_a6974d08a74da681b3957b2fead2608b8}{SCREEN\+\_\+\+HEIGHT}} \}
+\item 
+\Hypertarget{class_scene_a04ae8110c42e47e8e7892e89dc34328e}\label{class_scene_a04ae8110c42e47e8e7892e89dc34328e} 
+SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*} {\bfseries renderer} = nullptr
+\item 
+\Hypertarget{class_scene_ab6a70a1803dc39f20ff1a09c3831d3e5}\label{class_scene_ab6a70a1803dc39f20ff1a09c3831d3e5} 
+int {\bfseries millisecs\+Previous\+Frame} = SDL\+\_\+\+Get\+Ticks()
+\item 
+\Hypertarget{class_scene_a4624158c6d315465401ccdda659bc13b}\label{class_scene_a4624158c6d315465401ccdda659bc13b} 
+float {\bfseries delta\+Time} = 0.\+0f
+\item 
+\Hypertarget{class_scene_a1d6b1d025c5c89441175b07fd04b591b}\label{class_scene_a1d6b1d025c5c89441175b07fd04b591b} 
+std\+::string {\bfseries next\+Scene} = "{}Title\+Screen"{}
+\item 
+\Hypertarget{class_scene_a9776727e7373aee3bcef440e7c29e355}\label{class_scene_a9776727e7373aee3bcef440e7c29e355} 
+bool {\bfseries is\+Running} = false
+\item 
+\Hypertarget{class_scene_a01cd8ebd601919e8c766410391bf866f}\label{class_scene_a01cd8ebd601919e8c766410391bf866f} 
+bool {\bfseries is\+Paused} = false
+\item 
+\Hypertarget{class_scene_af013348fff0f861acbbd3d1f7ee238fe}\label{class_scene_af013348fff0f861acbbd3d1f7ee238fe} 
+bool {\bfseries is\+Loaded} = false
+\item 
+\Hypertarget{class_scene_a30a25d6b2e277cca02aedbdcbe906530}\label{class_scene_a30a25d6b2e277cca02aedbdcbe906530} 
+short {\bfseries exit} = 0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a game scene. 
+
+The \doxylink{class_scene}{Scene} class is an abstract base class that represents a game scene. It provides methods to load, input, update, render, and unload the scene. It also provides methods to calculate delta time, begin rendering, end rendering, and get the next scene. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_scene_aaebd59f907718f5b6a53594f372f82d0}\label{class_scene_aaebd59f907718f5b6a53594f372f82d0} 
+\index{Scene@{Scene}!getIsLoaded@{getIsLoaded}}
+\index{getIsLoaded@{getIsLoaded}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{getIsLoaded()}{getIsLoaded()}}
+{\footnotesize\ttfamily bool Scene\+::get\+Is\+Loaded (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns whether the scene is loaded. 
+
+\begin{DoxyReturn}{Returns}
+bool True if the scene is loaded, false otherwise. 
+\end{DoxyReturn}
+\Hypertarget{class_scene_a33dce9fb47e3ff7b75df5bc2c0d4a13e}\label{class_scene_a33dce9fb47e3ff7b75df5bc2c0d4a13e} 
+\index{Scene@{Scene}!getNextScene@{getNextScene}}
+\index{getNextScene@{getNextScene}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{getNextScene()}{getNextScene()}}
+{\footnotesize\ttfamily const std\+::string \& Scene\+::get\+Next\+Scene (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns the name of the next scene. 
+
+\begin{DoxyReturn}{Returns}
+const std\+::string\& The name of the next scene. 
+\end{DoxyReturn}
+\Hypertarget{class_scene_ae94f38c35f18de39b316d506055d81ef}\label{class_scene_ae94f38c35f18de39b316d506055d81ef} 
+\index{Scene@{Scene}!run@{run}}
+\index{run@{run}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily virtual short Scene\+::run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Runs the scene. Pure virtual function. 
+
+\begin{DoxyReturn}{Returns}
+short The exit status of the scene. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+dodoi-\/engine-\/ns/src/engine/core/\mbox{\hyperlink{_scene_8h}{Scene.\+h}}\item 
+dodoi-\/engine-\/ns/src/engine/core/\mbox{\hyperlink{_scene_8cpp}{Scene.\+cpp}}\end{DoxyCompactItemize}

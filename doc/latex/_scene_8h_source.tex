@@ -1,0 +1,53 @@
+\doxysection{Scene.\+h}
+\hypertarget{_scene_8h_source}{}\label{_scene_8h_source}\index{dodoi-\/engine-\/ns/src/engine/core/Scene.h@{dodoi-\/engine-\/ns/src/engine/core/Scene.h}}
+\mbox{\hyperlink{_scene_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00022\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00023\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_defs_8h}{../Defs.h}}"{}}}
+\DoxyCodeLine{00024\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_gfx_8h}{../gfx/Gfx.h}}"{}}}
+\DoxyCodeLine{00025\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_camera_8h}{../core/Camera.h}}"{}}}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00035\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_scene}{Scene}}\ \{}
+\DoxyCodeLine{00036\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00040\ \ \ \ \ std::future<void>\ loadFuture;}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ load()\ =\ 0;}
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ input()\ =\ 0;}
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ update()\ =\ 0;}
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ render()\ =\ 0;}
+\DoxyCodeLine{00046\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ unload()\ =\ 0;}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00048\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00049\ \ \ \ \ \mbox{\hyperlink{class_camera}{Camera}}\ camera\ =\ \{\ 0,\ 0,\ \mbox{\hyperlink{_defs_8h_a2cd109632a6dcccaa80b43561b1ab700}{SCREEN\_WIDTH}},\ \mbox{\hyperlink{_defs_8h_a6974d08a74da681b3957b2fead2608b8}{SCREEN\_HEIGHT}}\ \};}
+\DoxyCodeLine{00050\ \ \ \ \ SDL\_Renderer*\ renderer\ =\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{00051\ \ \ \ \ \textcolor{keywordtype}{int}\ millisecsPreviousFrame\ =\ SDL\_GetTicks();}
+\DoxyCodeLine{00052\ \ \ \ \ \textcolor{keywordtype}{float}\ deltaTime\ =\ 0.0f;}
+\DoxyCodeLine{00053\ \ \ \ \ std::string\ nextScene\ =\ \textcolor{stringliteral}{"{}TitleScreen"{}};}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00055\ \ \ \ \ \textcolor{keywordtype}{bool}\ isRunning\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00056\ \ \ \ \ \textcolor{keywordtype}{bool}\ isPaused\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00057\ \ \ \ \ \textcolor{keywordtype}{bool}\ isLoaded\ =\ \textcolor{keyword}{false};\ }
+\DoxyCodeLine{00058\ \ \ \ \ \textcolor{keywordtype}{short}\ exit\ =\ 0;}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00060\ \ \ \ \ \textcolor{keywordtype}{float}\ calculateDeltaTime();}
+\DoxyCodeLine{00061\ \ \ \ \ \textcolor{keywordtype}{void}\ beginRender();}
+\DoxyCodeLine{00062\ \ \ \ \ \textcolor{keywordtype}{void}\ endRender();}
+\DoxyCodeLine{00063\ }
+\DoxyCodeLine{00064\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00065\ \ \ \ \ \mbox{\hyperlink{class_scene}{Scene}}();}
+\DoxyCodeLine{00066\ }
+\DoxyCodeLine{00070\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{class_scene_aa0a5be58e2ee2d1fdafc5fb46b5e661e}{\string~Scene}}()\ \{\}}
+\DoxyCodeLine{00071\ }
+\DoxyCodeLine{00076\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{short}\ \mbox{\hyperlink{class_scene_ae94f38c35f18de39b316d506055d81ef}{run}}()\ =\ 0;}
+\DoxyCodeLine{00077\ }
+\DoxyCodeLine{00081\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_scene_acbf06616445b1c04f6cf3e8d6ea756e0}{loadAsync}}();}
+\DoxyCodeLine{00082\ }
+\DoxyCodeLine{00086\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_scene_ad1b6e620af9a0a43b7b24d59374e6f4a}{waitForLoad}}();}
+\DoxyCodeLine{00087\ }
+\DoxyCodeLine{00092\ \ \ \ \ \textcolor{keyword}{const}\ std::string\&\ \mbox{\hyperlink{class_scene_a33dce9fb47e3ff7b75df5bc2c0d4a13e}{getNextScene}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00093\ }
+\DoxyCodeLine{00098\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_scene_aaebd59f907718f5b6a53594f372f82d0}{getIsLoaded}}();}
+\DoxyCodeLine{00099\ \};}
+
+\end{DoxyCode}
