@@ -1,0 +1,38 @@
+\doxysection{Circle.\+h}
+\hypertarget{_circle_8h_source}{}\label{_circle_8h_source}\index{dodoi-\/engine-\/ns/src/engine/gfx/Circle.h@{dodoi-\/engine-\/ns/src/engine/gfx/Circle.h}}
+\mbox{\hyperlink{_circle_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00023\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00024\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_color_8h}{../gfx/Color.h}}"{}}}
+\DoxyCodeLine{00025\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_entity_8h}{../ecs/Entity.h}}"{}}}
+\DoxyCodeLine{00026\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_dimension_8h}{../math/Dimension.h}}"{}}}
+\DoxyCodeLine{00027\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_component_8h}{../ecs/component/Component.h}}"{}}}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00035\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_circle}{Circle}}\ final\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_component}{Component}}\ \{}
+\DoxyCodeLine{00036\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keywordtype}{int}\ radius\ =\ 0;}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00039\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keywordtype}{float}\ side\ =\ 0.0f;}
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keywordtype}{bool}\ isFixed\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{keywordtype}{bool}\ isFilled\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keywordtype}{bool}\ isDashed\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keywordtype}{short}\ dashLength\ =\ 8;}
+\DoxyCodeLine{00045\ \ \ \ \ SDL\_Color\ color\ =\ \mbox{\hyperlink{class_color_aafc5056b3e7b8f10ca09d04eb8877e0e}{Color::getWhite}}();}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00047\ \ \ \ \ \mbox{\hyperlink{class_circle}{Circle}}();}
+\DoxyCodeLine{00048\ \ \ \ \ \mbox{\hyperlink{class_circle}{Circle}}(\textcolor{keywordtype}{int}\ radius);}
+\DoxyCodeLine{00049\ \ \ \ \ \mbox{\hyperlink{class_circle}{Circle}}(\textcolor{keywordtype}{int}\ radius,\ \textcolor{keywordtype}{bool}\ isFixed);}
+\DoxyCodeLine{00050\ \ \ \ \ \mbox{\hyperlink{class_circle}{Circle}}(\textcolor{keywordtype}{int}\ radius,\ \textcolor{keywordtype}{bool}\ isFixed,\ \textcolor{keywordtype}{bool}\ isFilled,\ SDL\_Color\ color);}
+\DoxyCodeLine{00051\ \ \ \ \ \mbox{\hyperlink{class_circle}{Circle}}(\textcolor{keywordtype}{int}\ radius,\ \textcolor{keywordtype}{bool}\ isFixed,\ \textcolor{keywordtype}{short}\ dashLength,\ SDL\_Color\ color);}
+\DoxyCodeLine{00052\ \ \ \ \ \mbox{\hyperlink{class_circle}{\string~Circle}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00058\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_circle_a20e1a6e704da36f8a719a4cd61c2e0a0}{sideCalculation}}();}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00064\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_circle_a44c925cae1c7fbb29044cb1a9178a283}{setRadius}}(\textcolor{keywordtype}{int}\ radius);}
+\DoxyCodeLine{00065\ \ \ \ \ \textcolor{keywordtype}{int}\ getRadius()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00066\ \ \ \ \ \mbox{\hyperlink{class_dimension}{Dimension<int>}}\ getSize()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00067\ \};}
+
+\end{DoxyCode}

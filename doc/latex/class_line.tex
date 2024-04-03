@@ -1,0 +1,80 @@
+\doxysection{Line Class Reference}
+\hypertarget{class_line}{}\label{class_line}\index{Line@{Line}}
+
+
+A class representing a line, derived from the \doxylink{class_component}{Component} class.  
+
+
+
+
+{\ttfamily \#include $<$Line.\+h$>$}
+
+Inheritance diagram for Line\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_line}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_line_a80533db111a9572158734d6449ae52e9}{Line}} (\mbox{\hyperlink{class_vec2}{Vec2}} b)
+\begin{DoxyCompactList}\small\item\em Initializes a line with the given \doxylink{class_vec2}{Vec2}, the A point of the line is the transform component. \end{DoxyCompactList}\item 
+\Hypertarget{class_line_af86eb752cf0f65bd28b3c7f498862a26}\label{class_line_af86eb752cf0f65bd28b3c7f498862a26} 
+{\bfseries Line} (float x, float y)
+\item 
+\Hypertarget{class_line_a531bd02d162dcd0e1d529c5ea9ad6770}\label{class_line_a531bd02d162dcd0e1d529c5ea9ad6770} 
+{\bfseries Line} (\mbox{\hyperlink{class_vec2}{Vec2}} b, bool is\+Fixed)
+\item 
+\Hypertarget{class_line_ada9beb8c84b691a70ae7886b634ef7f0}\label{class_line_ada9beb8c84b691a70ae7886b634ef7f0} 
+{\bfseries Line} (\mbox{\hyperlink{class_vec2}{Vec2}} b, bool is\+Fixed, SDL\+\_\+\+Color color)
+\item 
+\Hypertarget{class_line_aef21542b0aa1483d114a1742c05bfef3}\label{class_line_aef21542b0aa1483d114a1742c05bfef3} 
+\mbox{\hyperlink{class_dimension}{Dimension}}$<$ int $>$ {\bfseries get\+Size} () const
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_line_aeec5ae6970c6a125ba365cd01073da4b}\label{class_line_aeec5ae6970c6a125ba365cd01073da4b} 
+\mbox{\hyperlink{class_vec2}{Vec2}} {\bfseries b}
+\item 
+\Hypertarget{class_line_a184837e779cbf0616fb4373e3320390e}\label{class_line_a184837e779cbf0616fb4373e3320390e} 
+bool {\bfseries is\+Fixed} = false
+\item 
+\Hypertarget{class_line_a20d8f22b99671a4f69ae8e2bbf2f01fe}\label{class_line_a20d8f22b99671a4f69ae8e2bbf2f01fe} 
+SDL\+\_\+\+Color {\bfseries color} = \mbox{\hyperlink{class_color_aafc5056b3e7b8f10ca09d04eb8877e0e}{Color\+::get\+White}}()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{class_component}{Component}}}
+\begin{DoxyCompactItemize}
+\item 
+unsigned long {\bfseries parent\+Id} = 0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A class representing a line, derived from the \doxylink{class_component}{Component} class. 
+
+This class provides functionality for creating and manipulating a line. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_line_a80533db111a9572158734d6449ae52e9}\label{class_line_a80533db111a9572158734d6449ae52e9} 
+\index{Line@{Line}!Line@{Line}}
+\index{Line@{Line}!Line@{Line}}
+\doxysubsubsection{\texorpdfstring{Line()}{Line()}}
+{\footnotesize\ttfamily Line\+::\+Line (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vec2}{Vec2}}}]{b }\end{DoxyParamCaption})}
+
+
+
+Initializes a line with the given \doxylink{class_vec2}{Vec2}, the A point of the line is the transform component. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em b} & The end point of the line. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+dodoi-\/engine-\/ns/src/engine/gfx/\mbox{\hyperlink{_line_8h}{Line.\+h}}\item 
+dodoi-\/engine-\/ns/src/engine/gfx/\mbox{\hyperlink{_line_8cpp}{Line.\+cpp}}\end{DoxyCompactItemize}

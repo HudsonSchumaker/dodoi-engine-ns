@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['h_0',['h',['../struct_dimension.html#ae649d4b86ddb8487cb48c41a9a5ca172',1,'Dimension']]]
+  ['w_0',['w',['../class_dimension.html#a0b98323f2bfb310dbda159ff742322c2',1,'Dimension']]]
 ];

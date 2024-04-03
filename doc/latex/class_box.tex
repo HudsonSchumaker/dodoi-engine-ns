@@ -1,0 +1,72 @@
+\doxysection{Box Class Reference}
+\hypertarget{class_box}{}\label{class_box}\index{Box@{Box}}
+
+
+Represents a box, derived from the \doxylink{class_component}{Component} class.  
+
+
+
+
+{\ttfamily \#include $<$Box.\+h$>$}
+
+Inheritance diagram for Box\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_box}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_box_a63ede7559e07dfb1ddf55e0d5f4f6c74}\label{class_box_a63ede7559e07dfb1ddf55e0d5f4f6c74} 
+{\bfseries Box} (int w, int h)
+\item 
+\Hypertarget{class_box_ada7b749406ebb41063164ce05af486bc}\label{class_box_ada7b749406ebb41063164ce05af486bc} 
+{\bfseries Box} (int w, int h, bool is\+Fixed)
+\item 
+\Hypertarget{class_box_afc933e5a4616cdce36dc32e8901fa7db}\label{class_box_afc933e5a4616cdce36dc32e8901fa7db} 
+{\bfseries Box} (int w, int h, bool is\+Fixed, SDL\+\_\+\+Color color)
+\item 
+\Hypertarget{class_box_a3c3274d40ca7d8ab16b73614b679282c}\label{class_box_a3c3274d40ca7d8ab16b73614b679282c} 
+{\bfseries Box} (int w, int h, bool is\+Fixed, bool is\+Filled, SDL\+\_\+\+Color color)
+\item 
+\Hypertarget{class_box_a64eed25c3a080c53b8e8af868117249e}\label{class_box_a64eed25c3a080c53b8e8af868117249e} 
+void {\bfseries set\+On\+Center} ()
+\item 
+\Hypertarget{class_box_aabf4df61ad115c404879f0cd49e1ea02}\label{class_box_aabf4df61ad115c404879f0cd49e1ea02} 
+\mbox{\hyperlink{class_dimension}{Dimension}}$<$ int $>$ {\bfseries get\+Size} () const
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_box_ade6f4e0988f98e4a036c0dd6ba02f9cd}\label{class_box_ade6f4e0988f98e4a036c0dd6ba02f9cd} 
+int {\bfseries w} = 0
+\item 
+\Hypertarget{class_box_ae2bd191194f33f8379e568970c40af74}\label{class_box_ae2bd191194f33f8379e568970c40af74} 
+int {\bfseries h} = 0
+\item 
+\Hypertarget{class_box_a1f3716fb555a42ecbf20a8253999cc77}\label{class_box_a1f3716fb555a42ecbf20a8253999cc77} 
+bool {\bfseries is\+Fixed} = false
+\item 
+\Hypertarget{class_box_adec0c1925b52c5bc5d1631a8e5d78b5e}\label{class_box_adec0c1925b52c5bc5d1631a8e5d78b5e} 
+bool {\bfseries is\+Filled} = false
+\item 
+\Hypertarget{class_box_a0c1a63ad67659462219971f2fcbde5e9}\label{class_box_a0c1a63ad67659462219971f2fcbde5e9} 
+SDL\+\_\+\+Color {\bfseries color} = \mbox{\hyperlink{class_color_aafc5056b3e7b8f10ca09d04eb8877e0e}{Color\+::get\+White}}()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{class_component}{Component}}}
+\begin{DoxyCompactItemize}
+\item 
+unsigned long {\bfseries parent\+Id} = 0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a box, derived from the \doxylink{class_component}{Component} class. 
+
+It represents a box component in the game, with properties such as width, height, fixed status, and color. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+dodoi-\/engine-\/ns/src/engine/gfx/\mbox{\hyperlink{_box_8h}{Box.\+h}}\item 
+dodoi-\/engine-\/ns/src/engine/gfx/\mbox{\hyperlink{_box_8cpp}{Box.\+cpp}}\end{DoxyCompactItemize}

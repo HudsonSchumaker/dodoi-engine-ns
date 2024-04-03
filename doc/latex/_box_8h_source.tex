@@ -1,0 +1,30 @@
+\doxysection{Box.\+h}
+\hypertarget{_box_8h_source}{}\label{_box_8h_source}\index{dodoi-\/engine-\/ns/src/engine/gfx/Box.h@{dodoi-\/engine-\/ns/src/engine/gfx/Box.h}}
+\mbox{\hyperlink{_box_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00023\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00024\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_color_8h}{../gfx/Color.h}}"{}}}
+\DoxyCodeLine{00025\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_dimension_8h}{../math/Dimension.h}}"{}}}
+\DoxyCodeLine{00026\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_component_8h}{../ecs/component/Component.h}}"{}}}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00034\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_box}{Box}}\ final\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_component}{Component}}\ \{}
+\DoxyCodeLine{00035\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keywordtype}{int}\ w\ =\ 0;}
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keywordtype}{int}\ h\ =\ 0;}
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keywordtype}{bool}\ isFixed\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keywordtype}{bool}\ isFilled\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00040\ \ \ \ \ SDL\_Color\ color\ =\ \mbox{\hyperlink{class_color_aafc5056b3e7b8f10ca09d04eb8877e0e}{Color::getWhite}}();}
+\DoxyCodeLine{00041\ \ \ \ \ }
+\DoxyCodeLine{00042\ \ \ \ \ \mbox{\hyperlink{class_box}{Box}}();}
+\DoxyCodeLine{00043\ \ \ \ \ \mbox{\hyperlink{class_box}{Box}}(\textcolor{keywordtype}{int}\ w,\ \textcolor{keywordtype}{int}\ h);}
+\DoxyCodeLine{00044\ \ \ \ \ \mbox{\hyperlink{class_box}{Box}}(\textcolor{keywordtype}{int}\ w,\ \textcolor{keywordtype}{int}\ h,\ \textcolor{keywordtype}{bool}\ isFixed);}
+\DoxyCodeLine{00045\ \ \ \ \ \mbox{\hyperlink{class_box}{Box}}(\textcolor{keywordtype}{int}\ w,\ \textcolor{keywordtype}{int}\ h,\ \textcolor{keywordtype}{bool}\ isFixed,\ SDL\_Color\ color);}
+\DoxyCodeLine{00046\ \ \ \ \ \mbox{\hyperlink{class_box}{Box}}(\textcolor{keywordtype}{int}\ w,\ \textcolor{keywordtype}{int}\ h,\ \textcolor{keywordtype}{bool}\ isFixed,\ \textcolor{keywordtype}{bool}\ isFilled,\ SDL\_Color\ color);}
+\DoxyCodeLine{00047\ \ \ \ \ \mbox{\hyperlink{class_box}{\string~Box}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00049\ \ \ \ \ \textcolor{keywordtype}{void}\ setOnCenter();}
+\DoxyCodeLine{00050\ \ \ \ \ \textcolor{keyword}{inline}\ \mbox{\hyperlink{class_dimension}{Dimension<int>}}\ getSize()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00051\ \};}
+
+\end{DoxyCode}

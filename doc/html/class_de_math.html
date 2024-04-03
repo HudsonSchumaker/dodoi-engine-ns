@@ -92,6 +92,12 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:abac1d6a2001d1cfaf4aa13add01b224e" id="r_abac1d6a2001d1cfaf4aa13add01b224e"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abac1d6a2001d1cfaf4aa13add01b224e">rootF</a> (float n)</td></tr>
 <tr class="memdesc:abac1d6a2001d1cfaf4aa13add01b224e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the square root of a single precision number using the Newton-Raphson method.  <br /></td></tr>
 <tr class="separator:abac1d6a2001d1cfaf4aa13add01b224e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62a822bd65d52d8c148aad26dffd3417" id="r_a62a822bd65d52d8c148aad26dffd3417"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a62a822bd65d52d8c148aad26dffd3417">distanceBetweenPoints</a> (float x1, float y1, float x2, float y2)</td></tr>
+<tr class="memdesc:a62a822bd65d52d8c148aad26dffd3417"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the distance between two points.  <br /></td></tr>
+<tr class="separator:a62a822bd65d52d8c148aad26dffd3417"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10c573d8a9244c72ddb5f64e8c798259" id="r_a10c573d8a9244c72ddb5f64e8c798259"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a10c573d8a9244c72ddb5f64e8c798259">normalizeAngle</a> (float angle)</td></tr>
+<tr class="memdesc:a10c573d8a9244c72ddb5f64e8c798259"><td class="mdescLeft">&#160;</td><td class="mdescRight">Normalize thr angle.  <br /></td></tr>
+<tr class="separator:a10c573d8a9244c72ddb5f64e8c798259"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:accf3b7140ae67c3d52a8f3b52744cf0b" id="r_accf3b7140ae67c3d52a8f3b52744cf0b"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#accf3b7140ae67c3d52a8f3b52744cf0b">deg2Rad</a> (float angle)</td></tr>
 <tr class="memdesc:accf3b7140ae67c3d52a8f3b52744cf0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts an angle from degrees to radians.  <br /></td></tr>
 <tr class="separator:accf3b7140ae67c3d52a8f3b52744cf0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -120,7 +126,7 @@ Static Public Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -133,6 +139,91 @@ Static Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The angle in radians. </dd></dl>
+
+</div>
+</div>
+<a id="a62a822bd65d52d8c148aad26dffd3417" name="a62a822bd65d52d8c148aad26dffd3417"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a62a822bd65d52d8c148aad26dffd3417">&#9670;&#160;</a></span>distanceBetweenPoints()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static float DeMath::distanceBetweenPoints </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>x1</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>y1</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>x2</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>y2</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Calculates the distance between two points. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x1</td><td>The x-coordinate of the first point. </td></tr>
+    <tr><td class="paramname">y1</td><td>The y-coordinate of the first point. </td></tr>
+    <tr><td class="paramname">x2</td><td>The x-coordinate of the second point. </td></tr>
+    <tr><td class="paramname">y2</td><td>The y-coordinate of the second point. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The distance between the two points. </dd></dl>
+
+</div>
+</div>
+<a id="a10c573d8a9244c72ddb5f64e8c798259" name="a10c573d8a9244c72ddb5f64e8c798259"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a10c573d8a9244c72ddb5f64e8c798259">&#9670;&#160;</a></span>normalizeAngle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static float DeMath::normalizeAngle </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>angle</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Normalize thr angle. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">angle</td><td>The angle. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The normalized angle. </dd></dl>
 
 </div>
 </div>
@@ -154,7 +245,7 @@ Static Public Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -188,7 +279,7 @@ Static Public Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -222,7 +313,7 @@ Static Public Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">

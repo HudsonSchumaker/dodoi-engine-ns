@@ -1,0 +1,28 @@
+\doxysection{Line.\+h}
+\hypertarget{_line_8h_source}{}\label{_line_8h_source}\index{dodoi-\/engine-\/ns/src/engine/gfx/Line.h@{dodoi-\/engine-\/ns/src/engine/gfx/Line.h}}
+\mbox{\hyperlink{_line_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00022\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00023\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_color_8h}{../gfx/Color.h}}"{}}}
+\DoxyCodeLine{00024\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_entity_8h}{../ecs/Entity.h}}"{}}}
+\DoxyCodeLine{00025\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_vec2_8h}{../math/Vec2.h}}"{}}}
+\DoxyCodeLine{00026\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_dimension_8h}{../math/Dimension.h}}"{}}}
+\DoxyCodeLine{00027\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_component_8h}{../ecs/component/Component.h}}"{}}}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00035\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_line}{Line}}\ final\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_component}{Component}}\ \{}
+\DoxyCodeLine{00036\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00037\ \ \ \ \ \mbox{\hyperlink{class_vec2}{Vec2}}\ b;}
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keywordtype}{bool}\ isFixed\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00039\ \ \ \ \ SDL\_Color\ color\ =\ \ \mbox{\hyperlink{class_color_aafc5056b3e7b8f10ca09d04eb8877e0e}{Color::getWhite}}();}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00045\ \ \ \ \ \mbox{\hyperlink{class_line_a80533db111a9572158734d6449ae52e9}{Line}}(\mbox{\hyperlink{class_vec2}{Vec2}}\ b);}
+\DoxyCodeLine{00046\ \ \ \ \ \mbox{\hyperlink{class_line_a80533db111a9572158734d6449ae52e9}{Line}}(\textcolor{keywordtype}{float}\ x,\ \textcolor{keywordtype}{float}\ y);}
+\DoxyCodeLine{00047\ \ \ \ \ \mbox{\hyperlink{class_line_a80533db111a9572158734d6449ae52e9}{Line}}(\mbox{\hyperlink{class_vec2}{Vec2}}\ b,\ \textcolor{keywordtype}{bool}\ isFixed);}
+\DoxyCodeLine{00048\ \ \ \ \ \mbox{\hyperlink{class_line_a80533db111a9572158734d6449ae52e9}{Line}}(\mbox{\hyperlink{class_vec2}{Vec2}}\ b,\ \textcolor{keywordtype}{bool}\ isFixed,\ SDL\_Color\ color);}
+\DoxyCodeLine{00049\ \ \ \ \ \mbox{\hyperlink{class_line}{\string~Line}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00051\ \ \ \ \ \mbox{\hyperlink{class_dimension}{Dimension<int>}}\ getSize()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00052\ \};}
+
+\end{DoxyCode}

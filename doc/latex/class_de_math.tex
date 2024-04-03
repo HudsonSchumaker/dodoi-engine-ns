@@ -16,6 +16,10 @@ static double \mbox{\hyperlink{class_de_math_ab0cd756c8ce25725f55070a9ad2e9bf9}{
 \begin{DoxyCompactList}\small\item\em Calculates the square root of a double precision number using the Newton-\/\+Raphson method. \end{DoxyCompactList}\item 
 static float \mbox{\hyperlink{class_de_math_abac1d6a2001d1cfaf4aa13add01b224e}{rootF}} (float n)
 \begin{DoxyCompactList}\small\item\em Calculates the square root of a single precision number using the Newton-\/\+Raphson method. \end{DoxyCompactList}\item 
+static float \mbox{\hyperlink{class_de_math_a62a822bd65d52d8c148aad26dffd3417}{distance\+Between\+Points}} (float x1, float y1, float x2, float y2)
+\begin{DoxyCompactList}\small\item\em Calculates the distance between two points. \end{DoxyCompactList}\item 
+static float \mbox{\hyperlink{class_de_math_a10c573d8a9244c72ddb5f64e8c798259}{normalize\+Angle}} (float angle)
+\begin{DoxyCompactList}\small\item\em Normalize thr angle. \end{DoxyCompactList}\item 
 static float \mbox{\hyperlink{class_de_math_accf3b7140ae67c3d52a8f3b52744cf0b}{deg2\+Rad}} (float angle)
 \begin{DoxyCompactList}\small\item\em Converts an angle from degrees to radians. \end{DoxyCompactList}\item 
 static float \mbox{\hyperlink{class_de_math_a5e8d25327e1b88953fd874a609ede434}{rad2\+Deg}} (float angle)
@@ -30,7 +34,7 @@ A utility class for mathematical operations. This class provides static methods 
 \index{DeMath@{DeMath}!deg2Rad@{deg2Rad}}
 \index{deg2Rad@{deg2Rad}!DeMath@{DeMath}}
 \doxysubsubsection{\texorpdfstring{deg2Rad()}{deg2Rad()}}
-{\footnotesize\ttfamily static float De\+Math\+::deg2\+Rad (\begin{DoxyParamCaption}\item[{float}]{angle }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+{\footnotesize\ttfamily static float De\+Math\+::deg2\+Rad (\begin{DoxyParamCaption}\item[{float}]{angle }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
 
 
@@ -44,11 +48,53 @@ Converts an angle from degrees to radians.
 \begin{DoxyReturn}{Returns}
 The angle in radians. 
 \end{DoxyReturn}
+\Hypertarget{class_de_math_a62a822bd65d52d8c148aad26dffd3417}\label{class_de_math_a62a822bd65d52d8c148aad26dffd3417} 
+\index{DeMath@{DeMath}!distanceBetweenPoints@{distanceBetweenPoints}}
+\index{distanceBetweenPoints@{distanceBetweenPoints}!DeMath@{DeMath}}
+\doxysubsubsection{\texorpdfstring{distanceBetweenPoints()}{distanceBetweenPoints()}}
+{\footnotesize\ttfamily static float De\+Math\+::distance\+Between\+Points (\begin{DoxyParamCaption}\item[{float}]{x1,  }\item[{float}]{y1,  }\item[{float}]{x2,  }\item[{float}]{y2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Calculates the distance between two points. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x1} & The x-\/coordinate of the first point. \\
+\hline
+{\em y1} & The y-\/coordinate of the first point. \\
+\hline
+{\em x2} & The x-\/coordinate of the second point. \\
+\hline
+{\em y2} & The y-\/coordinate of the second point. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The distance between the two points. 
+\end{DoxyReturn}
+\Hypertarget{class_de_math_a10c573d8a9244c72ddb5f64e8c798259}\label{class_de_math_a10c573d8a9244c72ddb5f64e8c798259} 
+\index{DeMath@{DeMath}!normalizeAngle@{normalizeAngle}}
+\index{normalizeAngle@{normalizeAngle}!DeMath@{DeMath}}
+\doxysubsubsection{\texorpdfstring{normalizeAngle()}{normalizeAngle()}}
+{\footnotesize\ttfamily static float De\+Math\+::normalize\+Angle (\begin{DoxyParamCaption}\item[{float}]{angle }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Normalize thr angle. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em angle} & The angle. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The normalized angle. 
+\end{DoxyReturn}
 \Hypertarget{class_de_math_a5e8d25327e1b88953fd874a609ede434}\label{class_de_math_a5e8d25327e1b88953fd874a609ede434} 
 \index{DeMath@{DeMath}!rad2Deg@{rad2Deg}}
 \index{rad2Deg@{rad2Deg}!DeMath@{DeMath}}
 \doxysubsubsection{\texorpdfstring{rad2Deg()}{rad2Deg()}}
-{\footnotesize\ttfamily static float De\+Math\+::rad2\+Deg (\begin{DoxyParamCaption}\item[{float}]{angle }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+{\footnotesize\ttfamily static float De\+Math\+::rad2\+Deg (\begin{DoxyParamCaption}\item[{float}]{angle }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
 
 
@@ -66,7 +112,7 @@ The angle in degrees.
 \index{DeMath@{DeMath}!rootD@{rootD}}
 \index{rootD@{rootD}!DeMath@{DeMath}}
 \doxysubsubsection{\texorpdfstring{rootD()}{rootD()}}
-{\footnotesize\ttfamily static double De\+Math\+::rootD (\begin{DoxyParamCaption}\item[{double}]{n }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+{\footnotesize\ttfamily static double De\+Math\+::rootD (\begin{DoxyParamCaption}\item[{double}]{n }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
 
 
@@ -84,7 +130,7 @@ The square root of the input number.
 \index{DeMath@{DeMath}!rootF@{rootF}}
 \index{rootF@{rootF}!DeMath@{DeMath}}
 \doxysubsubsection{\texorpdfstring{rootF()}{rootF()}}
-{\footnotesize\ttfamily static float De\+Math\+::rootF (\begin{DoxyParamCaption}\item[{float}]{n }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+{\footnotesize\ttfamily static float De\+Math\+::rootF (\begin{DoxyParamCaption}\item[{float}]{n }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
 
 

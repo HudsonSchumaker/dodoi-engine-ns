@@ -1,0 +1,98 @@
+\doxysection{Circle Class Reference}
+\hypertarget{class_circle}{}\label{class_circle}\index{Circle@{Circle}}
+
+
+A class representing a circle, derived from the \doxylink{class_component}{Component} class.  
+
+
+
+
+{\ttfamily \#include $<$Circle.\+h$>$}
+
+Inheritance diagram for Circle\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_circle}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_circle_a1b2864b954ac641bff2537d6d3652c7f}\label{class_circle_a1b2864b954ac641bff2537d6d3652c7f} 
+{\bfseries Circle} (int radius)
+\item 
+\Hypertarget{class_circle_a47c0da2e7ae7ac4389c788e9953b34a3}\label{class_circle_a47c0da2e7ae7ac4389c788e9953b34a3} 
+{\bfseries Circle} (int radius, bool is\+Fixed)
+\item 
+\Hypertarget{class_circle_a9f4df5cabb4b911427068acbdb43536b}\label{class_circle_a9f4df5cabb4b911427068acbdb43536b} 
+{\bfseries Circle} (int radius, bool is\+Fixed, bool is\+Filled, SDL\+\_\+\+Color color)
+\item 
+\Hypertarget{class_circle_a3a482704b797149189520f98b2a14275}\label{class_circle_a3a482704b797149189520f98b2a14275} 
+{\bfseries Circle} (int radius, bool is\+Fixed, short dash\+Length, SDL\+\_\+\+Color color)
+\item 
+\Hypertarget{class_circle_a20e1a6e704da36f8a719a4cd61c2e0a0}\label{class_circle_a20e1a6e704da36f8a719a4cd61c2e0a0} 
+void {\bfseries side\+Calculation} ()
+\begin{DoxyCompactList}\small\item\em Calculates the side length of the circle from the radius. for creating a square that contains the circle. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_circle_a44c925cae1c7fbb29044cb1a9178a283}{set\+Radius}} (int radius)
+\begin{DoxyCompactList}\small\item\em Sets the radius of the circle and recalculates the side. \end{DoxyCompactList}\item 
+\Hypertarget{class_circle_a5afbfb1dd1dc1984aca560d390506248}\label{class_circle_a5afbfb1dd1dc1984aca560d390506248} 
+int {\bfseries get\+Radius} () const
+\item 
+\Hypertarget{class_circle_a907aeefbcc5cd4b5730879e2f07bedfa}\label{class_circle_a907aeefbcc5cd4b5730879e2f07bedfa} 
+\mbox{\hyperlink{class_dimension}{Dimension}}$<$ int $>$ {\bfseries get\+Size} () const
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_circle_ab326d20745307627739e01685df38ef7}\label{class_circle_ab326d20745307627739e01685df38ef7} 
+float {\bfseries side} = 0.\+0f
+\item 
+\Hypertarget{class_circle_a0ba9733f19282e7ec53a4844e673da40}\label{class_circle_a0ba9733f19282e7ec53a4844e673da40} 
+bool {\bfseries is\+Fixed} = false
+\item 
+\Hypertarget{class_circle_a70fc5032c326925c7c2bdd33715ae082}\label{class_circle_a70fc5032c326925c7c2bdd33715ae082} 
+bool {\bfseries is\+Filled} = false
+\item 
+\Hypertarget{class_circle_af0abe6b0544272445ae7c7c8d767c151}\label{class_circle_af0abe6b0544272445ae7c7c8d767c151} 
+bool {\bfseries is\+Dashed} = false
+\item 
+\Hypertarget{class_circle_a3df406911ecc3ea416b246c50ea61f26}\label{class_circle_a3df406911ecc3ea416b246c50ea61f26} 
+short {\bfseries dash\+Length} = 8
+\item 
+\Hypertarget{class_circle_a759f441c1d5d8064160f2c814ae78feb}\label{class_circle_a759f441c1d5d8064160f2c814ae78feb} 
+SDL\+\_\+\+Color {\bfseries color} = \mbox{\hyperlink{class_color_aafc5056b3e7b8f10ca09d04eb8877e0e}{Color\+::get\+White}}()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{class_component}{Component}}}
+\begin{DoxyCompactItemize}
+\item 
+unsigned long {\bfseries parent\+Id} = 0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A class representing a circle, derived from the \doxylink{class_component}{Component} class. 
+
+This class provides functionality for creating and manipulating a circle. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_circle_a44c925cae1c7fbb29044cb1a9178a283}\label{class_circle_a44c925cae1c7fbb29044cb1a9178a283} 
+\index{Circle@{Circle}!setRadius@{setRadius}}
+\index{setRadius@{setRadius}!Circle@{Circle}}
+\doxysubsubsection{\texorpdfstring{setRadius()}{setRadius()}}
+{\footnotesize\ttfamily void Circle\+::set\+Radius (\begin{DoxyParamCaption}\item[{int}]{radius }\end{DoxyParamCaption})}
+
+
+
+Sets the radius of the circle and recalculates the side. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em radius} & The new radius of the circle. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+dodoi-\/engine-\/ns/src/engine/gfx/\mbox{\hyperlink{_circle_8h}{Circle.\+h}}\item 
+dodoi-\/engine-\/ns/src/engine/gfx/\mbox{\hyperlink{_circle_8cpp}{Circle.\+cpp}}\end{DoxyCompactItemize}

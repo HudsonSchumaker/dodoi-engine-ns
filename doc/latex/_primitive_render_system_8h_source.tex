@@ -1,0 +1,24 @@
+\doxysection{Primitive\+Render\+System.\+h}
+\hypertarget{_primitive_render_system_8h_source}{}\label{_primitive_render_system_8h_source}\index{dodoi-\/engine-\/ns/src/engine/ecs/system/PrimitiveRenderSystem.h@{dodoi-\/engine-\/ns/src/engine/ecs/system/PrimitiveRenderSystem.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_system_8h}{System.h}}"{}}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_camera_8h}{../../core/Camera.h}}"{}}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_primitive_render_system}{PrimitiveRenderSystem}}\ final\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_system}{System}}\ \{}
+\DoxyCodeLine{00006\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00007\ \ \ \ \ SDL\_Renderer*\ renderer\ =\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \ \ \ \ \textcolor{keywordtype}{void}\ renderLine(\mbox{\hyperlink{class_camera}{Camera}}*\ camera);}
+\DoxyCodeLine{00010\ \ \ \ \ \textcolor{keywordtype}{void}\ renderBox(\mbox{\hyperlink{class_camera}{Camera}}*\ camera);}
+\DoxyCodeLine{00011\ \ \ \ \ \textcolor{keywordtype}{void}\ renderCircle(\mbox{\hyperlink{class_camera}{Camera}}*\ camera);}
+\DoxyCodeLine{00012\ \ \ \ \ }
+\DoxyCodeLine{00013\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00014\ \ \ \ \ \mbox{\hyperlink{class_primitive_render_system}{PrimitiveRenderSystem}}();}
+\DoxyCodeLine{00015\ \ \ \ \ \mbox{\hyperlink{class_primitive_render_system}{\string~PrimitiveRenderSystem}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keywordtype}{void}\ update(\mbox{\hyperlink{class_camera}{Camera}}*\ camera);}
+\DoxyCodeLine{00017\ \};}
+\DoxyCodeLine{00018\ }
+
+\end{DoxyCode}

@@ -9,37 +9,17 @@
 \DoxyCodeLine{00030\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_de_math}{DeMath}}\ final\ \{}
 \DoxyCodeLine{00031\ \textcolor{keyword}{public}:}
 \DoxyCodeLine{00032\ }
-\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_de_math_ab0cd756c8ce25725f55070a9ad2e9bf9}{rootD}}(\textcolor{keywordtype}{double}\ n)\ \{}
-\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ x\ =\ n\ /\ 2.0;}
-\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{short}\ i\ =\ 0;\ i\ <\ 1000;\ i++)\ \{}
-\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ newX\ =\ x\ -\/\ (x\ *\ x\ -\/\ n)\ /\ (2.0\ *\ x);}
-\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (fabs(newX\ -\/\ x)\ <\ 0.000001)\ \{}
-\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ newX;}
-\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
-\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \ \ \ \ x\ =\ newX;}
-\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ \}}
-\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ x;}
-\DoxyCodeLine{00048\ \ \ \ \ \}}
-\DoxyCodeLine{00049\ }
-\DoxyCodeLine{00055\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{class_de_math_abac1d6a2001d1cfaf4aa13add01b224e}{rootF}}(\textcolor{keywordtype}{float}\ n)\ \{}
-\DoxyCodeLine{00056\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ x\ =\ n\ /\ 2.0f;}
-\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{short}\ i\ =\ 0;\ i\ <\ 1000;\ i++)\ \{}
-\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ newX\ =\ x\ -\/\ (x\ *\ x\ -\/\ n)\ /\ (2.0f\ *\ x);}
-\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (fabs(newX\ -\/\ x)\ <\ 0.000001)\ \{}
-\DoxyCodeLine{00060\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ newX;}
-\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
-\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ \ \ \ \ x\ =\ newX;}
-\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ \ \}}
-\DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ x;}
-\DoxyCodeLine{00065\ \ \ \ \ \}}
-\DoxyCodeLine{00066\ }
-\DoxyCodeLine{00072\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{class_de_math_accf3b7140ae67c3d52a8f3b52744cf0b}{deg2Rad}}(\textcolor{keywordtype}{float}\ angle)\ \{}
-\DoxyCodeLine{00073\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ angle\ *\ \mbox{\hyperlink{class_defs_a1658f3516a744374a14e0229e2ff45cd}{Defs::PI}}\ /\ 180.0f;}
-\DoxyCodeLine{00074\ \ \ \ \ \}}
-\DoxyCodeLine{00075\ }
-\DoxyCodeLine{00081\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{class_de_math_a5e8d25327e1b88953fd874a609ede434}{rad2Deg}}(\textcolor{keywordtype}{float}\ angle)\ \{}
-\DoxyCodeLine{00082\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ angle\ *\ 180.0f\ /\ \mbox{\hyperlink{class_defs_a1658f3516a744374a14e0229e2ff45cd}{Defs::PI}};}
-\DoxyCodeLine{00083\ \ \ \ \ \}}
-\DoxyCodeLine{00084\ \};}
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_de_math_ab0cd756c8ce25725f55070a9ad2e9bf9}{rootD}}(\textcolor{keywordtype}{double}\ n);}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{class_de_math_abac1d6a2001d1cfaf4aa13add01b224e}{rootF}}(\textcolor{keywordtype}{float}\ n);}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00055\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{class_de_math_a62a822bd65d52d8c148aad26dffd3417}{distanceBetweenPoints}}(\textcolor{keywordtype}{float}\ x1,\ \textcolor{keywordtype}{float}\ y1,\ \textcolor{keywordtype}{float}\ x2,\ \textcolor{keywordtype}{float}\ y2);}
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00062\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{class_de_math_a10c573d8a9244c72ddb5f64e8c798259}{normalizeAngle}}(\textcolor{keywordtype}{float}\ angle);}
+\DoxyCodeLine{00063\ }
+\DoxyCodeLine{00069\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{class_de_math_accf3b7140ae67c3d52a8f3b52744cf0b}{deg2Rad}}(\textcolor{keywordtype}{float}\ angle);}
+\DoxyCodeLine{00070\ \ \ \ \ }
+\DoxyCodeLine{00076\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{class_de_math_a5e8d25327e1b88953fd874a609ede434}{rad2Deg}}(\textcolor{keywordtype}{float}\ angle);}
+\DoxyCodeLine{00077\ \};}
 
 \end{DoxyCode}
