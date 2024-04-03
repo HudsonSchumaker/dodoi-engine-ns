@@ -1,14 +1,26 @@
 /**
 * @file Color.h
 * @author Hudson Schumaker
-* @brief Defines the Color class and its associated methods.
+* @brief Defines the Color class.
 * @version 1.0.0
 * 
 * Dodoi-Engine-NS is a game engine developed by Dodoi-Lab.
 * @copyright Copyright (c) 2024, Dodoi-Lab
+* 
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+* 
+*     http://www.apache.org/licenses/LICENSE-2.0
+* 
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
 */
 #pragma once
-#include "../Common.h"
+#include "../Defs.h"
 
 /**
 * @class Color
@@ -110,6 +122,16 @@ public:
     * @return The converted SDL_Color.
     */
     static SDL_Color fromHexARGB(Uint32 hex);
+
+    /**
+    * @brief Changes the intensity of a color.
+    * 
+    * This function takes a color and a factor as input. It then multiplies the red, green, and blue components of the color by the factor, effectively changing the color's intensity.
+    * 
+    * @param color A pointer to the color to change. The color is represented as a 32-bit unsigned integer, where each 8 bits represent the alpha, red, green, and blue components, respectively.
+    * @param factor The factor to multiply the color's components by. This should be a float between 0.0 (no intensity, color turns black) and 1.0 (full intensity, color remains the same).
+    */
+    static void changeColorIntensity(Uint32* color, float factor);
 
     /**
     * @brief Returns an SDL_Color representing red.

@@ -1,3 +1,25 @@
+/**
+* @file Color.h
+* @author Hudson Schumaker
+* @brief Defines the Color class.
+* @version 1.0.0
+* 
+* Dodoi-Engine-NS is a game engine developed by Dodoi-Lab.
+* 
+* @copyright Copyright (c) 2024, Dodoi-Lab
+* 
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+* 
+*     http://www.apache.org/licenses/LICENSE-2.0
+* 
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+*/
 #include "Color.h"
 
 Color::Color(int r, int g, int b, int a) : r(r), g(g), b(b), a(a) {}
@@ -56,6 +78,15 @@ SDL_Color Color::fromHexARGB(Uint32 hex) {
     color.b = (hex >> 8) & 0xFF;
     color.a = hex & 0xFF;
     return color;
+}
+
+void Color::changeColorIntensity(Uint32* color, float factor) {
+    Uint32 a = (*color & 0xFF000000);
+    Uint32 r = (*color & 0x00FF0000) * factor;
+    Uint32 g = (*color & 0x0000FF00) * factor;
+    Uint32 b = (*color & 0x000000FF) * factor;
+
+    *color = a | (r & 0x00FF0000) | (g & 0x0000FF00) | (b & 0x000000FF);
 }
 
 SDL_Color Color::getRed() {
