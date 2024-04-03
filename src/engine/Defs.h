@@ -110,23 +110,10 @@
 */
 class Defs final {
 public:
-    /**
-    * @brief The name of the engine.
-    */
     inline static const char NAME[] = "dodoi-engine v.0.0.0-ns";
-
-    /**
-    * @brief The target frames per second for the game.
-    */
     static const int FPS = 60;
-
-    /**
-    * @brief The number of milliseconds per frame at the target FPS.
-    */
     static const int MILLISECS_PER_FRAME = 1000 / FPS;
 
-    /**
-    * @brief The value of Pi.
-    */
     constexpr static float PI = 3.141592653589793f;
+    constexpr static float TWO_PI = 6.283185307179586f;
 };
