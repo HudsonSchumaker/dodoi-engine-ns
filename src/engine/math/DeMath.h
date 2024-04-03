@@ -35,50 +35,43 @@ public:
     * @param n The number to calculate the square root of.
     * @return The square root of the input number.
     */
-    static double rootD(double n) {
-        double x = n / 2.0;
-        for (short i = 0; i < 1000; i++) {
-            double newX = x - (x * x - n) / (2.0 * x);
-            if (fabs(newX - x) < 0.000001) {
-                return newX;
-            }
-            x = newX;
-        }
-        return x;
-    }
+    static double rootD(double n);
 
     /**
     * @brief Calculates the square root of a single precision number using the Newton-Raphson method.
     * @param n The number to calculate the square root of.
     * @return The square root of the input number.
     */
-    static float rootF(float n) {
-        float x = n / 2.0f;
-        for (short i = 0; i < 1000; i++) {
-            float newX = x - (x * x - n) / (2.0f * x);
-            if (fabs(newX - x) < 0.000001) {
-                return newX;
-            }
-            x = newX;
-         }
-        return x;
-    }
+    static float rootF(float n);
+
+    /**
+    * @brief Calculates the distance between two points.
+    * @param x1 The x-coordinate of the first point.
+    * @param y1 The y-coordinate of the first point.
+    * @param x2 The x-coordinate of the second point.
+    * @param y2 The y-coordinate of the second point.
+    * @return The distance between the two points.
+    */
+    static float distanceBetweenPoints(float x1, float y1, float x2, float y2);
+
+    /**
+    * @brief Normalize thr angle.
+    * @param angle The angle.
+    * @return The normalized angle.
+    */
+    static float normalizeAngle(float angle);
 
     /**
     * @brief Converts an angle from degrees to radians.
     * @param angle The angle in degrees.
     * @return The angle in radians.
     */
-    static float deg2Rad(float angle) {
-        return angle * Defs::PI / 180.0f;
-    }
-
+    static float deg2Rad(float angle);
+    
     /**
     * @brief Converts an angle from radians to degrees.
     * @param angle The angle in radians.
     * @return The angle in degrees.
     */
-    static float rad2Deg(float angle) {
-        return angle * 180.0f / Defs::PI;
-    }
+    static float rad2Deg(float angle);
 };
