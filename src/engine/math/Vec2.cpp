@@ -91,7 +91,7 @@ float Vec2::cross(const Vec2& b) const {
 	return (x * b.y) - (y * b.x);
 }
 
-float Vec2::distance(const Vec2& a) const {
+float Vec2::distance(const Vec2& a) const { // b.distance(a)
 	float dx = x - a.x;
 	float dy = y - a.y;
 	return DeMath::rootF(dx * dx + dy * dy);

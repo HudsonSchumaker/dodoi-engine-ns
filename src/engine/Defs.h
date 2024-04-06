@@ -44,6 +44,7 @@
 #include <filesystem>
 #include <functional>
 #include <unordered_map>
+#include <unordered_set>
 
 // SDL2 includes
 #include <SDL.h>

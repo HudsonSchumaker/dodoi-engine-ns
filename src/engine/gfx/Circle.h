@@ -22,7 +22,6 @@
 */
 #pragma once
 #include "../gfx/Color.h"
-#include "../ecs/Entity.h"
 #include "../math/Dimension.h"
 #include "../ecs/component/Component.h"
 

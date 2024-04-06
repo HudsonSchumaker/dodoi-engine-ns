@@ -27,7 +27,8 @@
 * @tparam T The type of the width and height. Can be any numeric type (int, float, double, etc.).
 */
 template <typename T>
-struct Dimension {
+class Dimension final {
+public:
     T w = 0;  ///< The width of the dimension.
     T h = 0;  ///< The height of the dimension.
 

@@ -26,7 +26,7 @@
 
 Box::Box() : w(2), h(2) {}
 Box::Box(int w, int h) : w(w), h(h) {}
-Box::Box(int w, int h,  bool isFixed) : w(w), h(h), isFixed(isFixed) {}
+Box::Box(int w, int h, bool isFixed) : w(w), h(h), isFixed(isFixed) {}
 Box::Box(int w, int h, bool isFixed, SDL_Color color) : w(w), h(h), isFixed(isFixed), color(color) {}
 Box:: Box(int w, int h, bool isFixed, bool isFilled, SDL_Color color) : w(w), h(h), isFixed(isFixed), isFilled(isFilled), color(color) {}
 
